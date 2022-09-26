@@ -3,9 +3,11 @@
 //
 // https://github.com/elderfo/react-native-storybook-loader.git
 
-function loadStories() {}
+function loadStories() {
+  require('../src/components/atoms/Dot/Dot.stories');
+}
 
-const stories = [];
+const stories = ['../src/components/atoms/Dot/Dot.stories'];
 
 module.exports = {
   loadStories,
