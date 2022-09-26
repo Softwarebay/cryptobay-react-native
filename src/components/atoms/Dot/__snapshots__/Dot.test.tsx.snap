@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Dot Atom Comonent Snapshot: Default Dot 1`] = `
+exports[`Dot Atom Comonent Snapshot 1`] = `
 <View
   style={
     Array [
@@ -11,23 +11,6 @@ exports[`Dot Atom Comonent Snapshot: Default Dot 1`] = `
         "backgroundColor": "#FFFFFF",
         "height": 6,
         "width": 6,
-      },
-    ]
-  }
-/>
-`;
-
-exports[`Dot Atom Comonent Snapshot: Dot With Props 1`] = `
-<View
-  style={
-    Array [
-      Object {
-        "borderRadius": 1000,
-      },
-      Object {
-        "backgroundColor": "#FEBF32",
-        "height": 18,
-        "width": 18,
       },
     ]
   }

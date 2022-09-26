@@ -8,12 +8,8 @@ import { Dot } from './Dot';
 
 describe('Dot Atom', () => {
   test('Comonent Snapshot', () => {
-    const defaultDotTree = renderer.create(<Dot />).toJSON();
-    const dotWithPropsTree = renderer
-      .create(<Dot size={18} color="#FEBF32" />)
-      .toJSON();
-    expect(defaultDotTree).toMatchSnapshot('Default Dot');
-    expect(dotWithPropsTree).toMatchSnapshot('Dot With Props');
+    const tree = renderer.create(<Dot />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   test('ensure Dot component color and size works correctly', () => {
