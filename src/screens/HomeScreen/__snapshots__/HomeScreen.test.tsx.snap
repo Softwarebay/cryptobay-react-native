@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen Screen Component Snapshot 1`] = `
+<RCTSafeAreaView>
+  <Text>
+    HomeScreen
+  </Text>
+</RCTSafeAreaView>
+`;
