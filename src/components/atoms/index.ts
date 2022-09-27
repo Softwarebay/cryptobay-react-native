@@ -1,1 +1,1 @@
-export { Dot } from './Dot/Dot';
+export { Label } from './Label/Label';

@@ -16,23 +16,4 @@ describe('Label Atom', () => {
     render(<Label value="Next" testID="atom-label" />);
     expect(screen.getByTestId('atom-label')).toHaveTextContent('Next');
   });
-
-  test('ensure Label components styling correctly', () => {
-    render(
-      <Label
-        value="Millions of people participate"
-        testID="atom-label"
-        fontSize={40}
-        lineHeight={56}
-        color="#FEBF32"
-        fontWeight="300"
-      />,
-    );
-    expect(screen.getByTestId('atom-label')).toHaveStyle({
-      fontSize: 40,
-      lineHeight: 56,
-      color: '#FEBF32',
-      fontWeight: '300',
-    });
-  });
 });
