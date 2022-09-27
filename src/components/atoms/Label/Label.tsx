@@ -5,24 +5,22 @@ import { styles } from './Label.styles';
 
 type LabelProps = {
   value: string;
+  variant?: 'primary' | 'secondary' | 'tertiary';
   color?: string;
   testID?: string;
 };
 
 export const Label: React.FC<LabelProps> = ({
   value,
-  color,
+  variant = 'primary',
+  color = '#FFFFFF',
   testID,
 }: LabelProps) => {
   const colorStyles = { color: color };
 
   return (
-    <Text testID={testID} style={[styles.label, colorStyles]}>
+    <Text testID={testID} style={[styles.label, styles[variant], colorStyles]}>
       {value}
     </Text>
   );
-};
-
-Label.defaultProps = {
-  color: '#FFFFFF',
 };

@@ -6,6 +6,8 @@ exports[`Label Atom Component Snapshot 1`] = `
     Array [
       Object {
         "fontFamily": "Poppins",
+      },
+      Object {
         "fontSize": 16,
         "fontWeight": "600",
         "lineHeight": 24,
