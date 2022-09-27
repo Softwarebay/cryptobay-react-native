@@ -3,13 +3,17 @@
 exports[`Label Atom Component Snapshot 1`] = `
 <Text
   style={
-    Object {
-      "color": "#FFFFFF",
-      "fontFamily": "Poppins",
-      "fontSize": 16,
-      "fontWeight": "600",
-      "lineHeight": 24,
-    }
+    Array [
+      Object {
+        "fontFamily": "Poppins",
+        "fontSize": 16,
+        "fontWeight": "600",
+        "lineHeight": 24,
+      },
+      Object {
+        "color": "#FFFFFF",
+      },
+    ]
   }
 >
   Next

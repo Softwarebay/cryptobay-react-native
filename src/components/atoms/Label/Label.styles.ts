@@ -5,7 +5,6 @@ export const styles = StyleSheet.create({
     fontFamily: 'Poppins',
     fontSize: 16,
     lineHeight: 24,
-    color: '#FFFFFF',
     fontWeight: '600',
   },
 });
