@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CarouselSlideNavigation Atom Component Snapshot 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#FEBF32",
+        },
+        Object {
+          "borderRadius": 8,
+          "height": 8,
+          "marginHorizontal": 4,
+          "width": 8,
+        },
+      ]
+    }
+    testID="slide-1-navigation-dot"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#4C516B",
+        },
+        Object {
+          "borderRadius": 8,
+          "height": 8,
+          "marginHorizontal": 4,
+          "width": 8,
+        },
+      ]
+    }
+    testID="slide-2-navigation-dot"
+  />
+  <View
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#4C516B",
+        },
+        Object {
+          "borderRadius": 8,
+          "height": 8,
+          "marginHorizontal": 4,
+          "width": 8,
+        },
+      ]
+    }
+    testID="slide-3-navigation-dot"
+  />
+</View>
+`;
