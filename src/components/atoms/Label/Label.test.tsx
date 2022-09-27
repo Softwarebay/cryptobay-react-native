@@ -12,11 +12,6 @@ describe('Label Atom', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  /* test('ensure label value renders correctly', () => {
-    render(<Label value="Next" testID="atom-label" />);
-    expect(screen.getByTestId('atom-label')).toHaveTextContent('Next');
-  }); */
-
   test('ensure label variants works correctly', () => {
     const { rerender } = render(
       <Label value="19.2371 BNB" testID="atom-label" />,

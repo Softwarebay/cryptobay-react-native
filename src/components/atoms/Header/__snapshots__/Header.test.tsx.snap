@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Atom Component Snapshot: Gradient Variant 1`] = `
+<RNCMaskedView>
+  <View
+    pointerEvents="none"
+    style={
+      Object {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Poppins",
+            "lineHeight": 56,
+          },
+          Object {
+            "fontSize": 40,
+            "fontWeight": "300",
+          },
+        ]
+      }
+    >
+      Convenient Transaction
+    </Text>
+  </View>
+  <BVLinearGradient
+    colors={
+      Array [
+        4289318399,
+        4285724369,
+        4288736653,
+        4294890341,
+        4294616222,
+      ]
+    }
+    endPoint={
+      Object {
+        "x": 1,
+        "y": 0,
+      }
+    }
+    locations={null}
+    startPoint={
+      Object {
+        "x": 0,
+        "y": 0,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Poppins",
+            "lineHeight": 56,
+          },
+          Object {
+            "fontSize": 40,
+            "fontWeight": "300",
+          },
+          Object {
+            "opacity": 0,
+          },
+        ]
+      }
+    >
+      Convenient Transaction
+    </Text>
+  </BVLinearGradient>
+</RNCMaskedView>
+`;
+
+exports[`Header Atom Component Snapshot: White Variant 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Poppins",
+        "lineHeight": 56,
+      },
+      Object {
+        "color": "#FFFFFF",
+        "fontSize": 42,
+        "fontWeight": "400",
+      },
+    ]
+  }
+>
+  Millionsof people participate
+</Text>
+`;

@@ -6,12 +6,14 @@
 function loadStories() {
   require('../src/components/atoms/Badge/Badge.stories');
   require('../src/components/atoms/Caption/Caption.stories');
+  require('../src/components/atoms/Header/Header.stories');
   require('../src/components/atoms/Label/Label.stories');
 }
 
 const stories = [
   '../src/components/atoms/Badge/Badge.stories',
   '../src/components/atoms/Caption/Caption.stories',
+  '../src/components/atoms/Header/Header.stories',
   '../src/components/atoms/Label/Label.stories',
 ];
 
