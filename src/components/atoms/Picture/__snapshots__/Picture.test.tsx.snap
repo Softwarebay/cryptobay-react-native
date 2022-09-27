@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Picture Atom Component Snapshot 1`] = `
+<Image
+  source={
+    Object {
+      "testUri": "../../../assets/pictures/cone.png",
+    }
+  }
+/>
+`;

@@ -9,6 +9,7 @@ function loadStories() {
   require('../src/components/atoms/CarouselSlideNavigation/CarouselSlideNavigation.stories');
   require('../src/components/atoms/Header/Header.stories');
   require('../src/components/atoms/Label/Label.stories');
+  require('../src/components/atoms/Picture/Picture.stories');
 }
 
 const stories = [
@@ -17,6 +18,7 @@ const stories = [
   '../src/components/atoms/CarouselSlideNavigation/CarouselSlideNavigation.stories',
   '../src/components/atoms/Header/Header.stories',
   '../src/components/atoms/Label/Label.stories',
+  '../src/components/atoms/Picture/Picture.stories',
 ];
 
 module.exports = {
