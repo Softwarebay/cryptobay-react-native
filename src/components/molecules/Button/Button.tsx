@@ -34,7 +34,9 @@ export const Button: React.FC<ButtonProps> = ({
       testID={testID}
       style={[styles.button, handleIconStyles, handleButtonVariant]}
       onPress={onPress}>
-      {iconType && <Icon type={iconType} style={iconStyle} testID={iconTestID} />}
+      {iconType && (
+        <Icon type={iconType} style={iconStyle} testID={iconTestID} />
+      )}
       <Label
         value={label}
         variant="primary"

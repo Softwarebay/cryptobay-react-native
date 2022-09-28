@@ -15,6 +15,7 @@ storiesOf('Atoms/Icon', module)
   ))
   .add('Arrow Right Sent Icon', () => <Icon type={Icons.ARROW_RIGHT_SENT} />)
   .add('Buy Icon', () => <Icon type={Icons.BUY} />)
+  .add('Elipse Profile Icon', () => <Icon type={Icons.ELIPSE_PROFILE} />)
   .add('Settings Icon', () => <Icon type={Icons.SETTINGS} />)
   .add('Swap Icon', () => <Icon type={Icons.SWAP} />)
   .add('Wallet Icon', () => <Icon type={Icons.WALLET} />);

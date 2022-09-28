@@ -22,6 +22,9 @@ describe('Icon Atom', () => {
       'Arrow Right Sent Icon',
     );
     expect(iconTree(Icons.BUY)).toMatchSnapshot('Buy Icon');
+    expect(iconTree(Icons.ELIPSE_PROFILE)).toMatchSnapshot(
+      'Elipse Profile Icon',
+    );
     expect(iconTree(Icons.SETTINGS)).toMatchSnapshot('Settings Icon');
     expect(iconTree(Icons.SWAP)).toMatchSnapshot('Swap Icon');
     expect(iconTree(Icons.WALLET)).toMatchSnapshot('Wallet Icon');

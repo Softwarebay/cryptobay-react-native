@@ -50,6 +50,16 @@ exports[`Icon Atom Component Snapshot: Buy Icon 1`] = `
 </View>
 `;
 
+exports[`Icon Atom Component Snapshot: Elipse Profile Icon 1`] = `
+<View>
+  <SvgMock
+    height={24}
+    testID="svg-icon-elipse-profile"
+    width={24}
+  />
+</View>
+`;
+
 exports[`Icon Atom Component Snapshot: Settings Icon 1`] = `
 <View>
   <SvgMock

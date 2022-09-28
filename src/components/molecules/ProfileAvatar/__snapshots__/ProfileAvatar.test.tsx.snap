@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProfileAvatar Molecule Component Snapshot 1`] = `
+<View
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/pictures/profile.png",
+      }
+    }
+    style={
+      Object {
+        "backgroundColor": "#2A2D3C",
+        "borderRadius": 42,
+        "height": 42,
+        "width": 42,
+      }
+    }
+  />
+  <View
+    style={
+      Object {
+        "left": 32,
+        "position": "absolute",
+        "top": 22,
+      }
+    }
+  >
+    <SvgMock
+      height={20}
+      testID="svg-icon-elipse-profile"
+      width={20}
+    />
+  </View>
+</View>
+`;

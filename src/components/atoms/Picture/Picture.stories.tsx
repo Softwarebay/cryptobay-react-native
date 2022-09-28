@@ -6,6 +6,7 @@ import {
   CONE,
   ELLIPSES,
   PAPER_PLANE,
+  PROFILE,
   SETUP,
   SHIELD,
 } from '../../../../assets/pictures';
@@ -24,6 +25,7 @@ storiesOf('Atoms/Picture', module)
   .add('Cone Picture', () => <Picture pictureFile={CONE} />)
   .add('Ellipses Picture', () => <Picture pictureFile={ELLIPSES} />)
   .add('Paper Plane Picture', () => <Picture pictureFile={PAPER_PLANE} />)
+  .add('Profile Picture', () => <Picture pictureFile={PROFILE} />)
   .add('Styled Paper Plane Picture', () => (
     <Picture pictureFile={PAPER_PLANE} style={pictureCustomStyles} />
   ))

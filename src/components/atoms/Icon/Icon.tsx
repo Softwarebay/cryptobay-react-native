@@ -6,6 +6,7 @@ import ArrowLeftBackIcon from '../../../../assets/icons/arrow-left-back.svg';
 import ArrowRightRecivedIcon from '../../../../assets/icons/arrow-right-recived.svg';
 import ArrowRightSentIcon from '../../../../assets/icons/arrow-right-sent.svg';
 import BuyIcon from '../../../../assets/icons/buy.svg';
+import ElipseProfileIcon from '../../../../assets/icons/elipse_profile.svg';
 import SettingsIcon from '../../../../assets/icons/settings.svg';
 import SwapIcon from '../../../../assets/icons/swap.svg';
 import WalletIcon from '../../../../assets/icons/wallet.svg';
@@ -57,6 +58,13 @@ export const Icon: React.FC<IconProps> = ({
       />
     ),
     BUY: <BuyIcon width={width} height={height} testID="svg-icon-buy" />,
+    ELIPSE_PROFILE: (
+      <ElipseProfileIcon
+        width={width}
+        height={height}
+        testID="svg-icon-elipse-profile"
+      />
+    ),
     SETTINGS: (
       <SettingsIcon width={width} height={height} testID="svg-icon-settings" />
     ),
