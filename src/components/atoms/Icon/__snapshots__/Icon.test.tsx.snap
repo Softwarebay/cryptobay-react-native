@@ -1,11 +1,65 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Icon Atom Component Snapshot: Arrow Down Icon 1`] = `
+<SvgMock
+  height={24}
+  testID="svg-icon-arrow-down"
+  width={24}
+/>
+`;
+
+exports[`Icon Atom Component Snapshot: Arrow Left Back Icon 1`] = `
+<SvgMock
+  height={24}
+  testID="svg-icon-arrow-left-back"
+  width={24}
+/>
+`;
+
+exports[`Icon Atom Component Snapshot: Arrow Right Recived Icon 1`] = `
+<SvgMock
+  height={24}
+  testID="svg-icon-arrow-right-recive"
+  width={24}
+/>
+`;
+
+exports[`Icon Atom Component Snapshot: Arrow Right Sent Icon 1`] = `
+<SvgMock
+  height={24}
+  testID="svg-icon-arrow-right-sent"
+  width={24}
+/>
+`;
+
+exports[`Icon Atom Component Snapshot: Buy Icon 1`] = `
+<SvgMock
+  height={24}
+  testID="svg-icon-buy"
+  width={24}
+/>
+`;
+
+exports[`Icon Atom Component Snapshot: Settings Icon 1`] = `
+<SvgMock
+  height={24}
+  testID="svg-icon-settings"
+  width={24}
+/>
+`;
+
+exports[`Icon Atom Component Snapshot: Swap Icon 1`] = `
+<SvgMock
+  height={24}
+  testID="svg-icon-swap"
+  width={24}
+/>
+`;
+
 exports[`Icon Atom Component Snapshot: Wallet Icon 1`] = `
-<View>
-  <SvgMock
-    height={24}
-    testID="svg-icon-wallet"
-    width={24}
-  />
-</View>
+<SvgMock
+  height={24}
+  testID="svg-icon-wallet"
+  width={24}
+/>
 `;
