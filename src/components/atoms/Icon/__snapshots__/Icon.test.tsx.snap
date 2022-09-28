@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Atom Component Snapshot: Wallet Icon 1`] = `
+<View>
+  <SvgMock
+    height={24}
+    testID="svg-icon-wallet"
+    width={24}
+  />
+</View>
+`;
