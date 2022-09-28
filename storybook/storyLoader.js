@@ -11,6 +11,7 @@ function loadStories() {
   require('../src/components/atoms/Icon/Icon.stories');
   require('../src/components/atoms/Label/Label.stories');
   require('../src/components/atoms/Picture/Picture.stories');
+  require('../src/components/molecules/Button/Button.stories');
 }
 
 const stories = [
@@ -21,6 +22,7 @@ const stories = [
   '../src/components/atoms/Icon/Icon.stories',
   '../src/components/atoms/Label/Label.stories',
   '../src/components/atoms/Picture/Picture.stories',
+  '../src/components/molecules/Button/Button.stories',
 ];
 
 module.exports = {

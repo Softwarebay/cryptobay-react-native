@@ -1,4 +1,5 @@
 import React from 'react';
+import { StyleProp, View, ViewStyle } from 'react-native';
 
 import ArrowDownIcon from '../../../../assets/icons/arrow-down.svg';
 import ArrowLeftBackIcon from '../../../../assets/icons/arrow-left-back.svg';
@@ -15,12 +16,16 @@ type IconProps = {
   type: Icons;
   width?: number;
   height?: number;
+  style?: StyleProp<ViewStyle>;
+  testID?: string;
 };
 
 export const Icon: React.FC<IconProps> = ({
   type,
   width = 24,
   height = 24,
+  style,
+  testID,
 }: IconProps) => {
   const iconVariants = {
     ARROW_DOWN: (
@@ -61,5 +66,9 @@ export const Icon: React.FC<IconProps> = ({
     ),
   };
 
-  return iconVariants[type];
+  return (
+    <View testID={testID} style={style}>
+      {iconVariants[type]}
+    </View>
+  );
 };

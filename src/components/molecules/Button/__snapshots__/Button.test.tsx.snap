@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Molecule Component Snapshot: No Icon 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#2A2D3C",
+      "borderRadius": 8,
+      "color": "#FEBF32",
+      "flexDirection": "row",
+      "justifyContent": "center",
+      "opacity": 1,
+      "padding": 16,
+      "width": "100%",
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Poppins",
+        },
+        Object {
+          "fontSize": 16,
+          "fontWeight": "600",
+          "lineHeight": 24,
+        },
+        Object {
+          "color": "#FEBF32",
+        },
+      ]
+    }
+  >
+    Get Start
+  </Text>
+</View>
+`;
+
+exports[`Button Molecule Component Snapshot: With Icon 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#2A2D3C",
+      "borderRadius": 8,
+      "color": "#FEBF32",
+      "flexDirection": "row",
+      "opacity": 1,
+      "padding": 8,
+      "width": "auto",
+    }
+  }
+>
+  <View>
+    <SvgMock
+      height={24}
+      testID="svg-icon-buy"
+      width={24}
+    />
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Poppins",
+        },
+        Object {
+          "fontSize": 16,
+          "fontWeight": "600",
+          "lineHeight": 24,
+        },
+        Object {
+          "color": "#FEBF32",
+        },
+      ]
+    }
+  >
+    Buy
+  </Text>
+</View>
+`;

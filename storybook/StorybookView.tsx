@@ -17,8 +17,8 @@ export default StorybookView;
 
 const styles = StyleSheet.create({
   storybookContainer: {
-    backgroundColor: '#323546',
     flex: 1,
+    backgroundColor: '#323546',
     justifyContent: 'center',
     alignItems: 'center',
   },
