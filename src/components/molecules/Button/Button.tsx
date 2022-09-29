@@ -28,6 +28,7 @@ export const Button: React.FC<ButtonProps> = ({
 }: ButtonProps) => {
   const handleIconStyles = iconType ? styles.withIcon : styles.noIcon;
   const handleButtonVariant = variant === 'dark' ? styles.dark : styles.bright;
+  const labelStyle = { color: handleButtonVariant.color };
 
   return (
     <TouchableOpacity
@@ -37,11 +38,7 @@ export const Button: React.FC<ButtonProps> = ({
       {iconType && (
         <Icon type={iconType} style={iconStyle} testID={iconTestID} />
       )}
-      <Label
-        value={label}
-        variant="primary"
-        color={handleButtonVariant.color}
-      />
+      <Label value={label} variant="primary" style={labelStyle} />
     </TouchableOpacity>
   );
 };

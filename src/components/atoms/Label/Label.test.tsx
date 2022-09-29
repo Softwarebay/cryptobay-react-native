@@ -30,7 +30,8 @@ describe('Label Atom', () => {
       lineHeight: 24,
       fontWeight: '400',
     });
-    rerender(<Label value="Wallet" color="#FEBF32" variant="tertiary" />);
+    const customStyle = { color: '#FEBF32' };
+    rerender(<Label value="Wallet" style={customStyle} variant="tertiary" />);
     expect(label).toHaveTextContent('Wallet');
     expect(label).toHaveStyle({
       fontSize: 12,

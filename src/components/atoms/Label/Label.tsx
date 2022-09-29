@@ -1,25 +1,25 @@
 import React from 'react';
-import { Text } from 'react-native';
+import { Text, TextStyle } from 'react-native';
 
 import { styles } from './Label.styles';
 
 type LabelProps = {
   value: string;
   variant?: 'primary' | 'secondary' | 'tertiary';
-  color?: string;
+  style? : TextStyle;
   testID?: string;
 };
 
 export const Label: React.FC<LabelProps> = ({
   value,
   variant = 'primary',
-  color = '#FFFFFF',
+  style,
   testID,
 }: LabelProps) => {
-  const colorStyles = { color: color };
+  const customStyle = style ? style : { color: '#FFFFFF' }
 
   return (
-    <Text testID={testID} style={[styles.label, styles[variant], colorStyles]}>
+    <Text testID={testID} style={[styles.label, styles[variant], customStyle]}>
       {value}
     </Text>
   );
