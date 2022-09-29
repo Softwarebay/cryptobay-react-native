@@ -6,7 +6,7 @@ import { styles } from './Label.styles';
 type LabelProps = {
   value: string;
   variant?: 'primary' | 'secondary' | 'tertiary';
-  style? : TextStyle;
+  style?: TextStyle;
   testID?: string;
 };
 
@@ -16,7 +16,7 @@ export const Label: React.FC<LabelProps> = ({
   style,
   testID,
 }: LabelProps) => {
-  const customStyle = style ? style : { color: '#FFFFFF' }
+  const customStyle = style ? style : { color: '#FFFFFF' };
 
   return (
     <Text testID={testID} style={[styles.label, styles[variant], customStyle]}>
