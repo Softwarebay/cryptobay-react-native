@@ -13,6 +13,7 @@ exports[`Badge Atom Component Snapshot 1`] = `
       Object {
         "color": "#76E268",
       },
+      undefined,
     ]
   }
 >
