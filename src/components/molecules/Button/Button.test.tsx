@@ -77,7 +77,7 @@ describe('Button Molecule', () => {
     rerender(
       <Button
         testID="molecule-button"
-        label={'Buy'}
+        label="Buy"
         onPress={mockOnPress}
         iconType={Icons.BUY}
         iconStyle={iconStyle}

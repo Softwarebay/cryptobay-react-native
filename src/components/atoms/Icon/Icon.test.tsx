@@ -11,22 +11,14 @@ describe('Icon Atom', () => {
   test('Component Snapshot', () => {
     const iconTree = (icon: Icons) =>
       renderer.create(<Icon type={icon} />).toJSON();
-    expect(iconTree(Icons.ARROW_DOWN)).toMatchSnapshot('Arrow Down Icon');
-    expect(iconTree(Icons.ARROW_LEFT_BACK)).toMatchSnapshot(
-      'Arrow Left Back Icon',
-    );
-    expect(iconTree(Icons.ARROW_RIGHT_RECIVED)).toMatchSnapshot(
-      'Arrow Right Recived Icon',
-    );
-    expect(iconTree(Icons.ARROW_RIGHT_SENT)).toMatchSnapshot(
-      'Arrow Right Sent Icon',
-    );
+    expect(iconTree(Icons.ARROW)).toMatchSnapshot('Arrow Icon');
     expect(iconTree(Icons.BUY)).toMatchSnapshot('Buy Icon');
     expect(iconTree(Icons.ELIPSE_PROFILE)).toMatchSnapshot(
       'Elipse Profile Icon',
     );
     expect(iconTree(Icons.SETTINGS)).toMatchSnapshot('Settings Icon');
     expect(iconTree(Icons.SWAP)).toMatchSnapshot('Swap Icon');
+    expect(iconTree(Icons.TICK_ARROW)).toMatchSnapshot('Tick Arrow Icon');
     expect(iconTree(Icons.WALLET)).toMatchSnapshot('Wallet Icon');
   });
 

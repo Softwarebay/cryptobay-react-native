@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleProp, TouchableOpacity, ViewStyle } from 'react-native';
+import { TouchableOpacity, ViewStyle } from 'react-native';
 
 import { Label } from '../../atoms';
 import { Icon } from '../../atoms/Icon/Icon';
@@ -12,7 +12,7 @@ type ButtonProps = {
   onPress: () => void;
   variant?: 'dark' | 'bright';
   iconType?: Icons;
-  iconStyle?: StyleProp<ViewStyle>;
+  iconStyle?: ViewStyle;
   testID?: string;
   iconTestID?: string;
 };

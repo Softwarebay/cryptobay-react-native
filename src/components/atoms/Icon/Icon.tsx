@@ -1,15 +1,14 @@
 import React from 'react';
 import { StyleProp, View, ViewStyle } from 'react-native';
-
-import ArrowDownIcon from '../../../../assets/icons/arrow-down.svg';
-import ArrowLeftBackIcon from '../../../../assets/icons/arrow-left-back.svg';
-import ArrowRightRecivedIcon from '../../../../assets/icons/arrow-right-recived.svg';
-import ArrowRightSentIcon from '../../../../assets/icons/arrow-right-sent.svg';
-import BuyIcon from '../../../../assets/icons/buy.svg';
-import ElipseProfileIcon from '../../../../assets/icons/elipse_profile.svg';
-import SettingsIcon from '../../../../assets/icons/settings.svg';
-import SwapIcon from '../../../../assets/icons/swap.svg';
-import WalletIcon from '../../../../assets/icons/wallet.svg';
+import {
+  ArrowIcon,
+  BuyIcon,
+  ElipseProfileIcon,
+  SettingsIcon,
+  SwapIcon,
+  TickArrowIcon,
+  WalletIcon,
+} from './icons';
 
 import { Icons } from './icons.enum';
 
@@ -17,6 +16,7 @@ type IconProps = {
   type: Icons;
   width?: number;
   height?: number;
+  color?: string;
   style?: StyleProp<ViewStyle>;
   testID?: string;
 };
@@ -25,36 +25,17 @@ export const Icon: React.FC<IconProps> = ({
   type,
   width = 24,
   height = 24,
+  color,
   style,
   testID,
 }: IconProps) => {
   const iconVariants = {
-    ARROW_DOWN: (
-      <ArrowDownIcon
+    ARROW: (
+      <ArrowIcon
         width={width}
         height={height}
-        testID="svg-icon-arrow-down"
-      />
-    ),
-    ARROW_LEFT_BACK: (
-      <ArrowLeftBackIcon
-        width={width}
-        height={height}
-        testID="svg-icon-arrow-left-back"
-      />
-    ),
-    ARROW_RIGHT_RECIVED: (
-      <ArrowRightRecivedIcon
-        width={width}
-        height={height}
-        testID="svg-icon-arrow-right-recive"
-      />
-    ),
-    ARROW_RIGHT_SENT: (
-      <ArrowRightSentIcon
-        width={width}
-        height={height}
-        testID="svg-icon-arrow-right-sent"
+        color={color}
+        testID="svg-icon-arrow"
       />
     ),
     BUY: <BuyIcon width={width} height={height} testID="svg-icon-buy" />,
@@ -66,11 +47,35 @@ export const Icon: React.FC<IconProps> = ({
       />
     ),
     SETTINGS: (
-      <SettingsIcon width={width} height={height} testID="svg-icon-settings" />
+      <SettingsIcon
+        width={width}
+        height={height}
+        color={color}
+        testID="svg-icon-settings"
+      />
     ),
-    SWAP: <SwapIcon width={width} height={height} testID="svg-icon-swap" />,
+    SWAP: (
+      <SwapIcon
+        width={width}
+        height={height}
+        color={color}
+        testID="svg-icon-swap"
+      />
+    ),
+    TICK_ARROW: (
+      <TickArrowIcon
+        width={width}
+        height={height}
+        testID="svg-icon-tick-arrow"
+      />
+    ),
     WALLET: (
-      <WalletIcon width={width} height={height} testID="svg-icon-wallet" />
+      <WalletIcon
+        width={width}
+        height={height}
+        color={color}
+        testID="svg-icon-wallet"
+      />
     ),
   };
 
