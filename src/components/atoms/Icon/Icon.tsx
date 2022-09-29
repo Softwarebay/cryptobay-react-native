@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleProp, View, ViewStyle } from 'react-native';
+import { View, ViewStyle } from 'react-native';
 
 import {
   ArrowIcon,
@@ -17,7 +17,7 @@ type IconProps = {
   width?: number;
   height?: number;
   color?: string;
-  style?: StyleProp<ViewStyle>;
+  style?: ViewStyle;
   testID?: string;
 };
 

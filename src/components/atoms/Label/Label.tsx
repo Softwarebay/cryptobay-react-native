@@ -6,7 +6,7 @@ import { styles } from './Label.styles';
 type LabelProps = {
   value: string;
   variant?: 'primary' | 'secondary' | 'tertiary';
-  style?: TextStyle;
+  style?: TextStyle | TextStyle[];
   testID?: string;
 };
 

@@ -6,7 +6,7 @@ import { styles } from './Badge.styles';
 type BadgeProps = {
   value: string;
   variant: 'green' | 'red';
-  style?: TextStyle;
+  style?: TextStyle | TextStyle[];
   testID?: string;
 };
 
