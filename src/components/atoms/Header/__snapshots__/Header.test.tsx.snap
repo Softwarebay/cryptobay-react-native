@@ -25,6 +25,7 @@ exports[`Header Atom Component Snapshot: Gradient Variant 1`] = `
             "fontSize": 40,
             "fontWeight": "300",
           },
+          undefined,
         ]
       }
     >
@@ -69,6 +70,7 @@ exports[`Header Atom Component Snapshot: Gradient Variant 1`] = `
           Object {
             "opacity": 0,
           },
+          undefined,
         ]
       }
     >
