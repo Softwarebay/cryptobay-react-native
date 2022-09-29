@@ -1,5 +1,5 @@
 export enum Icons {
-  ARROW= 'ARROW',
+  ARROW = 'ARROW',
   BUY = 'BUY',
   ELIPSE_PROFILE = 'ELIPSE_PROFILE',
   SETTINGS = 'SETTINGS',

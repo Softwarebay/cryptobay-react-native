@@ -1,5 +1,6 @@
 import React from 'react';
 import Svg, { ClipPath, Defs, G, Path, Rect } from 'react-native-svg';
+
 import { SvgIconProps } from '../svgIconProps.type';
 
 export const BuyIcon: React.FC<SvgIconProps> = ({ width, height, testID }) => {

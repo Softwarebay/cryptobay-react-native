@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleProp, View, ViewStyle } from 'react-native';
+
 import {
   ArrowIcon,
   BuyIcon,
@@ -9,7 +10,6 @@ import {
   TickArrowIcon,
   WalletIcon,
 } from './icons';
-
 import { Icons } from './icons.enum';
 
 type IconProps = {

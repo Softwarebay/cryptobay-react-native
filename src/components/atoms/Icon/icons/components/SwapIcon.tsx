@@ -1,5 +1,6 @@
-import Svg, { Path, G, Defs, Rect, ClipPath } from 'react-native-svg';
 import React from 'react';
+import Svg, { Path, G, Defs, Rect, ClipPath } from 'react-native-svg';
+
 import { SvgIconProps } from '../svgIconProps.type';
 
 export const SwapIcon: React.FC<SvgIconProps> = ({

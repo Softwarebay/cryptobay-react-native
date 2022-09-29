@@ -1,5 +1,6 @@
 import React from 'react';
 import Svg, { Circle, ClipPath, Defs, G, Path, Rect } from 'react-native-svg';
+
 import { SvgIconProps } from '../svgIconProps.type';
 
 export const ElipseProfileIcon: React.FC<SvgIconProps> = ({
