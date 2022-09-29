@@ -6,7 +6,7 @@ import { styles } from './Caption.styles';
 type CaptionProps = {
   value: string;
   variant?: 'gray' | 'white';
-  style: TextStyle;
+  style?: TextStyle;
   testID?: string;
 };
 
