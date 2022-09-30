@@ -15,6 +15,7 @@ function loadStories() {
   require('../src/components/molecules/DecoratedTab/DecoratedTab.stories');
   require('../src/components/molecules/IconedTab/IconedTab.stories');
   require('../src/components/molecules/ProfileAvatar/ProfileAvatar.stories');
+  require('../src/components/molecules/TockenListItem/TockenListItem.stories');
 }
 
 const stories = [
@@ -29,6 +30,7 @@ const stories = [
   '../src/components/molecules/DecoratedTab/DecoratedTab.stories',
   '../src/components/molecules/IconedTab/IconedTab.stories',
   '../src/components/molecules/ProfileAvatar/ProfileAvatar.stories',
+  '../src/components/molecules/TockenListItem/TockenListItem.stories',
 ];
 
 module.exports = {
