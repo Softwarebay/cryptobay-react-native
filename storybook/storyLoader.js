@@ -12,7 +12,7 @@ function loadStories() {
   require('../src/components/atoms/Label/Label.stories');
   require('../src/components/atoms/Picture/Picture.stories');
   require('../src/components/molecules/Button/Button.stories');
-  require('../src/components/molecules/DecoratedTab/DecoratedLabel.stories');
+  require('../src/components/molecules/DecoratedTab/DecoratedTab.stories');
   require('../src/components/molecules/IconedTab/IconedTab.stories');
   require('../src/components/molecules/ProfileAvatar/ProfileAvatar.stories');
 }
@@ -26,7 +26,7 @@ const stories = [
   '../src/components/atoms/Label/Label.stories',
   '../src/components/atoms/Picture/Picture.stories',
   '../src/components/molecules/Button/Button.stories',
-  '../src/components/molecules/DecoratedTab/DecoratedLabel.stories',
+  '../src/components/molecules/DecoratedTab/DecoratedTab.stories',
   '../src/components/molecules/IconedTab/IconedTab.stories',
   '../src/components/molecules/ProfileAvatar/ProfileAvatar.stories',
 ];
