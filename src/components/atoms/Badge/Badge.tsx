@@ -4,21 +4,23 @@ import { Text, TextStyle } from 'react-native';
 import { styles } from './Badge.styles';
 
 type BadgeProps = {
-  value: string;
-  variant: 'green' | 'red';
+  value: number;
   style?: TextStyle | TextStyle[];
   testID?: string;
 };
 
 export const Badge: React.FC<BadgeProps> = ({
   value,
-  variant,
   style,
   testID,
 }: BadgeProps) => {
+  const variant = value >= 0 ? 'green' : 'red';
+  const handlePositiveValuePlus = value >= 0 && '+';
+
   return (
     <Text testID={testID} style={[styles.badge, styles[variant], style]}>
-      {value}
+      {handlePositiveValuePlus}
+      {value}%
     </Text>
   );
 };
