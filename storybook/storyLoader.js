@@ -6,7 +6,7 @@
 function loadStories() {
   require('../src/components/atoms/Badge/Badge.stories');
   require('../src/components/atoms/Caption/Caption.stories');
-  require('../src/components/atoms/CarouselSlideNavigation/CarouselSlideNavigation.stories');
+  require('../src/components/atoms/DottedNavigation/DottedNavigation.stories');
   require('../src/components/atoms/Header/Header.stories');
   require('../src/components/atoms/Icon/Icon.stories');
   require('../src/components/atoms/Label/Label.stories');
@@ -15,13 +15,13 @@ function loadStories() {
   require('../src/components/molecules/DecoratedTab/DecoratedTab.stories');
   require('../src/components/molecules/IconedTab/IconedTab.stories');
   require('../src/components/molecules/ProfileAvatar/ProfileAvatar.stories');
-  require('../src/components/molecules/TockenListItem/TockenListItem.stories');
+  require('../src/components/organisms/WalthoughtCarousel/WalthoughtCarousel.stories');
 }
 
 const stories = [
   '../src/components/atoms/Badge/Badge.stories',
   '../src/components/atoms/Caption/Caption.stories',
-  '../src/components/atoms/CarouselSlideNavigation/CarouselSlideNavigation.stories',
+  '../src/components/atoms/DottedNavigation/DottedNavigation.stories',
   '../src/components/atoms/Header/Header.stories',
   '../src/components/atoms/Icon/Icon.stories',
   '../src/components/atoms/Label/Label.stories',
@@ -30,7 +30,7 @@ const stories = [
   '../src/components/molecules/DecoratedTab/DecoratedTab.stories',
   '../src/components/molecules/IconedTab/IconedTab.stories',
   '../src/components/molecules/ProfileAvatar/ProfileAvatar.stories',
-  '../src/components/molecules/TockenListItem/TockenListItem.stories',
+  '../src/components/organisms/WalthoughtCarousel/WalthoughtCarousel.stories',
 ];
 
 module.exports = {

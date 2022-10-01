@@ -8,16 +8,12 @@ import { Badge } from './Badge';
 
 describe('Badge Atom', () => {
   test('Component Snapshot', () => {
-    const tree = renderer
-      .create(<Badge value={4.8} />)
-      .toJSON();
+    const tree = renderer.create(<Badge value={4.8} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('ensure variants works correctly', () => {
-    const { rerender } = render(
-      <Badge value={4.8} testID="atom-badge" />,
-    );
+    const { rerender } = render(<Badge value={4.8} testID="atom-badge" />);
     const badge = screen.getByTestId('atom-badge');
     expect(badge).toHaveTextContent('+4.8%');
     expect(badge).toHaveStyle({ color: '#76E268' });

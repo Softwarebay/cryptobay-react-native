@@ -8,7 +8,7 @@ import { styles } from './Header.styles';
 type HeaderProps = {
   value: string;
   variant?: 'gradient' | 'white';
-  style?: TextStyle;
+  style?: TextStyle | TextStyle[];
   testID?: string;
 };
 
