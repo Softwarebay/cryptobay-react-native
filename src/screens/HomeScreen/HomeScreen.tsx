@@ -7,8 +7,9 @@ import { StackList } from '../stackList.type';
 
 type HomeScreenProps = NativeStackScreenProps<StackList, Screens.HOME>;
 
-export const HomeScreen: React.FC<HomeScreenProps> = ({}: // navigaition,
-HomeScreenProps) => {
+export const HomeScreen: React.FC<HomeScreenProps> = (/* {
+  navigaition,
+}: HomeScreenProps */) => {
   return (
     <SafeAreaView>
       <Text>HomeScreen</Text>

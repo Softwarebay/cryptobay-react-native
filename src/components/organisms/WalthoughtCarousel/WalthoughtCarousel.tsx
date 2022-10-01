@@ -39,6 +39,7 @@ export const WalthoughtCarousel: React.FC<WalthoughtCarouselProps> = ({
   const handleNextSlide = (): void => {
     if (isNextSlide) {
       setSlide(slide + 1);
+      return;
     }
 
     onNavigate();

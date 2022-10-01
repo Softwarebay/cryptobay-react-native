@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { SafeAreaView, View } from 'react-native';
 
 import { WalthoughtCarousel } from '../../organisms';
 
@@ -13,8 +13,10 @@ export const WalthoughtTemplate: React.FC<WalthoughtTemplateProps> = ({
   onNavigate,
 }: WalthoughtTemplateProps) => {
   return (
-    <View style={styles.walthoughtTemplate}>
-      <WalthoughtCarousel onNavigate={onNavigate} />
-    </View>
+    <SafeAreaView style={styles.walthoughtTemplate}>
+      <View style={styles.contentWrapper}>
+        <WalthoughtCarousel onNavigate={onNavigate} />
+      </View>
+    </SafeAreaView>
   );
 };
