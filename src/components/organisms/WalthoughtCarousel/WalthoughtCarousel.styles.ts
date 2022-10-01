@@ -9,8 +9,8 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   header: {
-    marginTop: 52,
-    marginBottom: 72,
+    marginTop: 32,
+    marginBottom: 62,
     alignSelf: 'flex-start',
   },
   dotWrapper: {
