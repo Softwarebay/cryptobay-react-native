@@ -5,7 +5,10 @@ import { WalthoughtTemplate } from '../../components/templates/WalthoughtTemplat
 import { Screens } from '../screens.enum';
 import { StackList } from '../stackList.type';
 
-type WalthoughtScreenProps = NativeStackScreenProps<StackList, Screens>;
+type WalthoughtScreenProps = NativeStackScreenProps<
+  StackList,
+  Screens.WALTHOUGHT
+>;
 
 export const WalthoughtScreen: React.FC<WalthoughtScreenProps> = ({
   navigation,

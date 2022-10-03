@@ -8,6 +8,7 @@ export const styles = StyleSheet.create({
   },
   contentWrapper: {
     width: '100%',
+    height: '100%',
     paddingTop: 30,
     paddingHorizontal: 10,
     justifyContent: 'space-between',
@@ -63,10 +64,11 @@ export const styles = StyleSheet.create({
   },
   navBar: {
     flexDirection: 'row',
-    height: 30,
+    height: 70,
   },
   navBarItem: {
     width: '33%',
     alignItems: 'center',
+    padding: 10,
   },
 });

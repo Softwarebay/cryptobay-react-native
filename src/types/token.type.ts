@@ -1,7 +1,7 @@
 import { ImageSourcePropType } from 'react-native';
 
 export type Token = {
-  picture: ImageSourcePropType;
+  picture?: ImageSourcePropType;
   name: string;
   shortName: string;
   price: number;
