@@ -13,6 +13,10 @@ export const styles = StyleSheet.create({
     backgroundColor: '#FEBF32',
     color: '#000000',
   },
+  ghost: {
+    backgroundColor: 'transparent',
+    color: '#FEBF32',
+  },
   noIcon: {
     padding: 16,
     width: '100%',
