@@ -4,6 +4,7 @@ import {
   ListRenderItemInfo,
   TouchableOpacity,
   View,
+  ViewStyle,
 } from 'react-native';
 
 import { Token } from '../../../types/token.type';
@@ -15,10 +16,12 @@ import { useSwitchTab } from './useSwitchTab';
 
 type TokenListProps = {
   tokens: Token[];
+  style?: ViewStyle | ViewStyle[];
 };
 
 export const TokenList: React.FC<TokenListProps> = ({
   tokens,
+  style,
 }: TokenListProps) => {
   const {
     Tabs,
@@ -57,7 +60,7 @@ export const TokenList: React.FC<TokenListProps> = ({
   };
 
   return (
-    <View style={tockenListStyles.container}>
+    <View style={[tockenListStyles.container, style]}>
       <View style={tockenListStyles.nav}>
         <TouchableOpacity
           style={[tockenListStyles.navItem, handleSwitchTabStyle(Tabs.TOKEN)]}

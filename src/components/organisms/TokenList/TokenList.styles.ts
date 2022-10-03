@@ -47,6 +47,6 @@ export const tockenListStyles = StyleSheet.create({
     borderColor: '#FFFFFF',
   },
   list: {
-    minHeight: 350,
+    height: 250,
   },
 });
