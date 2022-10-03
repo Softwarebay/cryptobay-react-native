@@ -16,9 +16,7 @@ export const Label: React.FC<LabelProps> = ({
   style,
   testID,
 }: LabelProps) => {
-  const customStyle = style
-    ? { ...style, color: '#FFFFFF' }
-    : { color: '#FFFFFF' };
+  const customStyle = style ? style : { color: '#FFFFFF' };
 
   return (
     <Text testID={testID} style={[styles.label, styles[variant], customStyle]}>
