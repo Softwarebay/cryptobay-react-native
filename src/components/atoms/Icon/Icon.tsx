@@ -5,6 +5,7 @@ import {
   ArrowIcon,
   BuyIcon,
   ElipseProfileIcon,
+  PlusIcon,
   SettingsIcon,
   SwapIcon,
   TickArrowIcon,
@@ -46,6 +47,7 @@ export const Icon: React.FC<IconProps> = ({
         testID="svg-icon-elipse-profile"
       />
     ),
+    PLUS: <PlusIcon width={width} height={height} testID="svg-icon-plus" />,
     SETTINGS: (
       <SettingsIcon
         width={width}
