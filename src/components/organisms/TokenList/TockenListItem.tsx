@@ -14,7 +14,8 @@ export const TokenListItem: React.FC<Token> = ({
   percentagePoint,
   value,
 }: Token) => {
-  const captionLabel = `$${price}`;
+  const tokenPicture = picture ? picture : 0;
+  const captionLabel = price % 1 === 0 ? `$${price}.00` : `$${price}`;
   const percentageLabel =
     percentagePoint > 0 ? `+${percentagePoint}%` : `${percentagePoint}%`;
   const variant = percentagePoint > 0 ? 'green' : 'red';
@@ -23,7 +24,10 @@ export const TokenListItem: React.FC<Token> = ({
   return (
     <View style={tockenListItemStyles.container}>
       <View style={tockenListItemStyles.dataWrapper}>
-        <Picture style={tockenListItemStyles.picture} pictureFile={picture} />
+        <Picture
+          style={tockenListItemStyles.picture}
+          pictureFile={tokenPicture}
+        />
 
         <View>
           <Label value={name} />
