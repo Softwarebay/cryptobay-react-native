@@ -13,7 +13,7 @@ import { Header, Label, Picture } from '../../atoms';
 import { Icon } from '../../atoms/Icon/Icon';
 import { Icons } from '../../atoms/Icon/icons.enum';
 import { Button, ProfileAvatar } from '../../molecules';
-import { TokenList } from '../../organisms';
+import { BottomNavigation, TokenList } from '../../organisms';
 
 import { styles } from './HomeTemplate.styles';
 
@@ -30,6 +30,8 @@ type HomeTemplateProps = {
   onRecive: () => void;
   onBuy: () => void;
   onAddToken: () => void;
+
+  routeName: string;
   onHomeNavigate: () => void;
   onSwapNavigate: () => void;
   onSettingsNavigate: () => void;
@@ -48,6 +50,8 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   onRecive,
   onBuy,
   onAddToken,
+
+  routeName,
   onHomeNavigate,
   onSwapNavigate,
   onSettingsNavigate,
@@ -121,24 +125,12 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
           onPress={onAddToken}
         />
 
-        <View style={styles.navBar}>
-          <TouchableOpacity style={styles.navBarItem} onPress={onHomeNavigate}>
-            <Icon type={Icons.WALLET} />
-            <Label value="Wallet" variant="tertiary" />
-          </TouchableOpacity>
-
-          <TouchableOpacity style={styles.navBarItem} onPress={onSwapNavigate}>
-            <Icon type={Icons.SWAP} />
-            <Label value="Swap" variant="tertiary" />
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={styles.navBarItem}
-            onPress={onSettingsNavigate}>
-            <Icon type={Icons.SETTINGS} />
-            <Label value="Settings" variant="tertiary" />
-          </TouchableOpacity>
-        </View>
+        <BottomNavigation
+          routeName={routeName}
+          onHomeNavigate={onHomeNavigate}
+          onSwapNavigate={onSwapNavigate}
+          onSettingsNavigate={onSettingsNavigate}
+        />
       </View>
     </SafeAreaView>
   );

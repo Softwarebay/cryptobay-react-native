@@ -3,7 +3,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import React from 'react';
 import Config from 'react-native-config';
 
-import { HomeScreen, Screens, WalthoughtScreen } from './src/screens';
+import {
+  HomeScreen,
+  Screens,
+  SettingsScreen,
+  SwapScreen,
+  WalthoughtScreen,
+} from './src/screens';
 import { StackList } from './src/screens/stackList.type';
 import StorybookUIRoot from './storybook';
 
@@ -18,6 +24,8 @@ const App: React.FC = () => {
         }}>
         <Stack.Screen name={Screens.WALTHOUGHT} component={WalthoughtScreen} />
         <Stack.Screen name={Screens.HOME} component={HomeScreen} />
+        <Stack.Screen name={Screens.SWAP} component={SwapScreen} />
+        <Stack.Screen name={Screens.SETTINGS} component={SettingsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

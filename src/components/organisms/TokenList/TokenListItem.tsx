@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import { Token } from '../../../types/token.type';
 import { Badge, Caption, Label, Picture } from '../../atoms';
 
-import { tockenListItemStyles } from './TokenList.styles';
+import { styles } from './TokenListItem.styles';
 
 export const TokenListItem: React.FC<Token> = ({
   picture,
@@ -22,21 +22,15 @@ export const TokenListItem: React.FC<Token> = ({
   const valueLabel = `${value} ${shortName}`;
 
   return (
-    <View style={tockenListItemStyles.container}>
-      <View style={tockenListItemStyles.dataWrapper}>
-        <Picture
-          style={tockenListItemStyles.picture}
-          pictureFile={tokenPicture}
-        />
+    <View style={styles.container}>
+      <View style={styles.dataWrapper}>
+        <Picture style={styles.picture} pictureFile={tokenPicture} />
 
         <View>
           <Label value={name} />
 
-          <View style={tockenListItemStyles.valueData}>
-            <Caption
-              style={tockenListItemStyles.caption}
-              value={captionLabel}
-            />
+          <View style={styles.valueData}>
+            <Caption style={styles.caption} value={captionLabel} />
             <Badge value={percentageLabel} variant={variant} />
           </View>
         </View>

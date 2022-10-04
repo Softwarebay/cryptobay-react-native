@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { tockenListStyles } from './TokenList.styles';
+import { styles } from './TokenList.styles';
 
 enum Tabs {
   TOKEN = 'TOKEN',
@@ -13,10 +13,10 @@ export const useSwitchTab = () => {
   const handleSwitchTab = (tab: Tabs) => setCurrentTab(tab);
 
   const handleSwitchTabStyle = (tab: Tabs) =>
-    tab === currentTab && tockenListStyles.currentTab;
+    tab === currentTab && styles.currentTab;
 
   const handleSwitchLabelStyles = (tab: Tabs) =>
-    tab !== currentTab && tockenListStyles.previousTab;
+    tab !== currentTab && styles.previousTab;
 
   return {
     Tabs,

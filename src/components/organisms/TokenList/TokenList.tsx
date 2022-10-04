@@ -10,8 +10,8 @@ import {
 import { Token } from '../../../types/token.type';
 import { Label } from '../../atoms';
 
-import { TokenListItem } from './TockenListItem';
-import { tockenListStyles } from './TokenList.styles';
+import { styles } from './TokenList.styles';
+import { TokenListItem } from './TokenListItem';
 import { useSwitchTab } from './useSwitchTab';
 
 type TokenListProps = {
@@ -34,7 +34,7 @@ export const TokenList: React.FC<TokenListProps> = ({
   const renderCurrentTab = {
     TOKEN: (
       <FlatList
-        style={tockenListStyles.list}
+        style={styles.list}
         data={tokens}
         renderItem={({ item }: ListRenderItemInfo<Token>) => (
           <TokenListItem
@@ -50,7 +50,7 @@ export const TokenList: React.FC<TokenListProps> = ({
     ),
     COLLECTIBILES: (
       <FlatList
-        style={tockenListStyles.list}
+        style={styles.list}
         data={['Collectibiles in Progress']}
         renderItem={({ item }: ListRenderItemInfo<string>) => (
           <Label value={item} />
@@ -60,19 +60,16 @@ export const TokenList: React.FC<TokenListProps> = ({
   };
 
   return (
-    <View style={[tockenListStyles.container, style]}>
-      <View style={tockenListStyles.nav}>
+    <View style={[styles.container, style]}>
+      <View style={styles.nav}>
         <TouchableOpacity
-          style={[tockenListStyles.navItem, handleSwitchTabStyle(Tabs.TOKEN)]}
+          style={[styles.navItem, handleSwitchTabStyle(Tabs.TOKEN)]}
           onPress={() => handleSwitchTab(Tabs.TOKEN)}>
           <Label style={handleSwitchLabelStyles(Tabs.TOKEN)} value="Token" />
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={[
-            tockenListStyles.navItem,
-            handleSwitchTabStyle(Tabs.COLLECTIBILES),
-          ]}
+          style={[styles.navItem, handleSwitchTabStyle(Tabs.COLLECTIBILES)]}
           onPress={() => handleSwitchTab(Tabs.COLLECTIBILES)}>
           <Label
             style={handleSwitchLabelStyles(Tabs.COLLECTIBILES)}

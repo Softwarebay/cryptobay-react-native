@@ -32,4 +32,12 @@ storiesOf('Molecules/Button', module)
       iconType={Icons.BUY}
       iconStyle={iconStyle}
     />
+  ))
+  .add('Ghost Button', () => (
+    <Button
+      label={text('label', 'Add Tokens')}
+      onPress={action('onPress Bright')}
+      variant="ghost"
+      iconType={Icons.PLUS}
+    />
   ));

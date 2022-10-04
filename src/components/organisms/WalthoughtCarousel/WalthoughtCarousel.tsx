@@ -31,7 +31,7 @@ export const WalthoughtCarousel: React.FC<WalthoughtCarouselProps> = ({
   const currentPicture = walthoughtCarouselPictures[slide - 1];
   const currentHeader = walthoughtCarouselHeaders[slide - 1];
 
-  const handleCurrentSlide = (observableSlide: number) =>
+  const getSelectedSlideStyle = (observableSlide: number) =>
     observableSlide === slide
       ? styles.currentSlideDot
       : styles.outdatedSlideDot;
@@ -50,9 +50,9 @@ export const WalthoughtCarousel: React.FC<WalthoughtCarouselProps> = ({
       <Picture pictureFile={currentPicture} style={styles.picture} />
       <Header value={currentHeader} style={styles.header} />
       <View style={styles.dotWrapper}>
-        <View style={[styles.dot, handleCurrentSlide(1)]} />
-        <View style={[styles.dot, handleCurrentSlide(2)]} />
-        <View style={[styles.dot, handleCurrentSlide(3)]} />
+        <View style={[styles.dot, getSelectedSlideStyle(1)]} />
+        <View style={[styles.dot, getSelectedSlideStyle(2)]} />
+        <View style={[styles.dot, getSelectedSlideStyle(3)]} />
       </View>
       <Button label={buttonLabel} onPress={handleNextSlide} />
     </View>

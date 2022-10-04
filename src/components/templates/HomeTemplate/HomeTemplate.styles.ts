@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
   contentWrapper: {
     width: '100%',
     height: '100%',
-    paddingTop: 30,
     paddingHorizontal: 10,
     justifyContent: 'space-between',
   },
@@ -61,14 +60,5 @@ export const styles = StyleSheet.create({
   },
   addButtonIcon: {
     marginLeft: '33%',
-  },
-  navBar: {
-    flexDirection: 'row',
-    height: 70,
-  },
-  navBarItem: {
-    width: '33%',
-    alignItems: 'center',
-    padding: 10,
   },
 });
