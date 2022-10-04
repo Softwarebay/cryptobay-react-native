@@ -6,7 +6,7 @@ import StorybookView from '../../../../storybook/StorybookView';
 
 import { WalthoughtTemplate } from './WalthoughtTemplate';
 
-storiesOf('Templates/WalthoughtCarousel', module)
+storiesOf('Templates/WalthoughtTemplate', module)
   .addDecorator(getStory => <StorybookView>{getStory()}</StorybookView>)
   .add('Walthought Template', () => (
     <WalthoughtTemplate onNavigate={action('onNavigate')} />
