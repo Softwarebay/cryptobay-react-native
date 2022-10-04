@@ -1,6 +1,7 @@
 export enum Screens {
   HOME = 'Home',
-  WALTHOUGHT = 'Walthought',
-  SWAP = 'Swap',
   SETTINGS = 'Settings',
+  SWAP = 'Swap',
+  WALLET_SETUP = 'WalletSetup',
+  WALTHOUGHT = 'Walthought',
 }

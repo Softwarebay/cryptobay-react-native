@@ -14,8 +14,7 @@ export const WalthoughtScreen: React.FC<WalthoughtScreenProps> = ({
   navigation,
 }: WalthoughtScreenProps) => {
   const onSetapNavigate = () => {
-    // Temporary navigate to HomeScreen
-    navigation.navigate(Screens.HOME);
+    navigation.navigate(Screens.WALLET_SETUP);
   };
 
   return <WalthoughtTemplate onNavigate={onSetapNavigate} />;

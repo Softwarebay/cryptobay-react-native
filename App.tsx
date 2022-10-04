@@ -8,6 +8,7 @@ import {
   Screens,
   SettingsScreen,
   SwapScreen,
+  WalletSetupScreen,
   WalthoughtScreen,
 } from './src/screens';
 import { StackList } from './src/screens/stackList.type';
@@ -23,6 +24,10 @@ const App: React.FC = () => {
           headerShown: false,
         }}>
         <Stack.Screen name={Screens.WALTHOUGHT} component={WalthoughtScreen} />
+        <Stack.Screen
+          name={Screens.WALLET_SETUP}
+          component={WalletSetupScreen}
+        />
         <Stack.Screen name={Screens.HOME} component={HomeScreen} />
         <Stack.Screen name={Screens.SWAP} component={SwapScreen} />
         <Stack.Screen name={Screens.SETTINGS} component={SettingsScreen} />
