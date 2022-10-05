@@ -34,11 +34,11 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   return (
     <HomeTemplate
       profileAvatarPicture={PROFILE}
-      currencyName={etheriumTockenMock.name}
-      currencyShortName={etheriumTockenMock.shortName}
-      currencyPrice={etheriumTockenMock.price}
-      currencyPercentagePoint={etheriumTockenMock.percentagePoint}
-      currencyValue={etheriumTockenMock.value}
+      tokenName={etheriumTockenMock.name}
+      tokenShortName={etheriumTockenMock.shortName}
+      tokenPrice={etheriumTockenMock.price}
+      tokenPercentagePoint={etheriumTockenMock.percentagePoint}
+      tokenValue={etheriumTockenMock.value}
       tokens={tokensMock}
       routeName={route.name}
       onDropDown={onDropDown}

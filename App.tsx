@@ -8,6 +8,7 @@ import {
   Screens,
   SettingsScreen,
   SwapScreen,
+  TokenScreen,
   WalletSetupScreen,
   WalthoughtScreen,
 } from './src/screens';
@@ -31,6 +32,7 @@ const App: React.FC = () => {
         <Stack.Screen name={Screens.HOME} component={HomeScreen} />
         <Stack.Screen name={Screens.SWAP} component={SwapScreen} />
         <Stack.Screen name={Screens.SETTINGS} component={SettingsScreen} />
+        <Stack.Screen name={Screens.TOKEN} component={TokenScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
