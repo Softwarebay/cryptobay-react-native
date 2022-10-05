@@ -4,5 +4,3 @@ export { SwapScreen } from './SwapScreen/SwapScreen';
 export { TokenScreen } from './TokenScreen/TokenScreen';
 export { WalletSetupScreen } from './WalletSetupScreen/WalletSetupScreen';
 export { WalthoughtScreen } from './WalthoughtScreen/WalthoughtScreen';
-export { Screens } from './screens.enum';
-export type { StackList } from './stackList.type';

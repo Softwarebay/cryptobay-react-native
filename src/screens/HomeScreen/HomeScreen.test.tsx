@@ -3,7 +3,7 @@ import '@testing-library/jest-native';
 import renderer from 'react-test-renderer';
 
 import 'react-native';
-import { Screens } from '../screens.enum';
+import { Screens } from '../../screens.enum';
 
 import { HomeScreen } from './HomeScreen';
 

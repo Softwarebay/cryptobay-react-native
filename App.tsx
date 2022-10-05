@@ -5,14 +5,14 @@ import Config from 'react-native-config';
 
 import {
   HomeScreen,
-  Screens,
   SettingsScreen,
   SwapScreen,
   TokenScreen,
   WalletSetupScreen,
   WalthoughtScreen,
 } from './src/screens';
-import { StackList } from './src/screens/stackList.type';
+import { Screens } from './src/screens.enum';
+import { StackList } from './src/types/stackList.type';
 import StorybookUIRoot from './storybook';
 
 const Stack = createNativeStackNavigator<StackList>();

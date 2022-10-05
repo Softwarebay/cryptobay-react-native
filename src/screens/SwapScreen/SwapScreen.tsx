@@ -1,5 +1,4 @@
-import { useRoute } from '@react-navigation/native';
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-navigation';
@@ -7,21 +6,9 @@ import { SafeAreaView } from 'react-navigation';
 import { Header } from '../../components/atoms';
 import { Button } from '../../components/molecules';
 import { BottomNavigation } from '../../components/organisms';
-import { Screens } from '../screens.enum';
-import { StackList } from '../stackList.type';
 
-type SwapScreenProps = NativeStackScreenProps<StackList, Screens.SWAP>;
-
-export const SwapScreen: React.FC<SwapScreenProps> = ({
-  navigation,
-}: SwapScreenProps) => {
-  const route = useRoute();
-
-  const onHomeNavigate = () => navigation.navigate(Screens.HOME);
-
-  const onSwapNavigate = () => navigation.navigate(Screens.SWAP);
-
-  const onSettingsNavigate = () => navigation.navigate(Screens.SETTINGS);
+export const SwapScreen: React.FC = () => {
+  const navigation = useNavigation();
 
   const onBack = () => navigation.goBack();
 
@@ -31,12 +18,7 @@ export const SwapScreen: React.FC<SwapScreenProps> = ({
         <Header value="Swap in progress" />
         <Button label="Back" variant="ghost" onPress={onBack} />
       </View>
-      <BottomNavigation
-        onHomeNavigate={onHomeNavigate}
-        onSwapNavigate={onSwapNavigate}
-        onSettingsNavigate={onSettingsNavigate}
-        routeName={route.name}
-      />
+      <BottomNavigation />
     </SafeAreaView>
   );
 };

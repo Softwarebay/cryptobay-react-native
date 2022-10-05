@@ -1,21 +1,16 @@
-import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 
 import { WalletSetupTemplate } from '../../components/templates';
-import { Screens } from '../screens.enum';
-import { StackList } from '../stackList.type';
+import { Screens } from '../../screens.enum';
 
-type WalletSetupScreenProps = NativeStackScreenProps<
-  StackList,
-  Screens.WALLET_SETUP
->;
+export const WalletSetupScreen: React.FC = () => {
+  const navigation = useNavigation();
 
-export const WalletSetupScreen: React.FC<WalletSetupScreenProps> = ({
-  navigation,
-}: WalletSetupScreenProps) => {
-  const onImportUsingSeedPhrase = () => navigation.navigate(Screens.HOME);
+  const onImportUsingSeedPhrase = () =>
+    navigation.navigate(Screens.HOME as never);
 
-  const onCreateANewWallet = () => navigation.navigate(Screens.HOME);
+  const onCreateANewWallet = () => navigation.navigate(Screens.HOME as never);
 
   return (
     <WalletSetupTemplate

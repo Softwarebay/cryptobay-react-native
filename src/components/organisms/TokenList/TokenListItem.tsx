@@ -2,7 +2,7 @@ import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
 
-import { Screens } from '../../../screens';
+import { Screens } from '../../../screens.enum';
 import { Token } from '../../../types/token.type';
 import { Badge, Caption, Label, Picture } from '../../atoms';
 

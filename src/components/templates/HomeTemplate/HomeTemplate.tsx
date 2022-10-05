@@ -23,15 +23,11 @@ type HomeTemplateProps = {
   tokenPercentagePoint: number;
   tokenValue: number;
   tokens: Token[];
-  routeName: string;
   onDropDown: () => void;
   onSent: () => void;
   onRecive: () => void;
   onBuy: () => void;
   onAddToken: () => void;
-  onHomeNavigate: () => void;
-  onSwapNavigate: () => void;
-  onSettingsNavigate: () => void;
 };
 
 export const HomeTemplate: React.FC<HomeTemplateProps> = ({
@@ -42,15 +38,11 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   tokenPercentagePoint,
   tokenValue,
   tokens,
-  routeName,
   onDropDown,
   onSent,
   onRecive,
   onBuy,
   onAddToken,
-  onHomeNavigate,
-  onSwapNavigate,
-  onSettingsNavigate,
 }: HomeTemplateProps) => {
   const tokenHeaderValue = `${tokenValue} ${tokenShortName}`;
   const tokenPriceLabel = `$${tokenPrice}`;
@@ -121,12 +113,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
           onPress={onAddToken}
         />
 
-        <BottomNavigation
-          routeName={routeName}
-          onHomeNavigate={onHomeNavigate}
-          onSwapNavigate={onSwapNavigate}
-          onSettingsNavigate={onSettingsNavigate}
-        />
+        <BottomNavigation />
       </View>
     </SafeAreaView>
   );

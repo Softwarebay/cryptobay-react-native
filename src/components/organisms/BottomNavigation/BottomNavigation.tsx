@@ -1,26 +1,27 @@
+import { useNavigation, useRoute } from '@react-navigation/native';
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 
-import { Screens } from '../../../screens';
+import { Screens } from '../../../screens.enum';
 import { Icon, Icons, Label } from '../../atoms';
 
 import { styles } from './BottomNavigation.styles';
 
-type BottomNavigationProps = {
-  routeName: string;
-  onHomeNavigate: () => void;
-  onSwapNavigate: () => void;
-  onSettingsNavigate: () => void;
-};
+export const BottomNavigation: React.FC = () => {
+  const navigation = useNavigation();
+  const route = useRoute();
 
-export const BottomNavigation: React.FC<BottomNavigationProps> = ({
-  routeName,
-  onHomeNavigate,
-  onSwapNavigate,
-  onSettingsNavigate,
-}: BottomNavigationProps) => {
-  const getCurrentScreenLabelStyle = (screenName: Screens) =>
-    screenName === routeName
+  const walletScreens = [Screens.HOME, Screens.TOKEN];
+  const swapScreens = [Screens.SWAP];
+  const settingsScreens = [Screens.SETTINGS];
+
+  const onHomeNavigate = () => navigation.navigate(Screens.HOME as never);
+  const onSwapNavigate = () => navigation.navigate(Screens.SWAP as never);
+  const onSettingsNavigate = () =>
+    navigation.navigate(Screens.SETTINGS as never);
+
+  const getCurrentScreenLabelStyle = (screensName: Screens[]) =>
+    screensName.includes(route.name as Screens)
       ? styles.bottomNavigationItemCurrent
       : styles.bottomNavigationItemPrevious;
 
@@ -31,10 +32,10 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
         onPress={onHomeNavigate}>
         <Icon
           type={Icons.WALLET}
-          color={getCurrentScreenLabelStyle(Screens.HOME).color}
+          color={getCurrentScreenLabelStyle(walletScreens).color}
         />
         <Label
-          style={getCurrentScreenLabelStyle(Screens.HOME)}
+          style={getCurrentScreenLabelStyle(walletScreens)}
           value="Wallet"
           variant="tertiary"
         />
@@ -45,10 +46,10 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
         onPress={onSwapNavigate}>
         <Icon
           type={Icons.SWAP}
-          color={getCurrentScreenLabelStyle(Screens.SWAP).color}
+          color={getCurrentScreenLabelStyle(swapScreens).color}
         />
         <Label
-          style={getCurrentScreenLabelStyle(Screens.SWAP)}
+          style={getCurrentScreenLabelStyle(swapScreens)}
           value="Swap"
           variant="tertiary"
         />
@@ -59,10 +60,10 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
         onPress={onSettingsNavigate}>
         <Icon
           type={Icons.SETTINGS}
-          color={getCurrentScreenLabelStyle(Screens.SETTINGS).color}
+          color={getCurrentScreenLabelStyle(settingsScreens).color}
         />
         <Label
-          style={getCurrentScreenLabelStyle(Screens.SETTINGS)}
+          style={getCurrentScreenLabelStyle(settingsScreens)}
           value="Settings"
           variant="tertiary"
         />

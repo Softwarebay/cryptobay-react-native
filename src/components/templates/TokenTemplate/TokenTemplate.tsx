@@ -15,13 +15,9 @@ type TokenTemplateProps = {
   tokenValue: number;
   tokenPrice: number;
   tokenSwapHistory: Swap[];
-  routeName: string;
   onGoBack: () => void;
   onSent: () => void;
   onReceive: () => void;
-  onHomeNavigate: () => void;
-  onSwapNavigate: () => void;
-  onSettingsNavigate: () => void;
 };
 
 export const TokenTemplate: React.FC<TokenTemplateProps> = ({
@@ -29,13 +25,9 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
   tokenValue,
   tokenPrice,
   tokenSwapHistory,
-  routeName,
   onGoBack,
   onSent,
   onReceive,
-  onHomeNavigate,
-  onSwapNavigate,
-  onSettingsNavigate,
 }) => {
   const backButtonHitSlop = { top: 16, bottom: 16, left: 16, right: 16 };
 
@@ -86,12 +78,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
           swapsHistory={tokenSwapHistory}
         />
 
-        <BottomNavigation
-          routeName={routeName}
-          onHomeNavigate={onHomeNavigate}
-          onSwapNavigate={onSwapNavigate}
-          onSettingsNavigate={onSettingsNavigate}
-        />
+        <BottomNavigation />
       </View>
     </SafeAreaView>
   );
