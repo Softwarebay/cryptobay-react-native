@@ -17,11 +17,11 @@ import { styles } from './HomeTemplate.styles';
 
 type HomeTemplateProps = {
   profileAvatarPicture: ImageSourcePropType;
-  currencyName: string;
-  currencyShortName: string;
-  currencyPrice: number;
-  currencyPercentagePoint: number;
-  currencyValue: number;
+  tokenName: string;
+  tokenShortName: string;
+  tokenPrice: number;
+  tokenPercentagePoint: number;
+  tokenValue: number;
   tokens: Token[];
   routeName: string;
   onDropDown: () => void;
@@ -36,11 +36,11 @@ type HomeTemplateProps = {
 
 export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   profileAvatarPicture,
-  currencyName,
-  currencyShortName,
-  currencyPrice,
-  currencyPercentagePoint,
-  currencyValue,
+  tokenName,
+  tokenShortName,
+  tokenPrice,
+  tokenPercentagePoint,
+  tokenValue,
   tokens,
   routeName,
   onDropDown,
@@ -52,14 +52,14 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   onSwapNavigate,
   onSettingsNavigate,
 }: HomeTemplateProps) => {
-  const currencyHeaderValue = `${currencyValue} ${currencyShortName}`;
-  const currencyPriceLabel = `$${currencyPrice}`;
-  const currencyPercentagePointLabel =
-    currencyPercentagePoint > 0
-      ? ` +${currencyPercentagePoint}%`
-      : ` ${currencyPercentagePoint}%`;
-  const currencyPercentagePointLabelStyle =
-    currencyPercentagePoint > 0 ? { color: '#76E268' } : { color: '#EA3943' };
+  const tokenHeaderValue = `${tokenValue} ${tokenShortName}`;
+  const tokenPriceLabel = `$${tokenPrice}`;
+  const tokenPercentagePointLabel =
+    tokenPercentagePoint > 0
+      ? ` +${tokenPercentagePoint}%`
+      : ` ${tokenPercentagePoint}%`;
+  const tokenPercentagePointLabelStyle =
+    tokenPercentagePoint > 0 ? { color: '#76E268' } : { color: '#EA3943' };
 
   return (
     <SafeAreaView style={styles.homeTemplate}>
@@ -70,18 +70,18 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
           <ProfileAvatar pictureFile={profileAvatarPicture} />
 
           <TouchableOpacity style={styles.homeBarDropDown} onPress={onDropDown}>
-            <Text style={styles.homeBarDropDownLabel}>{currencyName} Main</Text>
+            <Text style={styles.homeBarDropDownLabel}>{tokenName} Main</Text>
             <Icon type={Icons.TICK_ARROW} />
           </TouchableOpacity>
         </View>
 
-        <Header style={styles.header} value={currencyHeaderValue} />
+        <Header style={styles.header} value={tokenHeaderValue} />
 
         <View style={styles.labelsWrapper}>
-          <Label value={currencyPriceLabel} variant="secondary" />
+          <Label value={tokenPriceLabel} variant="secondary" />
           <Label
-            style={currencyPercentagePointLabelStyle}
-            value={currencyPercentagePointLabel}
+            style={tokenPercentagePointLabelStyle}
+            value={tokenPercentagePointLabel}
             variant="secondary"
           />
         </View>

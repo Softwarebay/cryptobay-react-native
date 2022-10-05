@@ -14,12 +14,13 @@ storiesOf('Templates/HomeTemplate', module)
   .add('Home Template', () => (
     <HomeTemplate
       profileAvatarPicture={PROFILE}
-      currencyName={text('currencyName', 'Etherium')}
-      currencyShortName={text('currencyShortName', 'ETH')}
-      currencyPrice={number('currencyPrice', 16858.15)}
-      currencyPercentagePoint={number('currencyPercentagePoint', 0.7)}
-      currencyValue={number('currencyValue', 9.2362)}
+      tokenName={text('tokenName', 'Etherium')}
+      tokenShortName={text('tokenShortName', 'ETH')}
+      tokenPrice={number('tokenPrice', 16858.15)}
+      tokenPercentagePoint={number('tokenPercentagePoint', 0.7)}
+      tokenValue={number('tokenValue', 9.2362)}
       tokens={tokensMock}
+      routeName={text('routeName', 'Home')}
       onDropDown={action('onDropDown')}
       onSent={action('onSent')}
       onRecive={action('onRecive')}

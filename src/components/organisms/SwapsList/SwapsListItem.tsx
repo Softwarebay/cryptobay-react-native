@@ -20,6 +20,10 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
   const rotateIconByOperation = operation === 'Received' && {
     transform: [{ rotate: '180deg' }],
   };
+  const operationLabel = `${operation} ${tokenShortName}`;
+  const badgeColorByStatus = status === 'Confirmed' ? 'green' : 'red';
+  const valueLabel = `${value} ${tokenShortName}`;
+  const dolarCaption = `$${valueInDolar}`;
 
   return (
     <View style={styles.swapListItem}>
@@ -36,17 +40,14 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
           />
 
           <View>
-            <Label value={`${operation} ${tokenShortName}`} />
-            <Badge
-              value={status}
-              variant={status === 'Confirmed' ? 'green' : 'red'}
-            />
+            <Label value={operationLabel} />
+            <Badge value={status} variant={badgeColorByStatus} />
           </View>
         </View>
 
         <View>
-          <Label value={`${value} ${tokenShortName}`} />
-          <Caption value={`$${valueInDolar}`} style={styles.valueInDolar} />
+          <Label value={valueLabel} />
+          <Caption value={dolarCaption} style={styles.valueInDolar} />
         </View>
       </View>
     </View>
