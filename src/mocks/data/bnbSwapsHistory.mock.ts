@@ -1,4 +1,4 @@
-import { Swap } from "../../types/swap.type";
+import { Swap } from '../../types/swap.type';
 
 export const bnbSwapsHistory = [
   {

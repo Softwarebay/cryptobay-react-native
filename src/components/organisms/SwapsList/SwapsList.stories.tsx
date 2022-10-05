@@ -4,6 +4,7 @@ import React from 'react';
 
 import StorybookView from '../../../../storybook/StorybookView';
 import { bnbSwapsHistory } from '../../../mocks';
+
 import { SwapsList } from './SwapsList';
 
 storiesOf('Organisms/SwapsList', module)

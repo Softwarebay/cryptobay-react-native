@@ -5,8 +5,9 @@ import renderer from 'react-test-renderer';
 
 import 'react-native';
 
-import { Button } from './Button';
 import { Icons } from '../../atoms';
+
+import { Button } from './Button';
 
 const mockOnPress = jest.fn();
 

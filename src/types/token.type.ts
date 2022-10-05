@@ -1,4 +1,5 @@
 import { ImageSourcePropType } from 'react-native';
+
 import { Swap } from './swap.type';
 
 export type Token = {

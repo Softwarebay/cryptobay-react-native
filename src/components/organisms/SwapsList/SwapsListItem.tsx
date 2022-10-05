@@ -1,7 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
+
 import { Swap } from '../../../types/swap.type';
 import { Badge, Caption, Icon, Icons, Label } from '../../atoms';
+
 import { styles } from './SwapsListItem.styles';
 
 type SwapsListItemProps = Swap & { tokenShortName: string };

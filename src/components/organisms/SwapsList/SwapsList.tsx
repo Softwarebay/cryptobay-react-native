@@ -1,9 +1,11 @@
-import { View } from 'react-native';
 import React from 'react';
+import { View } from 'react-native';
 import { FlatList } from 'react-native-gesture-handler';
+
 import { Swap } from '../../../types/swap.type';
-import { SwapsListItem } from './SwapsListItem';
+
 import { styles } from './SwapsList.styles';
+import { SwapsListItem } from './SwapsListItem';
 
 type SwapsListProps = {
   tokenShortName: string;
