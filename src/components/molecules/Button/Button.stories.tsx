@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 
 import StorybookView from '../../../../storybook/StorybookView';
-import { Icons } from '../../atoms/Icon/icons.enum';
+import { Icons } from '../../atoms';
 
 import { Button } from './Button';
 

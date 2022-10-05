@@ -9,9 +9,7 @@ import {
 
 import { BALL } from '../../../../assets/pictures';
 import { Token } from '../../../types/token.type';
-import { Header, Label, Picture } from '../../atoms';
-import { Icon } from '../../atoms/Icon/Icon';
-import { Icons } from '../../atoms/Icon/icons.enum';
+import { Header, Icon, Icons, Label, Picture } from '../../atoms';
 import { Button, ProfileAvatar } from '../../molecules';
 import { BottomNavigation, TokenList } from '../../organisms';
 
@@ -25,13 +23,12 @@ type HomeTemplateProps = {
   currencyPercentagePoint: number;
   currencyValue: number;
   tokens: Token[];
+  routeName: string;
   onDropDown: () => void;
   onSent: () => void;
   onRecive: () => void;
   onBuy: () => void;
   onAddToken: () => void;
-
-  routeName: string;
   onHomeNavigate: () => void;
   onSwapNavigate: () => void;
   onSettingsNavigate: () => void;
@@ -45,13 +42,12 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   currencyPercentagePoint,
   currencyValue,
   tokens,
+  routeName,
   onDropDown,
   onSent,
   onRecive,
   onBuy,
   onAddToken,
-
-  routeName,
   onHomeNavigate,
   onSwapNavigate,
   onSettingsNavigate,

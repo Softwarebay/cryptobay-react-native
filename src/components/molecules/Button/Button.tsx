@@ -1,9 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, ViewStyle } from 'react-native';
 
-import { Label } from '../../atoms';
-import { Icon } from '../../atoms/Icon/Icon';
-import { Icons } from '../../atoms/Icon/icons.enum';
+import { Icon, Icons, Label } from '../../atoms';
 
 import { styles } from './Button.styles';
 

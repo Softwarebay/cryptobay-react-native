@@ -2,9 +2,7 @@ import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 
 import { Screens } from '../../../screens';
-import { Label } from '../../atoms';
-import { Icon } from '../../atoms/Icon/Icon';
-import { Icons } from '../../atoms/Icon/icons.enum';
+import { Icon, Icons, Label } from '../../atoms';
 
 import { styles } from './BottomNavigation.styles';
 

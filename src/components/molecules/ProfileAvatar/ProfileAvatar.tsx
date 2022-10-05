@@ -1,9 +1,7 @@
 import React from 'react';
 import { ImageSourcePropType, StyleProp, View, ViewStyle } from 'react-native';
 
-import { Picture } from '../../atoms';
-import { Icon } from '../../atoms/Icon/Icon';
-import { Icons } from '../../atoms/Icon/icons.enum';
+import { Icon, Icons, Picture } from '../../atoms';
 
 import { styles } from './ProfileAvatar.styles';
 

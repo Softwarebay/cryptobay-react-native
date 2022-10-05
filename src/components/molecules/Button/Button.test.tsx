@@ -4,9 +4,9 @@ import '@testing-library/jest-native';
 import renderer from 'react-test-renderer';
 
 import 'react-native';
-import { Icons } from '../../atoms/Icon/icons.enum';
 
 import { Button } from './Button';
+import { Icons } from '../../atoms';
 
 const mockOnPress = jest.fn();
 

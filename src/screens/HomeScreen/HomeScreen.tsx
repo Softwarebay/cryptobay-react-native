@@ -4,7 +4,7 @@ import React from 'react';
 
 import { PROFILE } from '../../../assets/pictures';
 import { HomeTemplate } from '../../components/templates';
-import { tokenMock, tokensMock } from '../../mocks';
+import { etheriumTockenMock, tokensMock } from '../../mocks';
 import { Screens } from '../screens.enum';
 import { StackList } from '../stackList.type';
 
@@ -34,12 +34,13 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   return (
     <HomeTemplate
       profileAvatarPicture={PROFILE}
-      currencyName={tokenMock.name}
-      currencyShortName={tokenMock.shortName}
-      currencyPrice={tokenMock.price}
-      currencyPercentagePoint={tokenMock.percentagePoint}
-      currencyValue={tokenMock.value}
+      currencyName={etheriumTockenMock.name}
+      currencyShortName={etheriumTockenMock.shortName}
+      currencyPrice={etheriumTockenMock.price}
+      currencyPercentagePoint={etheriumTockenMock.percentagePoint}
+      currencyValue={etheriumTockenMock.value}
       tokens={tokensMock}
+      routeName={route.name}
       onDropDown={onDropDown}
       onSent={onSent}
       onRecive={onRecive}
@@ -48,7 +49,6 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
       onHomeNavigate={onHomeNavigate}
       onSwapNavigate={onSwapNavigate}
       onSettingsNavigate={onSettingsNavigate}
-      routeName={route.name}
     />
   );
 };

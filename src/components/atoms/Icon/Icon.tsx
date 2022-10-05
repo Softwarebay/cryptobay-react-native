@@ -18,7 +18,7 @@ type IconProps = {
   width?: number;
   height?: number;
   color?: string;
-  style?: ViewStyle;
+  style?: ViewStyle | ViewStyle[] | false;
   testID?: string;
 };
 
