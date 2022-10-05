@@ -1,6 +1,6 @@
 import { Token } from '../../types/token.type';
 
-export const tokenMock = {
+export const etheriumTockenMock = {
   name: 'Etherium',
   shortName: 'ETH',
   price: 16858.15,
