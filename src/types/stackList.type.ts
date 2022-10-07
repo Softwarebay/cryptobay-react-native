@@ -1,4 +1,5 @@
 export type StackList = {
+  Details: undefined;
   Home: undefined;
   Settings: undefined;
   Swap: undefined;

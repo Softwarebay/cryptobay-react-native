@@ -20,14 +20,10 @@ storiesOf('Templates/HomeTemplate', module)
       tokenPercentagePoint={number('tokenPercentagePoint', 0.7)}
       tokenValue={number('tokenValue', 9.2362)}
       tokens={tokensMock}
-      routeName={text('routeName', 'Home')}
       onDropDown={action('onDropDown')}
       onSent={action('onSent')}
       onRecive={action('onRecive')}
       onBuy={action('onBuy')}
       onAddToken={action('onAddToken')}
-      onHomeNavigate={action('onHomeNavigate')}
-      onSwapNavigate={action('onSwapNavigate')}
-      onSettingsNavigate={action('onSettingsNavigate')}
     />
   ));

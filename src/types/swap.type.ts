@@ -4,4 +4,6 @@ export type Swap = {
   status: 'Confirmed' | 'Cancelled';
   value: number;
   valueInDolar: number;
+  from: string;
+  to: string;
 };

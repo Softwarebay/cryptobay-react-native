@@ -1,6 +1,8 @@
+import { useNavigation } from '@react-navigation/native';
 import React from 'react';
-import { View } from 'react-native';
+import { TouchableOpacity, View } from 'react-native';
 
+import { Screens } from '../../../screens.enum';
 import { Swap } from '../../../types/swap.type';
 import { Badge, Caption, Icon, Icons, Label } from '../../atoms';
 
@@ -15,7 +17,11 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
   status,
   value,
   valueInDolar,
+  from,
+  to,
 }: SwapsListItemProps) => {
+  const navigation = useNavigation();
+
   const iconColorByStatus = status === 'Confirmed' ? '#76E268' : '#EA3943';
   const rotateIconByOperation = operation === 'Received' && {
     transform: [{ rotate: '180deg' }],
@@ -25,8 +31,24 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
   const valueLabel = `${value} ${tokenShortName}`;
   const dolarCaption = `$${valueInDolar}`;
 
+  const swapDetails = {
+    shortName: tokenShortName,
+    operation: operationLabel,
+    status: status,
+    date: date,
+    value: value,
+    from: from,
+    to: to,
+  };
+
+  const onDetailsNavigate = () =>
+    navigation.navigate(
+      Screens.DETAILS as never,
+      { swapDetails: swapDetails } as never,
+    );
+
   return (
-    <View style={styles.swapListItem}>
+    <TouchableOpacity style={styles.swapListItem} onPress={onDetailsNavigate}>
       <Caption value={date} />
 
       <View style={styles.contentWrapper}>
@@ -50,6 +72,6 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
           <Caption value={dolarCaption} style={styles.valueInDolar} />
         </View>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };

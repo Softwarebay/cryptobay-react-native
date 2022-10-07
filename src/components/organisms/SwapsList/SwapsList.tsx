@@ -28,6 +28,8 @@ export const SwapsList: React.FC<SwapsListProps> = ({
             status={item.status}
             value={item.value}
             valueInDolar={item.valueInDolar}
+            from={item.from}
+            to={item.to}
           />
         )}
       />

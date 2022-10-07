@@ -24,6 +24,7 @@ export const TokenListItem: React.FC<Token> = ({
     percentagePoint > 0 ? `+${percentagePoint}%` : `${percentagePoint}%`;
   const variant = percentagePoint > 0 ? 'green' : 'red';
   const valueLabel = `${value} ${shortName}`;
+
   const token = {
     shortName: shortName,
     value: value,
