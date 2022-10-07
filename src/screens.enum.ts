@@ -1,4 +1,5 @@
 export enum Screens {
+  DETAILS = 'Details',
   HOME = 'Home',
   SETTINGS = 'Settings',
   SWAP = 'Swap',

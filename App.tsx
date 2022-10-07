@@ -4,6 +4,7 @@ import React from 'react';
 import Config from 'react-native-config';
 
 import {
+  DetailsModalScreen,
   HomeScreen,
   SettingsScreen,
   SwapScreen,
@@ -33,6 +34,11 @@ const App: React.FC = () => {
         <Stack.Screen name={Screens.SWAP} component={SwapScreen} />
         <Stack.Screen name={Screens.SETTINGS} component={SettingsScreen} />
         <Stack.Screen name={Screens.TOKEN} component={TokenScreen} />
+        <Stack.Screen
+          name={Screens.DETAILS}
+          options={{ presentation: 'transparentModal' }}
+          component={DetailsModalScreen}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

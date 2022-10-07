@@ -1,3 +1,4 @@
+export { DetailsModalScreen } from './DetailsModalScreen/DetailsModalScreen';
 export { HomeScreen } from './HomeScreen/HomeScreen';
 export { SettingsScreen } from './SettingsScreen/SettingsScreen';
 export { SwapScreen } from './SwapScreen/SwapScreen';

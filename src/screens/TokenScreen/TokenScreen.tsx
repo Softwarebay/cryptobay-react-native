@@ -8,8 +8,10 @@ import { Token } from '../../types/token.type';
 export const TokenScreen: React.FC = () => {
   const navigation = useNavigation();
   const routes = useRoute();
+
   const params = routes.params as { token: Token };
   const token = params.token;
+
   const calculatedTokenPrice = token.price * token.value;
 
   const onGoBack = () => navigation.goBack();
