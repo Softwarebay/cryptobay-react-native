@@ -11,7 +11,7 @@ import { BALL } from '../../../../assets/pictures';
 import { Token } from '../../../types/token.type';
 import { Header, Icon, Icons, Label, Picture } from '../../atoms';
 import { Button, ProfileAvatar } from '../../molecules';
-import { BottomNavigation, TokenList } from '../../organisms';
+import { BottomNavigation, TokenDetails, TokenList } from '../../organisms';
 
 import { styles } from './HomeTemplate.styles';
 
@@ -23,11 +23,16 @@ type HomeTemplateProps = {
   tokenPercentagePoint: number;
   tokenValue: number;
   tokens: Token[];
+  routeName: string;
   onDropDown: () => void;
   onSent: () => void;
   onRecive: () => void;
   onBuy: () => void;
   onAddToken: () => void;
+  onHomeNavigate: () => void;
+  onSwapNavigate: () => void;
+  onSettingsNavigate: () => void;
+  onTokenNavigate: (tokenDetails: TokenDetails) => void;
 };
 
 export const HomeTemplate: React.FC<HomeTemplateProps> = ({
@@ -38,11 +43,16 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   tokenPercentagePoint,
   tokenValue,
   tokens,
+  routeName,
   onDropDown,
   onSent,
   onRecive,
   onBuy,
   onAddToken,
+  onHomeNavigate,
+  onSwapNavigate,
+  onSettingsNavigate,
+  onTokenNavigate,
 }: HomeTemplateProps) => {
   const tokenHeaderValue = `${tokenValue} ${tokenShortName}`;
   const tokenPriceLabel = `$${tokenPrice}`;
@@ -102,7 +112,11 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
           />
         </View>
 
-        <TokenList tokens={tokens} style={styles.tokenList} />
+        <TokenList
+          tokens={tokens}
+          style={styles.tokenList}
+          onTokenNavigate={onTokenNavigate}
+        />
 
         <Button
           style={styles.addButton}
@@ -113,7 +127,12 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
           onPress={onAddToken}
         />
 
-        <BottomNavigation />
+        <BottomNavigation
+          routeName={routeName}
+          onHomeNavigate={onHomeNavigate}
+          onSwapNavigate={onSwapNavigate}
+          onSettingsNavigate={onSettingsNavigate}
+        />
       </View>
     </SafeAreaView>
   );

@@ -16,12 +16,13 @@ storiesOf('Templates/TokenTemplate', module)
       tokenValue={19.2371}
       tokenPrice={4360.8582}
       tokenSwapHistory={bnbSwapsHistory}
-      routeName={'Token'}
+      routeName={text('routeName', 'Home')}
       onGoBack={action('onGoBack')}
       onSent={action('onSent')}
       onReceive={action('onReceive')}
       onHomeNavigate={action('onHomeNavigate')}
       onSwapNavigate={action('onSwapNavigate')}
       onSettingsNavigate={action('onSettingsNavigate')}
+      onDetailsNavigate={action('onDetailsNavigate')}
     />
   ));

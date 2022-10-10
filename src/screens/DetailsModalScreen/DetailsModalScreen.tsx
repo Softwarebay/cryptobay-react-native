@@ -1,33 +1,30 @@
-import { useNavigation, useRoute } from '@react-navigation/native';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
 
-import { DetailsModalTemplate } from '../../components/templates/DetailsModalTemplate/DetailsModalTemplate';
+import { SwapDetails } from '../../components/organisms';
+import { DetailsModalTemplate } from '../../components/templates';
 import { tokensMock } from '../../mocks';
-import { Swap } from '../../types/swap.type';
+import { Screens } from '../../screens.enum';
+import { StackList } from '../../types/stackList.type';
 import { Token } from '../../types/token.type';
 
-export const DetailsModalScreen: React.FC = () => {
-  const navigation = useNavigation();
-  const routes = useRoute();
+type DetailsModalScreenProps = NativeStackScreenProps<
+  StackList,
+  Screens.DETAILS
+>;
 
-  const params = routes.params as {
-    swapDetails: Swap & { shortName: string };
+export const DetailsModalScreen: React.FC<DetailsModalScreenProps> = ({
+  route,
+  navigation,
+}: DetailsModalScreenProps) => {
+  const { swapDetails } = route.params! as {
+    swapDetails: SwapDetails;
   };
-  const swapDetails = params.swapDetails;
 
-  const onGoBack = () => navigation.goBack();
-
-  const getTokenByShortName = () => {
-    const token = tokensMock.find(
+  const getTokenByShortName = () =>
+    tokensMock.find(
       (foundToken: Token) => foundToken.shortName === swapDetails.shortName,
-    );
-
-    if (token) {
-      return token;
-    }
-
-    return {} as Token;
-  };
+    ) || ({} as Token);
 
   const tokenShortName = getTokenByShortName()?.shortName;
   const tokenValue = getTokenByShortName()?.value;
@@ -39,6 +36,8 @@ export const DetailsModalScreen: React.FC = () => {
   const totalAmountDolarValue = `$${tokenValueInDolars}`;
   const swapValue = `${swapDetails.value} ${tokenShortName}`;
   const networkFee = `${calculatedNetworkFee} ${tokenShortName}`;
+
+  const onGoBack = () => navigation.goBack();
 
   return (
     <DetailsModalTemplate

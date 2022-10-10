@@ -6,15 +6,18 @@ import { Swap } from '../../../types/swap.type';
 
 import { styles } from './SwapsList.styles';
 import { SwapsListItem } from './SwapsListItem';
+import { SwapDetails } from './swapDetails.type';
 
 type SwapsListProps = {
   tokenShortName: string;
   swapsHistory: Swap[];
+  onDetailsNavigate: (swapDetails: SwapDetails) => void;
 };
 
 export const SwapsList: React.FC<SwapsListProps> = ({
   tokenShortName,
   swapsHistory,
+  onDetailsNavigate,
 }: SwapsListProps) => {
   return (
     <View style={styles.swapsList}>
@@ -30,6 +33,7 @@ export const SwapsList: React.FC<SwapsListProps> = ({
             valueInDolar={item.valueInDolar}
             from={item.from}
             to={item.to}
+            onDetailsNavigate={onDetailsNavigate}
           />
         )}
       />

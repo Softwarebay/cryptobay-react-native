@@ -1,23 +1,25 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
 
-import { Screens } from '../../../screens.enum';
 import { Token } from '../../../types/token.type';
 import { Badge, Caption, Label, Picture } from '../../atoms';
 
 import { styles } from './TokenListItem.styles';
+import { TokenDetails } from './tokenDetails.type';
 
-export const TokenListItem: React.FC<Token> = ({
+type TokenListItemProps = Token & {
+  onTokenNavigate: (tokenDetails: TokenDetails) => void;
+};
+
+export const TokenListItem: React.FC<TokenListItemProps> = ({
   picture,
   name,
   shortName,
   price,
   percentagePoint,
   value,
-}: Token) => {
-  const navigation = useNavigation();
-
+  onTokenNavigate,
+}: TokenListItemProps) => {
   const tokenPicture = picture ? picture : 0;
   const captionLabel = price % 1 === 0 ? `$${price}.00` : `$${price}`;
   const percentageLabel =
@@ -25,17 +27,16 @@ export const TokenListItem: React.FC<Token> = ({
   const variant = percentagePoint > 0 ? 'green' : 'red';
   const valueLabel = `${value} ${shortName}`;
 
-  const token = {
+  const tokenDetails = {
     shortName: shortName,
     value: value,
     price: price,
-  };
+  } as TokenDetails;
 
-  const onTokenNavigate = () =>
-    navigation.navigate(Screens.TOKEN as never, { token: token } as never);
+  const handleOnTokenNavigate = () => onTokenNavigate(tokenDetails);
 
   return (
-    <TouchableOpacity style={styles.container} onPress={onTokenNavigate}>
+    <TouchableOpacity style={styles.container} onPress={handleOnTokenNavigate}>
       <View style={styles.dataWrapper}>
         <Picture style={styles.picture} pictureFile={tokenPicture} />
 

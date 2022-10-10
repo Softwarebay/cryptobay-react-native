@@ -8,13 +8,13 @@ import { Button } from '../../molecules';
 import { styles } from './WalthoughtCarousel.styles';
 
 type WalthoughtCarouselProps = {
-  onNavigate: () => void;
   style?: ViewStyle | ViewStyle[];
+  onCarouselSlidesEnd: () => void;
 };
 
 export const WalthoughtCarousel: React.FC<WalthoughtCarouselProps> = ({
-  onNavigate,
   style,
+  onCarouselSlidesEnd,
 }: WalthoughtCarouselProps) => {
   const [slide, setSlide] = React.useState<number>(1);
 
@@ -31,10 +31,8 @@ export const WalthoughtCarousel: React.FC<WalthoughtCarouselProps> = ({
   const currentPicture = walthoughtCarouselPictures[slide - 1];
   const currentHeader = walthoughtCarouselHeaders[slide - 1];
 
-  const getSelectedSlideStyle = (observableSlide: number) =>
-    observableSlide === slide
-      ? styles.currentSlideDot
-      : styles.outdatedSlideDot;
+  const getSelectedSlideStyle = (slideValue: number) =>
+    slideValue === slide ? styles.currentSlideDot : styles.outdatedSlideDot;
 
   const handleNextSlide = (): void => {
     if (isNextSlide) {
@@ -42,7 +40,7 @@ export const WalthoughtCarousel: React.FC<WalthoughtCarouselProps> = ({
       return;
     }
 
-    onNavigate();
+    onCarouselSlidesEnd();
   };
 
   return (

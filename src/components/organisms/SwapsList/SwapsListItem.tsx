@@ -1,14 +1,16 @@
-import { useNavigation } from '@react-navigation/native';
 import React from 'react';
 import { TouchableOpacity, View } from 'react-native';
 
-import { Screens } from '../../../screens.enum';
 import { Swap } from '../../../types/swap.type';
 import { Badge, Caption, Icon, Icons, Label } from '../../atoms';
 
 import { styles } from './SwapsListItem.styles';
+import { SwapDetails } from './swapDetails.type';
 
-type SwapsListItemProps = Swap & { tokenShortName: string };
+type SwapsListItemProps = Swap & {
+  tokenShortName: string;
+  onDetailsNavigate: (details: SwapDetails) => void;
+};
 
 export const SwapsListItem: React.FC<SwapsListItemProps> = ({
   tokenShortName,
@@ -19,9 +21,8 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
   valueInDolar,
   from,
   to,
+  onDetailsNavigate,
 }: SwapsListItemProps) => {
-  const navigation = useNavigation();
-
   const iconColorByStatus = status === 'Confirmed' ? '#76E268' : '#EA3943';
   const rotateIconByOperation = operation === 'Received' && {
     transform: [{ rotate: '180deg' }],
@@ -39,16 +40,14 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
     value: value,
     from: from,
     to: to,
-  };
+  } as SwapDetails;
 
-  const onDetailsNavigate = () =>
-    navigation.navigate(
-      Screens.DETAILS as never,
-      { swapDetails: swapDetails } as never,
-    );
+  const handleOnDetailsNavigate = () => onDetailsNavigate(swapDetails);
 
   return (
-    <TouchableOpacity style={styles.swapListItem} onPress={onDetailsNavigate}>
+    <TouchableOpacity
+      style={styles.swapListItem}
+      onPress={handleOnDetailsNavigate}>
       <Caption value={date} />
 
       <View style={styles.contentWrapper}>

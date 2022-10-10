@@ -9,5 +9,5 @@ import { WalthoughtCarousel } from './WalthoughtCarousel';
 storiesOf('Organisms/WalthoughtCarousel', module)
   .addDecorator(getStory => <StorybookView>{getStory()}</StorybookView>)
   .add('Walthought Carousel', () => (
-    <WalthoughtCarousel onNavigate={action('onNavigate')} />
+    <WalthoughtCarousel onCarouselSlidesEnd={action('onCarouselSlidesEnd')} />
   ));

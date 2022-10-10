@@ -12,16 +12,19 @@ import { Label } from '../../atoms';
 
 import { styles } from './TokenList.styles';
 import { TokenListItem } from './TokenListItem';
+import { TokenDetails } from './tokenDetails.type';
 import { useSwitchTab } from './useSwitchTab';
 
 type TokenListProps = {
   tokens: Token[];
   style?: ViewStyle | ViewStyle[];
+  onTokenNavigate: (tokenDetails: TokenDetails) => void;
 };
 
 export const TokenList: React.FC<TokenListProps> = ({
   tokens,
   style,
+  onTokenNavigate,
 }: TokenListProps) => {
   const {
     Tabs,
@@ -44,6 +47,7 @@ export const TokenList: React.FC<TokenListProps> = ({
             price={item.price}
             percentagePoint={item.percentagePoint}
             value={item.value}
+            onTokenNavigate={onTokenNavigate}
           />
         )}
       />

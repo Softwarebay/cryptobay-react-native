@@ -1,4 +1,3 @@
-import { useNavigation, useRoute } from '@react-navigation/native';
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 
@@ -7,21 +6,25 @@ import { Icon, Icons, Label } from '../../atoms';
 
 import { styles } from './BottomNavigation.styles';
 
-export const BottomNavigation: React.FC = () => {
-  const navigation = useNavigation();
-  const route = useRoute();
+type BottomNavigationProps = {
+  routeName: string;
+  onHomeNavigate: () => void;
+  onSwapNavigate: () => void;
+  onSettingsNavigate: () => void;
+};
 
+export const BottomNavigation: React.FC<BottomNavigationProps> = ({
+  routeName,
+  onHomeNavigate,
+  onSwapNavigate,
+  onSettingsNavigate,
+}: BottomNavigationProps) => {
   const walletScreens = [Screens.HOME, Screens.TOKEN];
   const swapScreens = [Screens.SWAP];
   const settingsScreens = [Screens.SETTINGS];
 
-  const onHomeNavigate = () => navigation.navigate(Screens.HOME as never);
-  const onSwapNavigate = () => navigation.navigate(Screens.SWAP as never);
-  const onSettingsNavigate = () =>
-    navigation.navigate(Screens.SETTINGS as never);
-
   const getCurrentScreenLabelStyle = (screensName: Screens[]) =>
-    screensName.includes(route.name as Screens)
+    screensName.includes(routeName as Screens)
       ? styles.bottomNavigationItemCurrent
       : styles.bottomNavigationItemPrevious;
 

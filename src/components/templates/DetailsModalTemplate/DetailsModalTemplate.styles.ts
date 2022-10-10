@@ -5,18 +5,12 @@ export const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
     justifyContent: 'flex-end',
-
-    /* borderWidth: 1,
-    borderColor: 'red', */
   },
   blur: {
     height: '40%',
     padding: 8,
     justifyContent: 'flex-end',
     alignItems: 'center',
-
-    /* borderWidth: 1,
-    borderColor: 'red', */
   },
   indicator: {
     width: 40,
@@ -28,9 +22,6 @@ export const styles = StyleSheet.create({
     backgroundColor: '#000000',
     height: '60%',
     padding: 16,
-
-    /* borderWidth: 1,
-    borderColor: 'red', */
   },
   operationLabel: {
     marginBottom: 20,

@@ -6,16 +6,16 @@ import { WalthoughtCarousel } from '../../organisms';
 import { styles } from './WalthoughtTemplate.styles';
 
 type WalthoughtTemplateProps = {
-  onNavigate: () => void;
+  onCarouselSlidesEnd: () => void;
 };
 
 export const WalthoughtTemplate: React.FC<WalthoughtTemplateProps> = ({
-  onNavigate,
+  onCarouselSlidesEnd,
 }: WalthoughtTemplateProps) => {
   return (
     <SafeAreaView style={styles.walthoughtTemplate}>
       <View style={styles.contentWrapper}>
-        <WalthoughtCarousel onNavigate={onNavigate} />
+        <WalthoughtCarousel onCarouselSlidesEnd={onCarouselSlidesEnd} />
       </View>
     </SafeAreaView>
   );

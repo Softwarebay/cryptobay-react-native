@@ -1,18 +1,21 @@
-import { useNavigation, useRoute } from '@react-navigation/native';
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
 
-import { TokenTemplate } from '../../components/templates/TokenTemplate/TokenTemplate';
+import { SwapDetails, TokenDetails } from '../../components/organisms';
+import { TokenTemplate } from '../../components/templates';
 import { bnbSwapsHistory } from '../../mocks';
-import { Token } from '../../types/token.type';
+import { Screens } from '../../screens.enum';
+import { StackList } from '../../types/stackList.type';
 
-export const TokenScreen: React.FC = () => {
-  const navigation = useNavigation();
-  const routes = useRoute();
+type TokenScreenProps = NativeStackScreenProps<StackList, Screens.TOKEN>;
 
-  const params = routes.params as { token: Token };
-  const token = params.token;
+export const TokenScreen: React.FC<TokenScreenProps> = ({
+  route,
+  navigation,
+}: TokenScreenProps) => {
+  const { tokenDetails } = route.params! as { tokenDetails: TokenDetails };
 
-  const calculatedTokenPrice = token.price * token.value;
+  const calculatedTokenPrice = tokenDetails.price * tokenDetails.value;
 
   const onGoBack = () => navigation.goBack();
 
@@ -20,15 +23,29 @@ export const TokenScreen: React.FC = () => {
 
   const onRecive = () => console.log('onRecive');
 
+  const onHomeNavigate = () => navigation.navigate(Screens.HOME);
+
+  const onSwapNavigate = () => navigation.navigate(Screens.SWAP);
+
+  const onSettingsNavigate = () => navigation.navigate(Screens.SETTINGS);
+
+  const onDetailsNavigate = (swapDetails: SwapDetails) =>
+    navigation.navigate(Screens.DETAILS, { swapDetails: swapDetails } as any);
+
   return (
     <TokenTemplate
-      tokenShortName={token.shortName}
-      tokenValue={token.value}
+      tokenShortName={tokenDetails.shortName}
+      tokenValue={tokenDetails.value}
       tokenPrice={calculatedTokenPrice}
       tokenSwapHistory={bnbSwapsHistory}
+      routeName={route.name}
       onGoBack={onGoBack}
       onSent={onSent}
       onReceive={onRecive}
+      onHomeNavigate={onHomeNavigate}
+      onSwapNavigate={onSwapNavigate}
+      onSettingsNavigate={onSettingsNavigate}
+      onDetailsNavigate={onDetailsNavigate}
     />
   );
 };

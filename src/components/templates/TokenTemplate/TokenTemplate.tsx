@@ -5,7 +5,7 @@ import { BALL } from '../../../../assets/pictures';
 import { Swap } from '../../../types/swap.type';
 import { Header, Icon, Icons, Label, Picture } from '../../atoms';
 import { Button } from '../../molecules';
-import { BottomNavigation } from '../../organisms';
+import { BottomNavigation, SwapDetails } from '../../organisms';
 import { SwapsList } from '../../organisms/SwapsList/SwapsList';
 
 import { styles } from './TokenTemplate.styles';
@@ -15,9 +15,14 @@ type TokenTemplateProps = {
   tokenValue: number;
   tokenPrice: number;
   tokenSwapHistory: Swap[];
+  routeName: string;
   onGoBack: () => void;
   onSent: () => void;
   onReceive: () => void;
+  onHomeNavigate: () => void;
+  onSwapNavigate: () => void;
+  onSettingsNavigate: () => void;
+  onDetailsNavigate: (swapDetails: SwapDetails) => void;
 };
 
 export const TokenTemplate: React.FC<TokenTemplateProps> = ({
@@ -25,9 +30,14 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
   tokenValue,
   tokenPrice,
   tokenSwapHistory,
+  routeName,
   onGoBack,
   onSent,
   onReceive,
+  onHomeNavigate,
+  onSwapNavigate,
+  onSettingsNavigate,
+  onDetailsNavigate,
 }) => {
   const backButtonHitSlop = { top: 16, bottom: 16, left: 16, right: 16 };
 
@@ -76,9 +86,15 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
         <SwapsList
           tokenShortName={tokenShortName}
           swapsHistory={tokenSwapHistory}
+          onDetailsNavigate={onDetailsNavigate}
         />
 
-        <BottomNavigation />
+        <BottomNavigation
+          routeName={routeName}
+          onHomeNavigate={onHomeNavigate}
+          onSwapNavigate={onSwapNavigate}
+          onSettingsNavigate={onSettingsNavigate}
+        />
       </View>
     </SafeAreaView>
   );
