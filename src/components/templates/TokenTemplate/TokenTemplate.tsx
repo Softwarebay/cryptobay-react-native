@@ -3,7 +3,7 @@ import { SafeAreaView, TouchableOpacity, View } from 'react-native';
 
 import { BALL } from '../../../../assets/pictures';
 import { Swap } from '../../../types/swap.type';
-import { Header, Icon, Icons, Label, Picture } from '../../atoms';
+import { Badge, Header, Icon, Icons, Label, Picture } from '../../atoms';
 import { Button } from '../../molecules';
 import { BottomNavigation, SwapDetails } from '../../organisms';
 import { SwapsList } from '../../organisms/SwapsList/SwapsList';
@@ -14,6 +14,7 @@ type TokenTemplateProps = {
   tokenShortName: string;
   tokenValue: number;
   tokenPrice: number;
+  tokenPercentagePoint: number;
   tokenSwapHistory: Swap[];
   routeName: string;
   onGoBack: () => void;
@@ -29,6 +30,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
   tokenShortName,
   tokenValue,
   tokenPrice,
+  tokenPercentagePoint,
   tokenSwapHistory,
   routeName,
   onGoBack,
@@ -40,6 +42,13 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
   onDetailsNavigate,
 }) => {
   const backButtonHitSlop = { top: 16, bottom: 16, left: 16, right: 16 };
+  const tokenPriceLabel = `$${tokenPrice}`;
+  const tokenPercentagePointLabel =
+    tokenPercentagePoint > 0
+      ? ` +${tokenPercentagePoint}%`
+      : ` ${tokenPercentagePoint}%`;
+  const tokenPercentagePointLabelStyle =
+    tokenPercentagePoint > 0 ? { color: '#76E268' } : { color: '#EA3943' };
 
   return (
     <SafeAreaView style={styles.tokenTemplate}>
@@ -59,11 +68,18 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
 
         <Header value={`${tokenValue} ${tokenShortName}`} />
 
-        <Label
-          style={styles.priceLabel}
-          value={`$${tokenPrice}`}
-          variant="secondary"
-        />
+        <View style={styles.priceData}>
+          <Label
+            style={styles.priceLabel}
+            value={tokenPriceLabel}
+            variant="secondary"
+          />
+          <Label
+            style={tokenPercentagePointLabelStyle}
+            value={tokenPercentagePointLabel}
+            variant="secondary"
+          />
+        </View>
 
         <View style={styles.actionButtonsWrapper}>
           <Button

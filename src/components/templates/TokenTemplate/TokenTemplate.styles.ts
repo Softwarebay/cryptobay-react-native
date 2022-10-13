@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   ballPicture: {
-    width: '25%',
+    width: '30%',
     height: '25%',
     position: 'absolute',
     top: '10%',
@@ -35,8 +35,11 @@ export const styles = StyleSheet.create({
   backButtonIcon: {
     transform: [{ rotate: '90deg' }],
   },
-  priceLabel: {
+  priceData: {
     marginBottom: 20,
+    flexDirection: 'row',
+  },
+  priceLabel: {
     color: '#FFFFFF',
   },
   actionButtonsWrapper: {

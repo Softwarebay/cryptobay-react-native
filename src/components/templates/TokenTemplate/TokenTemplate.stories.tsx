@@ -1,5 +1,5 @@
 import { action } from '@storybook/addon-actions';
-import { text } from '@storybook/addon-knobs';
+import { number, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 
@@ -13,8 +13,9 @@ storiesOf('Templates/TokenTemplate', module)
   .add('Token Template', () => (
     <TokenTemplate
       tokenShortName={text('tokenShortName', 'BNB')}
-      tokenValue={19.2371}
-      tokenPrice={4360.8582}
+      tokenValue={number('tokenValue', 19.2371)}
+      tokenPrice={number('tokenPrice', 4360.8582)}
+      tokenPercentagePoint={number('tokenPercentagePoint', 0.7)}
       tokenSwapHistory={bnbSwapsHistory}
       routeName={text('routeName', 'Home')}
       onGoBack={action('onGoBack')}
