@@ -4,8 +4,9 @@ import '@testing-library/jest-native';
 import renderer from 'react-test-renderer';
 
 import 'react-native';
-import { SwapsList } from './SwapsList';
 import { bnbSwapsHistory } from '../../../mocks';
+
+import { SwapsList } from './SwapsList';
 import { SwapsListItem } from './SwapsListItem';
 
 const mockOnDetailsNavigate = jest.fn();

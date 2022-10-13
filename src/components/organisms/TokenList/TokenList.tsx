@@ -39,6 +39,7 @@ export const TokenList: React.FC<TokenListProps> = ({
       <FlatList
         style={styles.list}
         data={tokens}
+        testID="token-list"
         renderItem={({ item }: ListRenderItemInfo<Token>) => (
           <TokenListItem
             picture={item.picture}
@@ -56,6 +57,7 @@ export const TokenList: React.FC<TokenListProps> = ({
       <FlatList
         style={styles.list}
         data={['Collectibiles in Progress']}
+        testID="collectibiles-list"
         renderItem={({ item }: ListRenderItemInfo<string>) => (
           <Label value={item} />
         )}
@@ -68,13 +70,15 @@ export const TokenList: React.FC<TokenListProps> = ({
       <View style={styles.nav}>
         <TouchableOpacity
           style={[styles.navItem, handleSwitchTabStyle(Tabs.TOKEN)]}
-          onPress={() => handleSwitchTab(Tabs.TOKEN)}>
+          onPress={() => handleSwitchTab(Tabs.TOKEN)}
+          testID="token-list-token-tab">
           <Label style={handleSwitchLabelStyles(Tabs.TOKEN)} value="Token" />
         </TouchableOpacity>
 
         <TouchableOpacity
           style={[styles.navItem, handleSwitchTabStyle(Tabs.COLLECTIBILES)]}
-          onPress={() => handleSwitchTab(Tabs.COLLECTIBILES)}>
+          onPress={() => handleSwitchTab(Tabs.COLLECTIBILES)}
+          testID="token-list-collectibles-tab">
           <Label
             style={handleSwitchLabelStyles(Tabs.COLLECTIBILES)}
             value="Collectibles"

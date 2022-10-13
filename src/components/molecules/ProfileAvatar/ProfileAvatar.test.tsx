@@ -9,9 +9,7 @@ import { ProfileAvatar } from './ProfileAvatar';
 
 describe('ProfileAvatar Molecule', () => {
   test('Component Snapshot', () => {
-    const tree = renderer
-      .create(<ProfileAvatar />)
-      .toJSON();
+    const tree = renderer.create(<ProfileAvatar />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 

@@ -8,6 +8,7 @@ import { styles } from './TokenListItem.styles';
 import { TokenDetails } from './tokenDetails.type';
 
 type TokenListItemProps = Token & {
+  testID?: string;
   onTokenNavigate: (tokenDetails: TokenDetails) => void;
 };
 
@@ -18,6 +19,7 @@ export const TokenListItem: React.FC<TokenListItemProps> = ({
   price,
   percentagePoint,
   value,
+  testID,
   onTokenNavigate,
 }: TokenListItemProps) => {
   const tokenPicture = picture ? picture : 0;
@@ -36,9 +38,16 @@ export const TokenListItem: React.FC<TokenListItemProps> = ({
   const handleOnTokenNavigate = () => onTokenNavigate(tokenDetails);
 
   return (
-    <TouchableOpacity style={styles.container} onPress={handleOnTokenNavigate}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={handleOnTokenNavigate}
+      testID={testID}>
       <View style={styles.dataWrapper}>
-        <Picture style={styles.picture} pictureFile={tokenPicture} />
+        <Picture
+          style={styles.picture}
+          pictureFile={tokenPicture}
+          testID="token-list-item-token-picture"
+        />
 
         <View>
           <Label value={name} />

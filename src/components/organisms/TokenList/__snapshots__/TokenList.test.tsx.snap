@@ -1,0 +1,566 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TokenList Organism Component Snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "width": "50%",
+      }
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "borderBottomWidth": 2,
+          "borderColor": "#FFFFFF",
+          "marginHorizontal": 10,
+          "opacity": 1,
+          "paddingHorizontal": 15,
+        }
+      }
+      testID="token-list-token-tab"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Poppins",
+            },
+            Object {
+              "fontSize": 16,
+              "fontWeight": "600",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#FFFFFF",
+            },
+          ]
+        }
+      >
+        Token
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "marginHorizontal": 10,
+          "opacity": 1,
+          "paddingHorizontal": 15,
+        }
+      }
+      testID="token-list-collectibles-tab"
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Poppins",
+            },
+            Object {
+              "fontSize": 16,
+              "fontWeight": "600",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#888DAA",
+            },
+          ]
+        }
+      >
+        Collectibles
+      </Text>
+    </View>
+  </View>
+  <RCTScrollView
+    data={
+      Array [
+        Object {
+          "name": "Binance Coin",
+          "percentagePoint": 2,
+          "picture": 0,
+          "price": 226.69,
+          "shortName": "BNB",
+          "value": 19.2371,
+        },
+        Object {
+          "name": "USD Coin",
+          "percentagePoint": 4.3,
+          "picture": 0,
+          "price": 1,
+          "shortName": "USDC",
+          "value": 92.3,
+        },
+        Object {
+          "name": "Synthetix",
+          "percentagePoint": -1.3,
+          "picture": 0,
+          "price": 20.83,
+          "shortName": "SNX",
+          "value": 42.74,
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    style={
+      Object {
+        "height": 250,
+      }
+    }
+    testID="token-list"
+    viewabilityConfigCallbackPairs={Array []}
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Image
+              source={0}
+              style={
+                Object {
+                  "backgroundColor": "#44485F",
+                  "borderRadius": 40,
+                  "height": 40,
+                  "marginRight": 8,
+                  "width": 40,
+                }
+              }
+              testID="token-list-item-token-picture"
+            />
+            <View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "lineHeight": 24,
+                    },
+                    Object {
+                      "color": "#FFFFFF",
+                    },
+                  ]
+                }
+              >
+                Binance Coin
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "lineHeight": 18,
+                      },
+                      Object {
+                        "color": "#ABAFC4",
+                      },
+                      Object {
+                        "marginRight": 8,
+                      },
+                    ]
+                  }
+                >
+                  $226.69
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#76E268",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  +2%
+                </Text>
+              </View>
+            </View>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                },
+                Object {
+                  "fontSize": 16,
+                  "fontWeight": "600",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            19.2371 BNB
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Image
+              source={0}
+              style={
+                Object {
+                  "backgroundColor": "#44485F",
+                  "borderRadius": 40,
+                  "height": 40,
+                  "marginRight": 8,
+                  "width": 40,
+                }
+              }
+              testID="token-list-item-token-picture"
+            />
+            <View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "lineHeight": 24,
+                    },
+                    Object {
+                      "color": "#FFFFFF",
+                    },
+                  ]
+                }
+              >
+                USD Coin
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "lineHeight": 18,
+                      },
+                      Object {
+                        "color": "#ABAFC4",
+                      },
+                      Object {
+                        "marginRight": 8,
+                      },
+                    ]
+                  }
+                >
+                  $1.00
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#76E268",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  +4.3%
+                </Text>
+              </View>
+            </View>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                },
+                Object {
+                  "fontSize": 16,
+                  "fontWeight": "600",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            92.3 USDC
+          </Text>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+              "marginVertical": 16,
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Image
+              source={0}
+              style={
+                Object {
+                  "backgroundColor": "#44485F",
+                  "borderRadius": 40,
+                  "height": 40,
+                  "marginRight": 8,
+                  "width": 40,
+                }
+              }
+              testID="token-list-item-token-picture"
+            />
+            <View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "lineHeight": 24,
+                    },
+                    Object {
+                      "color": "#FFFFFF",
+                    },
+                  ]
+                }
+              >
+                Synthetix
+              </Text>
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 12,
+                        "fontWeight": "400",
+                        "lineHeight": 18,
+                      },
+                      Object {
+                        "color": "#ABAFC4",
+                      },
+                      Object {
+                        "marginRight": 8,
+                      },
+                    ]
+                  }
+                >
+                  $20.83
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#EA3943",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  -1.3%
+                </Text>
+              </View>
+            </View>
+          </View>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                },
+                Object {
+                  "fontSize": 16,
+                  "fontWeight": "600",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            42.74 SNX
+          </Text>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
