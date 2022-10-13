@@ -46,4 +46,11 @@ export const styles = StyleSheet.create({
   actionButton: {
     marginRight: 8,
   },
+  sentButtonIcon: {
+    marginRight: 8,
+  },
+  reciveButtonIcon: {
+    transform: [{ rotate: '180deg' }],
+    marginRight: 8,
+  },
 });

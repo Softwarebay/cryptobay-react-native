@@ -71,15 +71,14 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
             label="Sent"
             onPress={onSent}
             iconType={Icons.ARROW}
+            iconStyle={styles.sentButtonIcon}
           />
           <Button
             style={styles.actionButton}
             label="Receive"
             onPress={onReceive}
             iconType={Icons.ARROW}
-            iconStyle={{
-              transform: [{ rotate: '180deg' }],
-            }}
+            iconStyle={styles.reciveButtonIcon}
           />
         </View>
 
