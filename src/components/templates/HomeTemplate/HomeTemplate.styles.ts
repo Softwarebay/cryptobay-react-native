@@ -9,18 +9,19 @@ export const styles = StyleSheet.create({
   contentWrapper: {
     width: '100%',
     height: '100%',
-    paddingHorizontal: 10,
+    paddingHorizontal: 24,
     justifyContent: 'space-between',
   },
   ballPicture: {
     width: '35%',
     height: '35%',
     position: 'absolute',
-    top: '10%',
-    left: '70%',
+    top: '5%',
+    left: '80%',
     zIndex: -1,
   },
   homeBar: {
+    marginTop: 5,
     marginBottom: 30,
     flexDirection: 'row',
   },

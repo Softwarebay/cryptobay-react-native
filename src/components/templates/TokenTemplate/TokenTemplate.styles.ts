@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   contentWrapper: {
     width: '100%',
     height: '100%',
-    paddingHorizontal: 10,
+    paddingHorizontal: 24,
     justifyContent: 'space-between',
   },
   ballPicture: {
@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     height: '30%',
     position: 'absolute',
     top: '10%',
-    left: '75%',
+    left: '85%',
     zIndex: -1,
   },
   navBar: {

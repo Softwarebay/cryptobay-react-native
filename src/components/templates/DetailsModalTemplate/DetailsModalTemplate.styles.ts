@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
   detailsContent: {
     backgroundColor: '#000000',
     height: '60%',
-    padding: 16,
+    padding: 24,
   },
   operationLabel: {
     marginBottom: 20,
