@@ -23,7 +23,7 @@ exports[`Header Atom Component Snapshot: Gradient Variant 1`] = `
           },
           Object {
             "fontSize": 40,
-            "fontWeight": "300",
+            "fontWeight": "400",
           },
           undefined,
         ]
@@ -65,7 +65,7 @@ exports[`Header Atom Component Snapshot: Gradient Variant 1`] = `
           },
           Object {
             "fontSize": 40,
-            "fontWeight": "300",
+            "fontWeight": "400",
           },
           Object {
             "opacity": 0,
@@ -93,6 +93,7 @@ exports[`Header Atom Component Snapshot: White Variant 1`] = `
         "fontSize": 42,
         "fontWeight": "400",
       },
+      undefined,
     ]
   }
 >

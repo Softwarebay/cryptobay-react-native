@@ -37,7 +37,6 @@ export const TokenScreen: React.FC<TokenScreenProps> = ({
       tokenShortName={tokenDetails.shortName}
       tokenValue={tokenDetails.value}
       tokenPrice={calculatedTokenPrice}
-      tokenPercentagePoint={tokenDetails.percentagePoint}
       tokenSwapHistory={bnbSwapsHistory}
       routeName={route.name}
       onGoBack={onGoBack}

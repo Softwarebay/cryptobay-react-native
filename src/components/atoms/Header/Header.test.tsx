@@ -24,7 +24,7 @@ describe('Header Atom', () => {
     );
     let header = screen.getByTestId('atom-header');
     expect(header).toHaveTextContent('Convenient Transaction');
-    expect(header).toHaveStyle({ fontSize: 40, fontWeight: '300' });
+    expect(header).toHaveStyle({ fontSize: 40, fontWeight: '400' });
     rerender(
       <Header
         value="Millionsof people participate"

@@ -4,14 +4,13 @@ import '@testing-library/jest-native';
 import renderer from 'react-test-renderer';
 
 import 'react-native';
-import { PROFILE } from '../../../../assets/pictures';
 
 import { ProfileAvatar } from './ProfileAvatar';
 
 describe('ProfileAvatar Molecule', () => {
   test('Component Snapshot', () => {
     const tree = renderer
-      .create(<ProfileAvatar pictureFile={PROFILE} />)
+      .create(<ProfileAvatar />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
@@ -19,7 +18,6 @@ describe('ProfileAvatar Molecule', () => {
   test('ensure custom styles works correctly', () => {
     render(
       <ProfileAvatar
-        pictureFile={PROFILE}
         pictureTestID="profile-avatar-picture"
         iconTestID="profile-avatar-icon"
       />,
