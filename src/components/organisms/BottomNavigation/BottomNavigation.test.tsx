@@ -4,8 +4,9 @@ import '@testing-library/jest-native';
 import renderer from 'react-test-renderer';
 
 import 'react-native';
-import { BottomNavigation } from './BottomNavigation';
 import { Screens } from '../../../screens.enum';
+
+import { BottomNavigation } from './BottomNavigation';
 
 const mockOnHomeNavigate = jest.fn();
 const mockOnSwapNavigate = jest.fn();
