@@ -1,18 +1,17 @@
 import React from 'react';
-import { ImageSourcePropType, StyleProp, View, ViewStyle } from 'react-native';
+import { View, ViewStyle } from 'react-native';
 
+import { PROFILE } from '../../../../assets/pictures';
 import { Icon, Icons, Picture } from '../../atoms';
 
 import { styles } from './ProfileAvatar.styles';
 
 type ProfileAvatarProps = {
-  pictureFile: ImageSourcePropType;
   pictureTestID?: string;
   iconTestID?: string;
 };
 
 export const ProfileAvatar: React.FC<ProfileAvatarProps> = ({
-  pictureFile,
   pictureTestID,
   iconTestID,
 }: ProfileAvatarProps) => {
@@ -27,12 +26,12 @@ export const ProfileAvatar: React.FC<ProfileAvatarProps> = ({
     position: 'absolute',
     left: 32,
     top: 22,
-  } as StyleProp<ViewStyle>;
+  } as ViewStyle;
 
   return (
     <View style={styles.profileAvatar}>
       <Picture
-        pictureFile={pictureFile}
+        pictureFile={PROFILE}
         style={pictureStyle}
         testID={pictureTestID}
       />

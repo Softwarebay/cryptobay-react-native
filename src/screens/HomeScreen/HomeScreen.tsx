@@ -1,7 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
 
-import { PROFILE } from '../../../assets/pictures';
 import { TokenDetails } from '../../components/organisms';
 import { HomeTemplate } from '../../components/templates';
 import { etheriumTokenMock, tokensMock } from '../../mocks';
@@ -35,7 +34,6 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
 
   return (
     <HomeTemplate
-      profileAvatarPicture={PROFILE}
       tokenName={etheriumTokenMock.name}
       tokenShortName={etheriumTokenMock.shortName}
       tokenPrice={etheriumTokenMock.price}

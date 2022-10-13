@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  ImageSourcePropType,
-  SafeAreaView,
-  Text,
-  TouchableOpacity,
-  View,
-} from 'react-native';
+import { SafeAreaView, Text, TouchableOpacity, View } from 'react-native';
 
 import { BALL } from '../../../../assets/pictures';
 import { Token } from '../../../types/token.type';
@@ -16,7 +10,6 @@ import { BottomNavigation, TokenDetails, TokenList } from '../../organisms';
 import { styles } from './HomeTemplate.styles';
 
 type HomeTemplateProps = {
-  profileAvatarPicture: ImageSourcePropType;
   tokenName: string;
   tokenShortName: string;
   tokenPrice: number;
@@ -36,7 +29,6 @@ type HomeTemplateProps = {
 };
 
 export const HomeTemplate: React.FC<HomeTemplateProps> = ({
-  profileAvatarPicture,
   tokenName,
   tokenShortName,
   tokenPrice,
@@ -69,7 +61,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
         <Picture style={styles.ballPicture} pictureFile={BALL} />
 
         <View style={styles.homeBar}>
-          <ProfileAvatar pictureFile={profileAvatarPicture} />
+          <ProfileAvatar />
 
           <TouchableOpacity style={styles.homeBarDropDown} onPress={onDropDown}>
             <Text style={styles.homeBarDropDownLabel}>{tokenName} Main</Text>
