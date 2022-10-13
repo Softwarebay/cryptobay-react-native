@@ -9,6 +9,7 @@ import { SwapDetails } from './swapDetails.type';
 
 type SwapsListItemProps = Swap & {
   tokenShortName: string;
+  testID?: string;
   onDetailsNavigate: (details: SwapDetails) => void;
 };
 
@@ -21,6 +22,7 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
   valueInDolar,
   from,
   to,
+  testID,
   onDetailsNavigate,
 }: SwapsListItemProps) => {
   const iconColorByStatus = status === 'Confirmed' ? '#76E268' : '#EA3943';
@@ -47,7 +49,8 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
   return (
     <TouchableOpacity
       style={styles.swapListItem}
-      onPress={handleOnDetailsNavigate}>
+      onPress={handleOnDetailsNavigate}
+      testID={testID}>
       <Caption value={date} />
 
       <View style={styles.contentWrapper}>

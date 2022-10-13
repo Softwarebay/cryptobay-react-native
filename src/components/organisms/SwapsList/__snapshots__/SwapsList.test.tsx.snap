@@ -1,0 +1,948 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SwapsList Organism Component Snapshot 1`] = `
+<View
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+>
+  <RCTScrollView
+    collapsable={false}
+    data={
+      Array [
+        Object {
+          "date": "Mar 3 at 10:04am",
+          "from": "0x3Dc6...DfCE",
+          "operation": "Received",
+          "status": "Confirmed",
+          "to": "0x3Dc6...DfCE",
+          "value": 0.04,
+          "valueInDolar": 9.58799,
+        },
+        Object {
+          "date": "Mar 3 at 10:04am",
+          "from": "0x3Dc6...DfCE",
+          "operation": "Sent",
+          "status": "Cancelled",
+          "to": "0x3Dc6...DfCE",
+          "value": 2.35,
+          "valueInDolar": 547.5265,
+        },
+        Object {
+          "date": "Mar 3 at 10:04am",
+          "from": "0x3Dc6...DfCE",
+          "operation": "Received",
+          "status": "Confirmed",
+          "to": "0x3Dc6...DfCE",
+          "value": 1.876,
+          "valueInDolar": 436.11371,
+        },
+        Object {
+          "date": "Mar 3 at 10:04am",
+          "from": "0x3Dc6...DfCE",
+          "operation": "Sent",
+          "status": "Confirmed",
+          "to": "0x3Dc6...DfCE",
+          "value": 0.04,
+          "valueInDolar": 9.58799,
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    handlerTag={1}
+    handlerType="NativeViewGestureHandler"
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onGestureHandlerEvent={[Function]}
+    onGestureHandlerStateChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    renderScrollComponent={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    viewabilityConfigCallbackPairs={Array []}
+    waitFor={
+      Array [
+        Object {
+          "current": null,
+        },
+        Object {
+          "current": null,
+        },
+      ]
+    }
+  >
+    <View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 24,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "lineHeight": 18,
+                },
+                Object {
+                  "color": "#ABAFC4",
+                },
+                undefined,
+              ]
+            }
+          >
+            Mar 3 at 10:04am
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "rotate": "180deg",
+                      },
+                    ],
+                  }
+                }
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight="40"
+                  bbWidth="40"
+                  fill="none"
+                  focusable={false}
+                  height={40}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 40,
+                        "width": 40,
+                      },
+                    ]
+                  }
+                  testID="svg-icon-arrow"
+                  vbHeight={24}
+                  vbWidth={24}
+                  width={40}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      d="M11.5 18L11.5 6"
+                      propList={
+                        Array [
+                          "stroke",
+                        ]
+                      }
+                      stroke={
+                        Object {
+                          "payload": 4285981288,
+                          "type": 0,
+                        }
+                      }
+                    />
+                    <RNSVGPath
+                      d="M7 10L11.5 6L16 10"
+                      propList={
+                        Array [
+                          "stroke",
+                        ]
+                      }
+                      stroke={
+                        Object {
+                          "payload": 4285981288,
+                          "type": 0,
+                        }
+                      }
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                      },
+                      Object {
+                        "fontSize": 16,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Received BNB
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#76E268",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Confirmed
+                </Text>
+              </View>
+            </View>
+            <View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "lineHeight": 24,
+                    },
+                    Object {
+                      "color": "#FFFFFF",
+                    },
+                  ]
+                }
+              >
+                0.04 BNB
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "lineHeight": 18,
+                    },
+                    Object {
+                      "color": "#ABAFC4",
+                    },
+                    Object {
+                      "alignSelf": "flex-end",
+                    },
+                  ]
+                }
+              >
+                $9.58799
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 24,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "lineHeight": 18,
+                },
+                Object {
+                  "color": "#ABAFC4",
+                },
+                undefined,
+              ]
+            }
+          >
+            Mar 3 at 10:04am
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={false}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight="40"
+                  bbWidth="40"
+                  fill="none"
+                  focusable={false}
+                  height={40}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 40,
+                        "width": 40,
+                      },
+                    ]
+                  }
+                  testID="svg-icon-arrow"
+                  vbHeight={24}
+                  vbWidth={24}
+                  width={40}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      d="M11.5 18L11.5 6"
+                      propList={
+                        Array [
+                          "stroke",
+                        ]
+                      }
+                      stroke={
+                        Object {
+                          "payload": 4293540163,
+                          "type": 0,
+                        }
+                      }
+                    />
+                    <RNSVGPath
+                      d="M7 10L11.5 6L16 10"
+                      propList={
+                        Array [
+                          "stroke",
+                        ]
+                      }
+                      stroke={
+                        Object {
+                          "payload": 4293540163,
+                          "type": 0,
+                        }
+                      }
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                      },
+                      Object {
+                        "fontSize": 16,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Sent BNB
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#EA3943",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Cancelled
+                </Text>
+              </View>
+            </View>
+            <View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "lineHeight": 24,
+                    },
+                    Object {
+                      "color": "#FFFFFF",
+                    },
+                  ]
+                }
+              >
+                2.35 BNB
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "lineHeight": 18,
+                    },
+                    Object {
+                      "color": "#ABAFC4",
+                    },
+                    Object {
+                      "alignSelf": "flex-end",
+                    },
+                  ]
+                }
+              >
+                $547.5265
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 24,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "lineHeight": 18,
+                },
+                Object {
+                  "color": "#ABAFC4",
+                },
+                undefined,
+              ]
+            }
+          >
+            Mar 3 at 10:04am
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "transform": Array [
+                      Object {
+                        "rotate": "180deg",
+                      },
+                    ],
+                  }
+                }
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight="40"
+                  bbWidth="40"
+                  fill="none"
+                  focusable={false}
+                  height={40}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 40,
+                        "width": 40,
+                      },
+                    ]
+                  }
+                  testID="svg-icon-arrow"
+                  vbHeight={24}
+                  vbWidth={24}
+                  width={40}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      d="M11.5 18L11.5 6"
+                      propList={
+                        Array [
+                          "stroke",
+                        ]
+                      }
+                      stroke={
+                        Object {
+                          "payload": 4285981288,
+                          "type": 0,
+                        }
+                      }
+                    />
+                    <RNSVGPath
+                      d="M7 10L11.5 6L16 10"
+                      propList={
+                        Array [
+                          "stroke",
+                        ]
+                      }
+                      stroke={
+                        Object {
+                          "payload": 4285981288,
+                          "type": 0,
+                        }
+                      }
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                      },
+                      Object {
+                        "fontSize": 16,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Received BNB
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#76E268",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Confirmed
+                </Text>
+              </View>
+            </View>
+            <View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "lineHeight": 24,
+                    },
+                    Object {
+                      "color": "#FFFFFF",
+                    },
+                  ]
+                }
+              >
+                1.876 BNB
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "lineHeight": 18,
+                    },
+                    Object {
+                      "color": "#ABAFC4",
+                    },
+                    Object {
+                      "alignSelf": "flex-end",
+                    },
+                  ]
+                }
+              >
+                $436.11371
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "marginBottom": 24,
+              "opacity": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                  "fontSize": 12,
+                  "fontWeight": "400",
+                  "lineHeight": 18,
+                },
+                Object {
+                  "color": "#ABAFC4",
+                },
+                undefined,
+              ]
+            }
+          >
+            Mar 3 at 10:04am
+          </Text>
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flexDirection": "row",
+                "justifyContent": "space-between",
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={false}
+              >
+                <RNSVGSvgView
+                  align="xMidYMid"
+                  bbHeight="40"
+                  bbWidth="40"
+                  fill="none"
+                  focusable={false}
+                  height={40}
+                  meetOrSlice={0}
+                  minX={0}
+                  minY={0}
+                  style={
+                    Array [
+                      Object {
+                        "backgroundColor": "transparent",
+                        "borderWidth": 0,
+                      },
+                      Object {
+                        "flex": 0,
+                        "height": 40,
+                        "width": 40,
+                      },
+                    ]
+                  }
+                  testID="svg-icon-arrow"
+                  vbHeight={24}
+                  vbWidth={24}
+                  width={40}
+                >
+                  <RNSVGGroup
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  >
+                    <RNSVGPath
+                      d="M11.5 18L11.5 6"
+                      propList={
+                        Array [
+                          "stroke",
+                        ]
+                      }
+                      stroke={
+                        Object {
+                          "payload": 4285981288,
+                          "type": 0,
+                        }
+                      }
+                    />
+                    <RNSVGPath
+                      d="M7 10L11.5 6L16 10"
+                      propList={
+                        Array [
+                          "stroke",
+                        ]
+                      }
+                      stroke={
+                        Object {
+                          "payload": 4285981288,
+                          "type": 0,
+                        }
+                      }
+                    />
+                  </RNSVGGroup>
+                </RNSVGSvgView>
+              </View>
+              <View>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                      },
+                      Object {
+                        "fontSize": 16,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Sent BNB
+                </Text>
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                        "fontSize": 14,
+                        "fontWeight": "600",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#76E268",
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  Confirmed
+                </Text>
+              </View>
+            </View>
+            <View>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                    },
+                    Object {
+                      "fontSize": 16,
+                      "fontWeight": "600",
+                      "lineHeight": 24,
+                    },
+                    Object {
+                      "color": "#FFFFFF",
+                    },
+                  ]
+                }
+              >
+                0.04 BNB
+              </Text>
+              <Text
+                style={
+                  Array [
+                    Object {
+                      "fontFamily": "Poppins",
+                      "fontSize": 12,
+                      "fontWeight": "400",
+                      "lineHeight": 18,
+                    },
+                    Object {
+                      "color": "#ABAFC4",
+                    },
+                    Object {
+                      "alignSelf": "flex-end",
+                    },
+                  ]
+                }
+              >
+                $9.58799
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
