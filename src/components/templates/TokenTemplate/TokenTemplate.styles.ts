@@ -35,11 +35,8 @@ export const styles = StyleSheet.create({
   backButtonIcon: {
     transform: [{ rotate: '90deg' }],
   },
-  priceData: {
-    marginBottom: 20,
-    flexDirection: 'row',
-  },
   priceLabel: {
+    marginBottom: 20,
     color: '#FFFFFF',
   },
   actionButtonsWrapper: {

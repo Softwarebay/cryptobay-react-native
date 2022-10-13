@@ -31,7 +31,6 @@ export const TokenListItem: React.FC<TokenListItemProps> = ({
     shortName: shortName,
     value: value,
     price: price,
-    percentagePoint: percentagePoint,
   } as TokenDetails;
 
   const handleOnTokenNavigate = () => onTokenNavigate(tokenDetails);

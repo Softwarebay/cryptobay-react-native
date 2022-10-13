@@ -14,7 +14,6 @@ type TokenTemplateProps = {
   tokenShortName: string;
   tokenValue: number;
   tokenPrice: number;
-  tokenPercentagePoint: number;
   tokenSwapHistory: Swap[];
   routeName: string;
   onGoBack: () => void;
@@ -30,7 +29,6 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
   tokenShortName,
   tokenValue,
   tokenPrice,
-  tokenPercentagePoint,
   tokenSwapHistory,
   routeName,
   onGoBack,
@@ -43,12 +41,6 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
 }) => {
   const backButtonHitSlop = { top: 16, bottom: 16, left: 16, right: 16 };
   const tokenPriceLabel = `$${tokenPrice}`;
-  const tokenPercentagePointLabel =
-    tokenPercentagePoint > 0
-      ? ` +${tokenPercentagePoint}%`
-      : ` ${tokenPercentagePoint}%`;
-  const tokenPercentagePointLabelStyle =
-    tokenPercentagePoint > 0 ? { color: '#76E268' } : { color: '#EA3943' };
 
   return (
     <SafeAreaView style={styles.tokenTemplate}>
@@ -68,18 +60,11 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
 
         <Header value={`${tokenValue} ${tokenShortName}`} />
 
-        <View style={styles.priceData}>
-          <Label
-            style={styles.priceLabel}
-            value={tokenPriceLabel}
-            variant="secondary"
-          />
-          <Label
-            style={tokenPercentagePointLabelStyle}
-            value={tokenPercentagePointLabel}
-            variant="secondary"
-          />
-        </View>
+        <Label
+          style={styles.priceLabel}
+          value={tokenPriceLabel}
+          variant="secondary"
+        />
 
         <View style={styles.actionButtonsWrapper}>
           <Button

@@ -15,7 +15,6 @@ storiesOf('Templates/TokenTemplate', module)
       tokenShortName={text('tokenShortName', 'BNB')}
       tokenValue={number('tokenValue', 19.2371)}
       tokenPrice={number('tokenPrice', 4360.8582)}
-      tokenPercentagePoint={number('tokenPercentagePoint', 0.7)}
       tokenSwapHistory={bnbSwapsHistory}
       routeName={text('routeName', 'Home')}
       onGoBack={action('onGoBack')}
