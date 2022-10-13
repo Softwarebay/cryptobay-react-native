@@ -38,7 +38,7 @@ export const DetailsModalTemplate: React.FC<DetailsModalTemplateProps> = ({
       <BlurView style={styles.blur}>
         <View style={styles.indicator} />
       </BlurView>
-      
+
       <View style={styles.detailsContent}>
         <Label style={styles.operationLabel} value={operation} />
 

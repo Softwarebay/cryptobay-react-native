@@ -3,7 +3,7 @@ import { SafeAreaView, TouchableOpacity, View } from 'react-native';
 
 import { BALL } from '../../../../assets/pictures';
 import { Swap } from '../../../types/swap.type';
-import { Badge, Header, Icon, Icons, Label, Picture } from '../../atoms';
+import { Header, Icon, Icons, Label, Picture } from '../../atoms';
 import { Button } from '../../molecules';
 import { BottomNavigation, SwapDetails } from '../../organisms';
 import { SwapsList } from '../../organisms/SwapsList/SwapsList';
