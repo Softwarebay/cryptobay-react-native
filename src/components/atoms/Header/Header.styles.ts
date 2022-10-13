@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
   },
   gradient: {
     fontSize: 40,
-    fontWeight: '300',
+    fontWeight: '400',
   },
   white: {
     fontSize: 42,

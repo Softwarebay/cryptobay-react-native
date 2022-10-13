@@ -18,9 +18,17 @@ export const Header: React.FC<HeaderProps> = ({
   style,
   testID,
 }) => {
+  const gradientColors = [
+    '#A9CDFF',
+    '#72F6D1',
+    '#A0ED8D',
+    '#FED365',
+    '#FAA49E',
+  ];
+
   if (variant === 'white') {
     return (
-      <Text testID={testID} style={[styles.header, styles.white]}>
+      <Text testID={testID} style={[styles.header, styles.white, style]}>
         {value}
       </Text>
     );
@@ -34,7 +42,7 @@ export const Header: React.FC<HeaderProps> = ({
         </Text>
       }>
       <LinearGradient
-        colors={['#A9CDFF', '#72F6D1', '#A0ED8D', '#FED365', '#FAA49E']}
+        colors={gradientColors}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}>
         <Text
