@@ -13,11 +13,11 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   ballPicture: {
-    width: '35%',
-    height: '35%',
+    width: '30%',
+    height: '25%',
     position: 'absolute',
-    top: '5%',
-    left: '80%',
+    top: '10%',
+    left: '85%',
     zIndex: -1,
   },
   homeBar: {
@@ -48,6 +48,13 @@ export const styles = StyleSheet.create({
     marginRight: 8,
   },
   actionButtonIcon: {
+    marginRight: 8,
+  },
+  sctionButtonIconBuy: {
+    marginLeft: 6,
+    marginRight: 8,
+  },
+  actionButtonLabel: {
     marginRight: 8,
   },
   actionButtonIconRotate: {

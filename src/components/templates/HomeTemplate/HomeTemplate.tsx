@@ -94,6 +94,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
             label="Sent"
             iconType={Icons.ARROW}
             iconStyle={styles.actionButtonIcon}
+            labelStyle={styles.actionButtonLabel}
             onPress={onSent}
           />
           <Button
@@ -101,13 +102,14 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
             label="Recive"
             iconType={Icons.ARROW}
             iconStyle={[styles.actionButtonIcon, styles.actionButtonIconRotate]}
+            labelStyle={styles.actionButtonLabel}
             onPress={onRecive}
           />
           <Button
-            style={styles.actionButton}
             label="Buy"
             iconType={Icons.BUY}
-            iconStyle={styles.actionButtonIcon}
+            iconStyle={styles.sctionButtonIconBuy}
+            labelStyle={styles.actionButtonLabel}
             onPress={onBuy}
           />
         </View>

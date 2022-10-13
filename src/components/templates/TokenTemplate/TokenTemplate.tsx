@@ -72,6 +72,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
             onPress={onSent}
             iconType={Icons.ARROW}
             iconStyle={styles.sentButtonIcon}
+            labelStyle={styles.actionButtonLabel}
           />
           <Button
             style={styles.actionButton}
@@ -79,6 +80,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
             onPress={onReceive}
             iconType={Icons.ARROW}
             iconStyle={styles.reciveButtonIcon}
+            labelStyle={styles.actionButtonLabel}
           />
         </View>
 

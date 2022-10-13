@@ -13,16 +13,16 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   ballPicture: {
-    width: '30%',
-    height: '30%',
+    width: '25%',
+    height: '25%',
     position: 'absolute',
     top: '10%',
     left: '85%',
     zIndex: -1,
   },
   navBar: {
-    marginTop: 20,
-    marginBottom: 45,
+    marginTop: 35,
+    marginBottom: 30,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
   },
   actionButtonsWrapper: {
     flexDirection: 'row',
-    marginBottom: 30,
+    marginBottom: 20,
   },
   actionButton: {
     marginRight: 8,
@@ -51,6 +51,9 @@ export const styles = StyleSheet.create({
   },
   reciveButtonIcon: {
     transform: [{ rotate: '180deg' }],
+    marginRight: 8,
+  },
+  actionButtonLabel: {
     marginRight: 8,
   },
 });

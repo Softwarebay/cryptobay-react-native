@@ -12,6 +12,7 @@ type ButtonProps = {
   style?: ViewStyle | ViewStyle[];
   iconType?: Icons;
   iconStyle?: ViewStyle | ViewStyle[];
+  labelStyle?: ViewStyle;
   testID?: string;
   iconTestID?: string;
 };
@@ -23,11 +24,12 @@ export const Button: React.FC<ButtonProps> = ({
   style,
   iconType,
   iconStyle,
+  labelStyle,
   testID,
   iconTestID,
 }: ButtonProps) => {
   const handleIconStyles = iconType ? styles.withIcon : styles.noIcon;
-  const labelStyle = { color: styles[variant].color };
+  const labelCustomStyle = { color: styles[variant].color, ...labelStyle };
 
   return (
     <TouchableOpacity
@@ -37,7 +39,7 @@ export const Button: React.FC<ButtonProps> = ({
       {iconType && (
         <Icon type={iconType} style={iconStyle} testID={iconTestID} />
       )}
-      <Label value={label} variant="primary" style={labelStyle} />
+      <Label value={label} variant="primary" style={labelCustomStyle} />
     </TouchableOpacity>
   );
 };
