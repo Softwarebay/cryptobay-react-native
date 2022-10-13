@@ -32,7 +32,8 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
     <View style={styles.bottomNavigation}>
       <TouchableOpacity
         style={styles.bottomNavigationItem}
-        onPress={onHomeNavigate}>
+        onPress={onHomeNavigate}
+        testID="bottom-navigation-wallet-tab">
         <Icon
           type={Icons.WALLET}
           color={getCurrentScreenLabelStyle(walletScreens).color}
@@ -41,13 +42,14 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
           style={getCurrentScreenLabelStyle(walletScreens)}
           value="Wallet"
           variant="tertiary"
-          testID="bottom-navigation-wallet-tab-label"
+          testID="wallet-tab-label"
         />
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.bottomNavigationItem}
-        onPress={onSwapNavigate}>
+        onPress={onSwapNavigate}
+        testID="bottom-navigation-swap-tab">
         <Icon
           type={Icons.SWAP}
           color={getCurrentScreenLabelStyle(swapScreens).color}
@@ -56,13 +58,14 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
           style={getCurrentScreenLabelStyle(swapScreens)}
           value="Swap"
           variant="tertiary"
-          testID="bottom-navigation-swap-tab-label"
+          testID="swap-tab-label"
         />
       </TouchableOpacity>
 
       <TouchableOpacity
         style={styles.bottomNavigationItem}
-        onPress={onSettingsNavigate}>
+        onPress={onSettingsNavigate}
+        testID="bottom-navigation-settings-tab">
         <Icon
           type={Icons.SETTINGS}
           color={getCurrentScreenLabelStyle(settingsScreens).color}
@@ -71,7 +74,7 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
           style={getCurrentScreenLabelStyle(settingsScreens)}
           value="Settings"
           variant="tertiary"
-          testID="bottom-navigation-settings-tab-label"
+          testID="settings-tab-label"
         />
       </TouchableOpacity>
     </View>

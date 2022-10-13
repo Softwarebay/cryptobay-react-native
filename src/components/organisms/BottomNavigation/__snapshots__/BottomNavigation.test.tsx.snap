@@ -28,6 +28,7 @@ exports[`BottomNavigation Organism Component Snapshot 1`] = `
         "width": "33%",
       }
     }
+    testID="bottom-navigation-wallet-tab"
   >
     <View>
       <RNSVGSvgView
@@ -113,7 +114,7 @@ exports[`BottomNavigation Organism Component Snapshot 1`] = `
           },
         ]
       }
-      testID="bottom-navigation-wallet-tab-label"
+      testID="wallet-tab-label"
     >
       Wallet
     </Text>
@@ -137,6 +138,7 @@ exports[`BottomNavigation Organism Component Snapshot 1`] = `
         "width": "33%",
       }
     }
+    testID="bottom-navigation-swap-tab"
   >
     <View>
       <RNSVGSvgView
@@ -341,7 +343,7 @@ exports[`BottomNavigation Organism Component Snapshot 1`] = `
           },
         ]
       }
-      testID="bottom-navigation-swap-tab-label"
+      testID="swap-tab-label"
     >
       Swap
     </Text>
@@ -365,6 +367,7 @@ exports[`BottomNavigation Organism Component Snapshot 1`] = `
         "width": "33%",
       }
     }
+    testID="bottom-navigation-settings-tab"
   >
     <View>
       <RNSVGSvgView
@@ -450,7 +453,7 @@ exports[`BottomNavigation Organism Component Snapshot 1`] = `
           },
         ]
       }
-      testID="bottom-navigation-settings-tab-label"
+      testID="settings-tab-label"
     >
       Settings
     </Text>
