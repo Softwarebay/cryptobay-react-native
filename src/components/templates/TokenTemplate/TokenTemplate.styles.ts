@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   tokenTemplate: {
     width: '100%',
     flex: 1,
-    backgroundColor: '#000000',
+    backgroundColor: '#17171A',
   },
   contentWrapper: {
     width: '100%',

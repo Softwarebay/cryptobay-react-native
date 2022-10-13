@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#ABAFC4',
   },
   detailsContent: {
-    backgroundColor: '#000000',
+    backgroundColor: '#17171A',
     height: '60%',
     padding: 24,
   },

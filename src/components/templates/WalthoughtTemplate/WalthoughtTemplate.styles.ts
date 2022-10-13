@@ -4,7 +4,7 @@ export const styles = StyleSheet.create({
   walthoughtTemplate: {
     flex: 1,
     width: '100%',
-    backgroundColor: '#000000',
+    backgroundColor: '#17171A',
     alignItems: 'center',
     justifyContent: 'flex-end',
   },
