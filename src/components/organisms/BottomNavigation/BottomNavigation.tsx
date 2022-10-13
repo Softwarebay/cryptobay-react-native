@@ -41,6 +41,7 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
           style={getCurrentScreenLabelStyle(walletScreens)}
           value="Wallet"
           variant="tertiary"
+          testID="bottom-navigation-wallet-tab-label"
         />
       </TouchableOpacity>
 
@@ -55,6 +56,7 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
           style={getCurrentScreenLabelStyle(swapScreens)}
           value="Swap"
           variant="tertiary"
+          testID="bottom-navigation-swap-tab-label"
         />
       </TouchableOpacity>
 
@@ -69,6 +71,7 @@ export const BottomNavigation: React.FC<BottomNavigationProps> = ({
           style={getCurrentScreenLabelStyle(settingsScreens)}
           value="Settings"
           variant="tertiary"
+          testID="bottom-navigation-settings-tab-label"
         />
       </TouchableOpacity>
     </View>
