@@ -45,14 +45,35 @@ export const WalthoughtCarousel: React.FC<WalthoughtCarouselProps> = ({
 
   return (
     <View style={[styles.walthoughtCarousel, style]}>
-      <Picture pictureFile={currentPicture} style={styles.picture} />
-      <Header value={currentHeader} style={styles.header} />
+      <Picture
+        style={styles.picture}
+        pictureFile={currentPicture}
+        testID="walthought-carousel-picture"
+      />
+      <Header
+        style={styles.header}
+        value={currentHeader}
+        testID="walthought-carousel-header"
+      />
       <View style={styles.dotWrapper}>
-        <View style={[styles.dot, getSelectedSlideStyle(1)]} />
-        <View style={[styles.dot, getSelectedSlideStyle(2)]} />
-        <View style={[styles.dot, getSelectedSlideStyle(3)]} />
+        <View
+          style={[styles.dot, getSelectedSlideStyle(1)]}
+          testID="walthought-carousel-slide-1-dot"
+        />
+        <View
+          style={[styles.dot, getSelectedSlideStyle(2)]}
+          testID="walthought-carousel-slide-2-dot"
+        />
+        <View
+          style={[styles.dot, getSelectedSlideStyle(3)]}
+          testID="walthought-carousel-slide-3-dot"
+        />
       </View>
-      <Button label={buttonLabel} onPress={handleNextSlide} />
+      <Button
+        label={buttonLabel}
+        onPress={handleNextSlide}
+        testID="walthought-carousel-button"
+      />
     </View>
   );
 };

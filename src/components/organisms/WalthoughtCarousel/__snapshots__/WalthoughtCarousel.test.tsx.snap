@@ -1,0 +1,219 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WalthoughtCarousel Organism Component Snapshot 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    source={
+      Object {
+        "testUri": "../../../assets/pictures/cone.png",
+      }
+    }
+    style={
+      Object {
+        "alignSelf": "center",
+        "height": 302,
+      }
+    }
+    testID="walthought-carousel-picture"
+  />
+  <RNCMaskedView>
+    <View
+      pointerEvents="none"
+      style={
+        Object {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Poppins",
+              "lineHeight": 56,
+            },
+            Object {
+              "fontSize": 40,
+              "fontWeight": "400",
+            },
+            Object {
+              "alignSelf": "flex-start",
+              "marginBottom": 62,
+              "marginTop": 32,
+            },
+          ]
+        }
+        testID="walthought-carousel-header"
+      >
+        Property Diversity
+      </Text>
+    </View>
+    <BVLinearGradient
+      colors={
+        Array [
+          4289318399,
+          4285724369,
+          4288736653,
+          4294890341,
+          4294616222,
+        ]
+      }
+      endPoint={
+        Object {
+          "x": 1,
+          "y": 0,
+        }
+      }
+      locations={null}
+      startPoint={
+        Object {
+          "x": 0,
+          "y": 0,
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Poppins",
+              "lineHeight": 56,
+            },
+            Object {
+              "fontSize": 40,
+              "fontWeight": "400",
+            },
+            Object {
+              "opacity": 0,
+            },
+            Object {
+              "alignSelf": "flex-start",
+              "marginBottom": 62,
+              "marginTop": 32,
+            },
+          ]
+        }
+      >
+        Property Diversity
+      </Text>
+    </BVLinearGradient>
+  </RNCMaskedView>
+  <View
+    style={
+      Object {
+        "alignSelf": "center",
+        "flexDirection": "row",
+        "marginBottom": 16,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 8,
+            "height": 8,
+            "marginHorizontal": 4,
+            "width": 8,
+          },
+          Object {
+            "backgroundColor": "#FEBF32",
+          },
+        ]
+      }
+      testID="walthought-carousel-slide-1-dot"
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 8,
+            "height": 8,
+            "marginHorizontal": 4,
+            "width": 8,
+          },
+          Object {
+            "backgroundColor": "#4C516B",
+          },
+        ]
+      }
+      testID="walthought-carousel-slide-2-dot"
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 8,
+            "height": 8,
+            "marginHorizontal": 4,
+            "width": 8,
+          },
+          Object {
+            "backgroundColor": "#4C516B",
+          },
+        ]
+      }
+      testID="walthought-carousel-slide-3-dot"
+    />
+  </View>
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#2A2D3C",
+        "borderRadius": 8,
+        "color": "#FEBF32",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "opacity": 1,
+        "padding": 16,
+        "width": "100%",
+      }
+    }
+    testID="walthought-carousel-button"
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Poppins",
+          },
+          Object {
+            "fontSize": 16,
+            "fontWeight": "600",
+            "lineHeight": 24,
+          },
+          Object {
+            "color": "#FEBF32",
+          },
+        ]
+      }
+    >
+      Next
+    </Text>
+  </View>
+</View>
+`;
