@@ -26,7 +26,12 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
         <Header value="Settings in progress" />
-        <Button label="Back" variant="ghost" onPress={onBack} />
+        <Button
+          testID="settings-screen-back-button"
+          label="Back"
+          variant="ghost"
+          onPress={onBack}
+        />
       </View>
       <BottomNavigation
         routeName={route.name}
