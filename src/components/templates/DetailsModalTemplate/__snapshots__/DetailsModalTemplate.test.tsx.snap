@@ -1,0 +1,371 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DetailsModalTemplate Template Component Snapshot 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onBlur={[Function]}
+  onClick={[Function]}
+  onFocus={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "flex-end",
+      "width": "100%",
+    }
+  }
+  testID="details-modal-template"
+>
+  <BlurView
+    blurAmount={10}
+    blurType="dark"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+        },
+        Object {
+          "alignItems": "center",
+          "height": "40%",
+          "justifyContent": "flex-end",
+          "padding": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#ABAFC4",
+          "borderRadius": 4,
+          "height": 4,
+          "width": 40,
+        }
+      }
+    />
+  </BlurView>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#17171A",
+        "height": "60%",
+        "padding": 24,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Poppins",
+          },
+          Object {
+            "fontSize": 16,
+            "fontWeight": "600",
+            "lineHeight": 24,
+          },
+          Object {
+            "alignSelf": "center",
+            "color": "#FFFFFF",
+            "marginBottom": 20,
+          },
+        ]
+      }
+    >
+      Recived BNB
+    </Text>
+    <View
+      style={
+        Object {
+          "marginBottom": 32,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 18,
+              },
+              Object {
+                "color": "#ABAFC4",
+              },
+              undefined,
+            ]
+          }
+        >
+          Status
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 18,
+              },
+              Object {
+                "color": "#ABAFC4",
+              },
+              undefined,
+            ]
+          }
+        >
+          Date
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+                "fontSize": 14,
+                "fontWeight": "600",
+                "lineHeight": 24,
+              },
+              Object {
+                "color": "#76E268",
+              },
+              undefined,
+            ]
+          }
+          testID="details-modal-status-badge"
+        >
+          Confirmed
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 18,
+              },
+              Object {
+                "color": "#ABAFC4",
+              },
+              undefined,
+            ]
+          }
+        >
+          Mar 3 at 10:04am
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "marginBottom": 32,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 18,
+              },
+              Object {
+                "color": "#ABAFC4",
+              },
+              undefined,
+            ]
+          }
+        >
+          From
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 18,
+              },
+              Object {
+                "color": "#ABAFC4",
+              },
+              undefined,
+            ]
+          }
+        >
+          To
+        </Text>
+      </View>
+      <View
+        style={
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+              },
+              Object {
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          0x3Dc6...DfCE
+        </Text>
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+              },
+              Object {
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          0x3Dc6...DfF9
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "borderColor": "#2F2F2F",
+          "borderRadius": 10,
+          "borderWidth": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                },
+                Object {
+                  "fontSize": 16,
+                  "fontWeight": "600",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            Total Amount
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                },
+                Object {
+                  "fontSize": 16,
+                  "fontWeight": "600",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            2.56 BNB
+          </Text>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+                "fontSize": 12,
+                "fontWeight": "400",
+                "lineHeight": 18,
+              },
+              Object {
+                "color": "#ABAFC4",
+              },
+              Object {
+                "alignSelf": "flex-end",
+                "flexDirection": "row",
+              },
+            ]
+          }
+        >
+          $594.304
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

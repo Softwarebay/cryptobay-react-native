@@ -34,7 +34,10 @@ export const DetailsModalTemplate: React.FC<DetailsModalTemplateProps> = ({
   const badgeColorByStatus = status === 'Confirmed' ? 'green' : 'red';
 
   return (
-    <Pressable style={styles.detailsModalScreen} onPress={onGoBack}>
+    <Pressable
+      testID="details-modal-template"
+      style={styles.detailsModalScreen}
+      onPress={onGoBack}>
       <BlurView style={styles.blur}>
         <View style={styles.indicator} />
       </BlurView>
@@ -49,7 +52,11 @@ export const DetailsModalTemplate: React.FC<DetailsModalTemplateProps> = ({
           </View>
 
           <View style={styles.content}>
-            <Badge value={status} variant={badgeColorByStatus} />
+            <Badge
+              testID="details-modal-status-badge"
+              value={status}
+              variant={badgeColorByStatus}
+            />
             <Caption value={date} />
           </View>
         </View>
