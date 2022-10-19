@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WalletSetupTemplate Component Snapshot 1`] = `
+<RCTSafeAreaView
+  style={
+    Object {
+      "backgroundColor": "#17171A",
+      "flex": 1,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "padding": 30,
+        "width": "100%",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "testUri": "../../../assets/pictures/setup.png",
+        }
+      }
+      style={
+        Object {
+          "alignSelf": "center",
+          "marginBottom": 80,
+        }
+      }
+    />
+    <RNCMaskedView>
+      <View
+        pointerEvents="none"
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+                "lineHeight": 56,
+              },
+              Object {
+                "fontSize": 40,
+                "fontWeight": "400",
+              },
+              Object {
+                "marginBottom": 40,
+              },
+            ]
+          }
+        >
+          Wallet setup
+        </Text>
+      </View>
+      <BVLinearGradient
+        colors={
+          Array [
+            4289318399,
+            4285724369,
+            4288736653,
+            4294890341,
+            4294616222,
+          ]
+        }
+        endPoint={
+          Object {
+            "x": 1,
+            "y": 0,
+          }
+        }
+        locations={null}
+        startPoint={
+          Object {
+            "x": 0,
+            "y": 0,
+          }
+        }
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+                "lineHeight": 56,
+              },
+              Object {
+                "fontSize": 40,
+                "fontWeight": "400",
+              },
+              Object {
+                "opacity": 0,
+              },
+              Object {
+                "marginBottom": 40,
+              },
+            ]
+          }
+        >
+          Wallet setup
+        </Text>
+      </BVLinearGradient>
+    </RNCMaskedView>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#2A2D3C",
+          "borderRadius": 8,
+          "color": "#FEBF32",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "marginBottom": 16,
+          "opacity": 1,
+          "padding": 16,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Poppins",
+            },
+            Object {
+              "fontSize": 16,
+              "fontWeight": "600",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#FEBF32",
+            },
+          ]
+        }
+      >
+        Import Using Seed Phrase
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#FEBF32",
+          "borderRadius": 8,
+          "color": "#000000",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "opacity": 1,
+          "padding": 16,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Poppins",
+            },
+            Object {
+              "fontSize": 16,
+              "fontWeight": "600",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#000000",
+            },
+          ]
+        }
+      >
+        Create a New Wallet
+      </Text>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;
