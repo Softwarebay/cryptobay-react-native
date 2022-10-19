@@ -1,7 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { SafeAreaView } from 'react-navigation';
+import { StyleSheet, View, SafeAreaView } from 'react-native';
 
 import { Header } from '../../components/atoms';
 import { Button } from '../../components/molecules';
@@ -27,7 +26,12 @@ export const SwapScreen: React.FC<SwapScreenProps> = ({
     <SafeAreaView style={styles.safe}>
       <View style={styles.container}>
         <Header value="Swap in progress" />
-        <Button label="Back" variant="ghost" onPress={onBack} />
+        <Button
+          testID="swap-screen-back-button"
+          label="Back"
+          variant="ghost"
+          onPress={onBack}
+        />
       </View>
       <BottomNavigation
         routeName={route.name}

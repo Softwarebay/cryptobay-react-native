@@ -1,7 +1,6 @@
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { SafeAreaView } from 'react-navigation';
+import { StyleSheet, View, SafeAreaView } from 'react-native';
 
 import { Header } from '../../components/atoms';
 import { Button } from '../../components/molecules';
