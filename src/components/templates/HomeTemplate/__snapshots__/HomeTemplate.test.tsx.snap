@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HomeScreen Screen Component Snapshot 1`] = `
+exports[`HomeTemplate Template Component Snapshot 1`] = `
 <RCTSafeAreaView
   style={
     Object {
@@ -1698,7 +1698,7 @@ exports[`HomeScreen Screen Component Snapshot 1`] = `
                 }
                 stroke={
                   Object {
-                    "payload": 4289441732,
+                    "payload": 4294885170,
                     "type": 0,
                   }
                 }
@@ -1712,7 +1712,7 @@ exports[`HomeScreen Screen Component Snapshot 1`] = `
                 }
                 stroke={
                   Object {
-                    "payload": 4289441732,
+                    "payload": 4294885170,
                     "type": 0,
                   }
                 }
@@ -1732,7 +1732,7 @@ exports[`HomeScreen Screen Component Snapshot 1`] = `
                 "lineHeight": 18,
               },
               Object {
-                "color": "#ABAFC4",
+                "color": "#FEBF32",
               },
             ]
           }

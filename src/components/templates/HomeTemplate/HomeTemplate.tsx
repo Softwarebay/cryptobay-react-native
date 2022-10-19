@@ -74,6 +74,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
         <View style={styles.labelsWrapper}>
           <Label value={tokenPriceLabel} variant="secondary" />
           <Label
+            testID="home-template-token-percentage-point"
             style={tokenPercentagePointLabelStyle}
             value={tokenPercentagePointLabel}
             variant="secondary"
