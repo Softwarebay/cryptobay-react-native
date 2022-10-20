@@ -26,12 +26,13 @@ export const DetailsModalScreen: React.FC<DetailsModalScreenProps> = ({
       (foundToken: Token) => foundToken.shortName === swapDetails.shortName,
     ) || ({} as Token);
 
-  const tokenShortName = getTokenByShortName()?.shortName;
-  const tokenValue = getTokenByShortName()?.value;
-  const tokenPrice = getTokenByShortName()?.price;
+  const tokenShortName =
+    getTokenByShortName() && getTokenByShortName().shortName;
+  const tokenValue = getTokenByShortName() && getTokenByShortName().value;
+  const tokenPrice = getTokenByShortName() && getTokenByShortName().price;
+
   const tokenValueInDolars = tokenValue * tokenPrice;
   const calculatedNetworkFee = (swapDetails.value * 0.09).toFixed(2);
-
   const totalAmount = `${tokenValue} ${tokenShortName}`;
   const totalAmountDolarValue = `$${tokenValueInDolars}`;
   const swapValue = `${swapDetails.value} ${tokenShortName}`;

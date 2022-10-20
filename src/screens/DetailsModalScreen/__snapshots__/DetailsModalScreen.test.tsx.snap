@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`DetailsModalTemplate Template Component Snapshot 1`] = `
+exports[`DetailsModalScreen Component Snapshot 1`] = `
 <View
   accessible={true}
   collapsable={false}
@@ -79,7 +79,7 @@ exports[`DetailsModalTemplate Template Component Snapshot 1`] = `
         ]
       }
     >
-      Recived BNB
+      Received
     </Text>
     <View
       style={
@@ -151,14 +151,14 @@ exports[`DetailsModalTemplate Template Component Snapshot 1`] = `
                 "lineHeight": 24,
               },
               Object {
-                "color": "#76E268",
+                "color": "#EA3943",
               },
               undefined,
             ]
           }
           testID="details-modal-status-badge"
         >
-          Confirmed
+          Cancelled
         </Text>
         <Text
           style={
@@ -276,7 +276,7 @@ exports[`DetailsModalTemplate Template Component Snapshot 1`] = `
             ]
           }
         >
-          0x3Dc6...DfF9
+          0x3Dc6...DfCE
         </Text>
       </View>
     </View>
@@ -289,6 +289,115 @@ exports[`DetailsModalTemplate Template Component Snapshot 1`] = `
         }
       }
     >
+      <View
+        style={
+          Array [
+            Object {
+              "padding": 16,
+            },
+            Object {
+              "borderBottomColor": "#2F2F2F",
+              "borderBottomWidth": 1,
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                },
+                Object {
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            Amount
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                },
+                Object {
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+            testID="details-modal-template-swap-value"
+          >
+            0.04 BNB
+          </Text>
+        </View>
+        <View
+          style={
+            Object {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                },
+                Object {
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            Network fee
+          </Text>
+          <Text
+            style={
+              Array [
+                Object {
+                  "fontFamily": "Poppins",
+                },
+                Object {
+                  "fontSize": 14,
+                  "fontWeight": "400",
+                  "lineHeight": 24,
+                },
+                Object {
+                  "color": "#FFFFFF",
+                },
+              ]
+            }
+          >
+            0.00 BNB
+          </Text>
+        </View>
+      </View>
       <View
         style={
           Object {
@@ -341,7 +450,7 @@ exports[`DetailsModalTemplate Template Component Snapshot 1`] = `
             }
             testID="details-modal-template-total-amount"
           >
-            2.56 BNB
+            19.2371 BNB
           </Text>
         </View>
         <Text
@@ -364,7 +473,7 @@ exports[`DetailsModalTemplate Template Component Snapshot 1`] = `
           }
           testID="details-modal-template-total-amount-dolars"
         >
-          $594.304
+          $4360.858199
         </Text>
       </View>
     </View>

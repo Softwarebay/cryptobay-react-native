@@ -30,7 +30,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   const onSettingsNavigate = () => navigation.navigate(Screens.SETTINGS);
 
   const onTokenNavigate = (tokenDetails: TokenDetails) =>
-    navigation.navigate(Screens.TOKEN, { tokenDetails: tokenDetails } as any); // TODO: Type!
+    navigation.navigate(Screens.TOKEN, { tokenDetails: tokenDetails } as any);
 
   return (
     <HomeTemplate

@@ -79,7 +79,11 @@ export const DetailsModalTemplate: React.FC<DetailsModalTemplateProps> = ({
               style={[styles.summarySectionRow, styles.summaryCanceledDatat]}>
               <View style={styles.summaryDataFlex}>
                 <Label value="Amount" variant="secondary" />
-                <Label value={swapValue} variant="secondary" />
+                <Label
+                  testID="details-modal-template-swap-value"
+                  value={swapValue}
+                  variant="secondary"
+                />
               </View>
 
               <View style={styles.summaryDataFlex}>
@@ -92,10 +96,14 @@ export const DetailsModalTemplate: React.FC<DetailsModalTemplateProps> = ({
           <View style={styles.summarySectionRow}>
             <View style={styles.summaryDataFlex}>
               <Label value="Total Amount" />
-              <Label value={totalAmount} />
+              <Label
+                testID="details-modal-template-total-amount"
+                value={totalAmount}
+              />
             </View>
 
             <Caption
+              testID="details-modal-template-total-amount-dolars"
               style={styles.summaryTotalAmountDolars}
               value={totalAmountDolarValue}
             />

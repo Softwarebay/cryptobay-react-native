@@ -1,3 +1,4 @@
+import { action } from '@storybook/addon-actions';
 import { text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
@@ -13,5 +14,6 @@ storiesOf('Organisms/SwapsList', module)
     <SwapsList
       tokenShortName={text('tokenShortName', 'BNB')}
       swapsHistory={bnbSwapsHistory}
+      onDetailsNavigate={action('onDetailsNavigate')}
     />
   ));
