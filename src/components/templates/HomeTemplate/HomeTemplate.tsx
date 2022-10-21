@@ -63,7 +63,10 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
         <View style={styles.homeBar}>
           <ProfileAvatar />
 
-          <TouchableOpacity style={styles.homeBarDropDown} onPress={onDropDown}>
+          <TouchableOpacity
+            testID="home-bar-drop-down"
+            style={styles.homeBarDropDown}
+            onPress={onDropDown}>
             <Text style={styles.homeBarDropDownLabel}>{tokenName} Main</Text>
             <Icon type={Icons.TICK_ARROW} />
           </TouchableOpacity>
@@ -83,6 +86,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
 
         <View style={styles.actionButtonsWrapper}>
           <Button
+            testID="home-action-sent"
             style={styles.actionButton}
             label="Sent"
             iconType={Icons.ARROW}
@@ -91,6 +95,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
             onPress={onSent}
           />
           <Button
+            testID="home-action-recive"
             style={styles.actionButton}
             label="Recive"
             iconType={Icons.ARROW}
@@ -99,6 +104,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
             onPress={onRecive}
           />
           <Button
+            testID="home-action-buy"
             label="Buy"
             iconType={Icons.BUY}
             iconStyle={styles.sctionButtonIconBuy}
@@ -114,6 +120,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
         />
 
         <Button
+          testID="home-action-add-token"
           style={styles.addButton}
           label="Add Tokens"
           variant="ghost"

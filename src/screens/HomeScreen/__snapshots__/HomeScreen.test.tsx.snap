@@ -271,6 +271,7 @@ exports[`HomeScreen Screen Component Snapshot 1`] = `
             "opacity": 1,
           }
         }
+        testID="home-bar-drop-down"
       >
         <Text
           style={
@@ -499,6 +500,7 @@ exports[`HomeScreen Screen Component Snapshot 1`] = `
             "width": "auto",
           }
         }
+        testID="home-action-sent"
       >
         <View
           style={
@@ -619,6 +621,7 @@ exports[`HomeScreen Screen Component Snapshot 1`] = `
             "width": "auto",
           }
         }
+        testID="home-action-recive"
       >
         <View
           style={
@@ -747,6 +750,7 @@ exports[`HomeScreen Screen Component Snapshot 1`] = `
             "width": "auto",
           }
         }
+        testID="home-action-buy"
       >
         <View
           style={
@@ -1528,6 +1532,7 @@ exports[`HomeScreen Screen Component Snapshot 1`] = `
           "width": "auto",
         }
       }
+      testID="home-action-add-token"
     >
       <View
         style={
