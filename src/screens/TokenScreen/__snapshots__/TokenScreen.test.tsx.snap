@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TokenTemplate Template Component Snapshot 1`] = `
+exports[`TokenScreen Screen Component Snapshot 1`] = `
 <RCTSafeAreaView
   style={
     Object {
@@ -257,7 +257,7 @@ exports[`TokenTemplate Template Component Snapshot 1`] = `
         ]
       }
     >
-      $4360.8582
+      $83890.26527922
     </Text>
     <View
       style={

@@ -49,6 +49,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
 
         <View style={styles.navBar}>
           <TouchableOpacity
+            testID="token-template-navigation-back"
             style={styles.backButton}
             onPress={onGoBack}
             hitSlop={backButtonHitSlop}>
@@ -68,6 +69,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
 
         <View style={styles.actionButtonsWrapper}>
           <Button
+            testID="token-template-action-sent"
             style={styles.actionButton}
             label="Sent"
             onPress={onSent}
@@ -76,6 +78,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
             labelStyle={styles.actionButtonLabel}
           />
           <Button
+            testID="token-template-action-receive"
             style={styles.actionButton}
             label="Receive"
             onPress={onReceive}
