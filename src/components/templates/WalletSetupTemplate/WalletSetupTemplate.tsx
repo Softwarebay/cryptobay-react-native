@@ -22,11 +22,13 @@ export const WalletSetupTemplate: React.FC<WalletSetupTemplateProps> = ({
         <Picture style={styles.picture} pictureFile={SETUP} />
         <Header style={styles.header} value="Wallet setup" />
         <Button
+          testID="wallet-setup-import"
           style={styles.importButton}
           label="Import Using Seed Phrase"
           onPress={onImportUsingSeedPhrase}
         />
         <Button
+          testID="wallet-setup-create-new"
           label="Create a New Wallet"
           variant="bright"
           onPress={onCreateANewWallet}

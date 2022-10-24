@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`WalletSetupTemplate Component Snapshot 1`] = `
+exports[`WalletSetupScreen Screen Component Snapshot 1`] = `
 <RCTSafeAreaView
   style={
     Object {
