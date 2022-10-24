@@ -1,5 +1,7 @@
 # Cryptobay Mobile App
 
+Cryptobay is a mobile cryptocurrency wallet that allows you to exchange and collect currencies with your friends. 
+
 ## Run app
 ```
 yarn ios
@@ -14,12 +16,21 @@ yarn ios:storybook
 ## Run Tests
 ```
 yarn test
-tarn test ${relativePathToComponentsTest}
 ```
 
 ## Run Test with Coverage
 ```
 yarn test:coverage
+```
+
+## React Version
+```
+18.1.0
+```
+
+## ReactNative Version
+```
+0.70.1
 ```
 
 ## Rubby Version
