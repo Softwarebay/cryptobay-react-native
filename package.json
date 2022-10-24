@@ -1,6 +1,6 @@
 {
   "name": "cryptobay",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -84,9 +84,6 @@
       "jsx",
       "json",
       "node"
-    ],
-    "moduleNameMapper": {
-      "\\.svg": "<rootDir>/__mocks__/svgMock.js"
-    }
+    ]
   }
 }

@@ -23,19 +23,12 @@ yarn test
 yarn test:coverage
 ```
 
-## React Version
+## Technologies
 ```
-18.1.0
-```
-
-## ReactNative Version
-```
-0.70.1
-```
-
-## Rubby Version
-```
-3.0.0
+ Node v16
+ React v18.1.0
+ ReactNative v0.70.1
+ Rubby v3.0.0
 ```
 
 ## Figma
