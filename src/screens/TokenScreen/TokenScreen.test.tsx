@@ -48,9 +48,9 @@ describe('TokenScreen Screen', () => {
     const actionButton = (actinButtonName: string) =>
       screen.getByTestId(`token-template-action-${actinButtonName}`);
     fireEvent.press(actionButton('sent'));
-    expect(console.log).toHaveBeenCalledWith('onSent');
+    expect(console.log).toHaveBeenCalledWith('onPressSent');
     fireEvent.press(actionButton('receive'));
-    expect(console.log).toHaveBeenCalledWith('onRecive');
+    expect(console.log).toHaveBeenCalledWith('onPressRecive');
   });
 
   test('ensure navigation works correctly', () => {

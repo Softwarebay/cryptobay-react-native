@@ -3,7 +3,6 @@ import { number, text } from '@storybook/addon-knobs';
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 
-import { PROFILE } from '../../../../assets/pictures';
 import StorybookView from '../../../../storybook/StorybookView';
 import { tokensMock } from '../../../mocks';
 
@@ -13,7 +12,6 @@ storiesOf('Templates/HomeTemplate', module)
   .addDecorator(getStory => <StorybookView>{getStory()}</StorybookView>)
   .add('Home Template', () => (
     <HomeTemplate
-      profileAvatarPicture={PROFILE}
       tokenName={text('tokenName', 'Etherium')}
       tokenShortName={text('tokenShortName', 'ETH')}
       tokenPrice={number('tokenPrice', 16858.15)}
@@ -21,14 +19,14 @@ storiesOf('Templates/HomeTemplate', module)
       tokenValue={number('tokenValue', 9.2362)}
       tokens={tokensMock}
       routeName={text('routeName', 'Home')}
-      onDropDown={action('onDropDown')}
-      onSent={action('onSent')}
-      onRecive={action('onRecive')}
-      onBuy={action('onBuy')}
-      onAddToken={action('onAddToken')}
+      onPressDropDown={action('onPressDropDown')}
+      onPressSent={action('onPressSent')}
+      onPressRecive={action('onPressRecive')}
+      onPressBuy={action('onPressBuy')}
+      onPressAddToken={action('onPressAddToken')}
       onHomeNavigate={action('onHomeNavigate')}
       onSwapNavigate={action('onSwapNavigate')}
       onSettingsNavigate={action('onSettingsNavigate')}
-      onTokenNavigate={action('onTokenNavigate')}
+      onPressToken={action('onPressToken')}
     />
   ));

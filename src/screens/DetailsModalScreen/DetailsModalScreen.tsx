@@ -38,7 +38,7 @@ export const DetailsModalScreen: React.FC<DetailsModalScreenProps> = ({
   const swapValue = `${swapDetails.value} ${tokenShortName}`;
   const networkFee = `${calculatedNetworkFee} ${tokenShortName}`;
 
-  const onGoBack = () => navigation.goBack();
+  const onPressBack = () => navigation.goBack();
 
   return (
     <DetailsModalTemplate
@@ -51,7 +51,7 @@ export const DetailsModalScreen: React.FC<DetailsModalScreenProps> = ({
       totalAmountDolarValue={totalAmountDolarValue}
       swapValue={swapValue}
       networkFee={networkFee}
-      onGoBack={onGoBack}
+      onPressBack={onPressBack}
     />
   );
 };

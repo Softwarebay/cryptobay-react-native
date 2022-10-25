@@ -10,7 +10,7 @@ import { SwapDetails } from './swapDetails.type';
 type SwapsListItemProps = Swap & {
   tokenShortName: string;
   testID?: string;
-  onDetailsNavigate: (details: SwapDetails) => void;
+  onPressDetails: (details: SwapDetails) => void;
 };
 
 export const SwapsListItem: React.FC<SwapsListItemProps> = ({
@@ -23,7 +23,7 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
   from,
   to,
   testID,
-  onDetailsNavigate,
+  onPressDetails,
 }: SwapsListItemProps) => {
   const iconColorByStatus = status === 'Confirmed' ? '#76E268' : '#EA3943';
   const rotateIconByOperation = operation === 'Received' && {
@@ -44,12 +44,12 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
     to: to,
   } as SwapDetails;
 
-  const handleOnDetailsNavigate = () => onDetailsNavigate(swapDetails);
+  const handleOnPressDetails = () => onPressDetails(swapDetails);
 
   return (
     <TouchableOpacity
       style={styles.swapListItem}
-      onPress={handleOnDetailsNavigate}
+      onPress={handleOnPressDetails}
       testID={testID}>
       <Caption value={date} />
 

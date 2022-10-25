@@ -17,11 +17,11 @@ export const TokenScreen: React.FC<TokenScreenProps> = ({
 
   const calculatedTokenPrice = tokenDetails.price * tokenDetails.value;
 
-  const onGoBack = () => navigation.goBack();
+  const onPressBack = () => navigation.goBack();
 
-  const onSent = () => console.log('onSent');
+  const onPressSent = () => console.log('onPressSent');
 
-  const onRecive = () => console.log('onRecive');
+  const onPressRecive = () => console.log('onPressRecive');
 
   const onHomeNavigate = () => navigation.navigate(Screens.HOME);
 
@@ -29,7 +29,7 @@ export const TokenScreen: React.FC<TokenScreenProps> = ({
 
   const onSettingsNavigate = () => navigation.navigate(Screens.SETTINGS);
 
-  const onDetailsNavigate = (swapDetails: SwapDetails) =>
+  const onPressDetails = (swapDetails: SwapDetails) =>
     navigation.navigate(Screens.DETAILS, { swapDetails: swapDetails } as any);
 
   return (
@@ -39,13 +39,13 @@ export const TokenScreen: React.FC<TokenScreenProps> = ({
       tokenPrice={calculatedTokenPrice}
       tokenSwapHistory={bnbSwapsHistory}
       routeName={route.name}
-      onGoBack={onGoBack}
-      onSent={onSent}
-      onReceive={onRecive}
+      onPressBack={onPressBack}
+      onPressSent={onPressSent}
+      onPressReceive={onPressRecive}
       onHomeNavigate={onHomeNavigate}
       onSwapNavigate={onSwapNavigate}
       onSettingsNavigate={onSettingsNavigate}
-      onDetailsNavigate={onDetailsNavigate}
+      onPressDetails={onPressDetails}
     />
   );
 };

@@ -6,7 +6,7 @@ import renderer from 'react-test-renderer';
 
 import { DetailsModalTemplate } from './DetailsModalTemplate';
 
-const mockOnGoBack = jest.fn();
+const mockOnPressBack = jest.fn();
 
 describe('DetailsModalTemplate Template', () => {
   test('Component Snapshot', () => {
@@ -22,7 +22,7 @@ describe('DetailsModalTemplate Template', () => {
           totalAmountDolarValue="$594.304"
           swapValue="2.35 BNB"
           networkFee="0.21 BNB"
-          onGoBack={mockOnGoBack}
+          onPressBack={mockOnPressBack}
         />,
       )
       .toJSON();
@@ -41,7 +41,7 @@ describe('DetailsModalTemplate Template', () => {
         totalAmountDolarValue="$594.304"
         swapValue="2.35 BNB"
         networkFee="0.21 BNB"
-        onGoBack={mockOnGoBack}
+        onPressBack={mockOnPressBack}
       />,
     );
     const statusBadge = screen.getByTestId('details-modal-status-badge');
@@ -59,7 +59,7 @@ describe('DetailsModalTemplate Template', () => {
         totalAmountDolarValue="$594.304"
         swapValue="2.35 BNB"
         networkFee="0.21 BNB"
-        onGoBack={mockOnGoBack}
+        onPressBack={mockOnPressBack}
       />,
     );
     expect(statusBadge).toHaveStyle({
@@ -67,7 +67,7 @@ describe('DetailsModalTemplate Template', () => {
     });
   });
 
-  test('ensure onGoBack works correctly', () => {
+  test('ensure onPressGoBack works correctly', () => {
     render(
       <DetailsModalTemplate
         operation="Recived BNB"
@@ -79,10 +79,10 @@ describe('DetailsModalTemplate Template', () => {
         totalAmountDolarValue="$594.304"
         swapValue="2.35 BNB"
         networkFee="0.21 BNB"
-        onGoBack={mockOnGoBack}
+        onPressBack={mockOnPressBack}
       />,
     );
     fireEvent.press(screen.getByTestId('details-modal-template'));
-    expect(mockOnGoBack).toHaveBeenCalled();
+    expect(mockOnPressBack).toHaveBeenCalled();
   });
 });

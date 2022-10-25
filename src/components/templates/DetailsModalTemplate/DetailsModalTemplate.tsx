@@ -16,7 +16,7 @@ type DetailsModalTemplateProps = {
   totalAmountDolarValue: string;
   swapValue: string;
   networkFee: string;
-  onGoBack: () => void;
+  onPressBack: () => void;
 };
 
 export const DetailsModalTemplate: React.FC<DetailsModalTemplateProps> = ({
@@ -29,7 +29,7 @@ export const DetailsModalTemplate: React.FC<DetailsModalTemplateProps> = ({
   totalAmountDolarValue,
   swapValue,
   networkFee,
-  onGoBack,
+  onPressBack,
 }) => {
   const badgeColorByStatus = status === 'Confirmed' ? 'green' : 'red';
 
@@ -37,7 +37,7 @@ export const DetailsModalTemplate: React.FC<DetailsModalTemplateProps> = ({
     <Pressable
       testID="details-modal-template"
       style={styles.detailsModalScreen}
-      onPress={onGoBack}>
+      onPress={onPressBack}>
       <BlurView style={styles.blur}>
         <View style={styles.indicator} />
       </BlurView>

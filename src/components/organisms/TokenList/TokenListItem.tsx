@@ -9,7 +9,7 @@ import { TokenDetails } from './tokenDetails.type';
 
 type TokenListItemProps = Token & {
   testID?: string;
-  onTokenNavigate: (tokenDetails: TokenDetails) => void;
+  onPressToken: (tokenDetails: TokenDetails) => void;
 };
 
 export const TokenListItem: React.FC<TokenListItemProps> = ({
@@ -20,7 +20,7 @@ export const TokenListItem: React.FC<TokenListItemProps> = ({
   percentagePoint,
   value,
   testID,
-  onTokenNavigate,
+  onPressToken,
 }: TokenListItemProps) => {
   const tokenPicture = picture ? picture : 0;
   const captionLabel = price % 1 === 0 ? `$${price}.00` : `$${price}`;
@@ -35,12 +35,12 @@ export const TokenListItem: React.FC<TokenListItemProps> = ({
     price: price,
   } as TokenDetails;
 
-  const handleOnTokenNavigate = () => onTokenNavigate(tokenDetails);
+  const handleOnPressToken = () => onPressToken(tokenDetails);
 
   return (
     <TouchableOpacity
       style={styles.container}
-      onPress={handleOnTokenNavigate}
+      onPress={handleOnPressToken}
       testID={testID}>
       <View style={styles.dataWrapper}>
         <Picture

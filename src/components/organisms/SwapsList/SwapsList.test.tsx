@@ -9,7 +9,7 @@ import { bnbSwapsHistory } from '../../../mocks';
 import { SwapsList } from './SwapsList';
 import { SwapsListItem } from './SwapsListItem';
 
-const mockOnDetailsNavigate = jest.fn();
+const mockOnPressDetails = jest.fn();
 
 describe('SwapsList Organism', () => {
   test('Component Snapshot', () => {
@@ -18,7 +18,7 @@ describe('SwapsList Organism', () => {
         <SwapsList
           tokenShortName="BNB"
           swapsHistory={bnbSwapsHistory}
-          onDetailsNavigate={mockOnDetailsNavigate}
+          onPressDetails={mockOnPressDetails}
         />,
       )
       .toJSON();
@@ -37,11 +37,11 @@ describe('SwapsList Organism', () => {
         from="0x3Dc6...DfCE"
         to="0x3Dc6...DfCE"
         tokenShortName="BNB"
-        onDetailsNavigate={mockOnDetailsNavigate}
+        onPressDetails={mockOnPressDetails}
       />,
     );
     fireEvent.press(screen.getByTestId('swap-list-item'));
-    expect(mockOnDetailsNavigate).toHaveBeenCalledWith({
+    expect(mockOnPressDetails).toHaveBeenCalledWith({
       shortName: 'BNB',
       operation: 'Received BNB',
       status: 'Confirmed',

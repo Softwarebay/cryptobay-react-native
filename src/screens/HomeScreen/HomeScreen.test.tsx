@@ -37,15 +37,15 @@ describe('HomeScreen Screen', () => {
     const actionButton = (buttonName: string) =>
       screen.getByTestId(`home-action-${buttonName}`);
     fireEvent.press(screen.getByTestId('home-bar-drop-down'));
-    expect(console.log).toHaveBeenCalledWith('onDropDown');
+    expect(console.log).toHaveBeenCalledWith('onPressDropDown');
     fireEvent.press(actionButton('sent'));
-    expect(console.log).toHaveBeenCalledWith('onSent');
+    expect(console.log).toHaveBeenCalledWith('onPressSent');
     fireEvent.press(actionButton('recive'));
-    expect(console.log).toHaveBeenCalledWith('onRecive');
+    expect(console.log).toHaveBeenCalledWith('onPressRecive');
     fireEvent.press(actionButton('buy'));
-    expect(console.log).toHaveBeenCalledWith('onBuy');
+    expect(console.log).toHaveBeenCalledWith('onPressBuy');
     fireEvent.press(actionButton('add-token'));
-    expect(console.log).toHaveBeenCalledWith('onAddToken');
+    expect(console.log).toHaveBeenCalledWith('onPressAddToken');
   });
 
   test('ensure navigation works', () => {

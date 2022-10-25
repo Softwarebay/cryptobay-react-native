@@ -14,6 +14,6 @@ storiesOf('Organisms/SwapsList', module)
     <SwapsList
       tokenShortName={text('tokenShortName', 'BNB')}
       swapsHistory={bnbSwapsHistory}
-      onDetailsNavigate={action('onDetailsNavigate')}
+      onPressDetails={action('onPressDetails')}
     />
   ));

@@ -8,13 +8,13 @@ import { Screens } from '../../../screens.enum';
 
 import { TokenTemplate } from './TokenTemplate';
 
-const mockOnGoBack = jest.fn();
 const mockOnSent = jest.fn();
 const mockOnReceive = jest.fn();
 const mockOnHomeNavigate = jest.fn();
 const mockOnSwapNavigate = jest.fn();
 const mockOnSettingsNavigate = jest.fn();
-const mockOnDetailsNavigate = jest.fn();
+const mockOnPressDetails = jest.fn();
+const mockOnPressBack = jest.fn();
 
 describe('TokenTemplate Template', () => {
   test('Component Snapshot', () => {
@@ -26,13 +26,13 @@ describe('TokenTemplate Template', () => {
           tokenPrice={4360.8582}
           tokenSwapHistory={bnbSwapsHistory}
           routeName={Screens.TOKEN}
-          onGoBack={mockOnGoBack}
-          onSent={mockOnSent}
-          onReceive={mockOnReceive}
+          onPressSent={mockOnSent}
+          onPressReceive={mockOnReceive}
           onHomeNavigate={mockOnHomeNavigate}
           onSwapNavigate={mockOnSwapNavigate}
           onSettingsNavigate={mockOnSettingsNavigate}
-          onDetailsNavigate={mockOnDetailsNavigate}
+          onPressDetails={mockOnPressDetails}
+          onPressBack={mockOnPressBack}
         />,
       )
       .toJSON();

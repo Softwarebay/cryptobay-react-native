@@ -13,15 +13,15 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
   route,
   navigation,
 }: HomeScreenProps) => {
-  const onDropDown = () => console.log('onDropDown');
+  const onPressDropDown = () => console.log('onPressDropDown');
 
-  const onSent = () => console.log('onSent');
+  const onPressSent = () => console.log('onPressSent');
 
-  const onRecive = () => console.log('onRecive');
+  const onPressRecive = () => console.log('onPressRecive');
 
-  const onBuy = () => console.log('onBuy');
+  const onPressBuy = () => console.log('onPressBuy');
 
-  const onAddToken = () => console.log('onAddToken');
+  const onPressAddToken = () => console.log('onPressAddToken');
 
   const onHomeNavigate = () => navigation.navigate(Screens.HOME);
 
@@ -29,7 +29,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
 
   const onSettingsNavigate = () => navigation.navigate(Screens.SETTINGS);
 
-  const onTokenNavigate = (tokenDetails: TokenDetails) =>
+  const onPressToken = (tokenDetails: TokenDetails) =>
     navigation.navigate(Screens.TOKEN, { tokenDetails: tokenDetails } as any);
 
   return (
@@ -41,15 +41,15 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
       tokenValue={etheriumTokenMock.value}
       tokens={tokensMock}
       routeName={route.name}
-      onDropDown={onDropDown}
-      onSent={onSent}
-      onRecive={onRecive}
-      onBuy={onBuy}
-      onAddToken={onAddToken}
+      onPressDropDown={onPressDropDown}
+      onPressSent={onPressSent}
+      onPressRecive={onPressRecive}
+      onPressBuy={onPressBuy}
+      onPressAddToken={onPressAddToken}
       onHomeNavigate={onHomeNavigate}
       onSwapNavigate={onSwapNavigate}
       onSettingsNavigate={onSettingsNavigate}
-      onTokenNavigate={onTokenNavigate}
+      onPressToken={onPressToken}
     />
   );
 };

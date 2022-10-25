@@ -14,7 +14,7 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
   route,
   navigation,
 }: SettingsScreenProps) => {
-  const onBack = () => navigation.goBack();
+  const onPressBack = () => navigation.goBack();
 
   const onHomeNavigate = () => navigation.navigate(Screens.HOME);
 
@@ -30,7 +30,7 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
           testID="settings-screen-back-button"
           label="Back"
           variant="ghost"
-          onPress={onBack}
+          onPress={onPressBack}
         />
       </View>
       <BottomNavigation

@@ -18,13 +18,13 @@ import { useSwitchTab } from './useSwitchTab';
 type TokenListProps = {
   tokens: Token[];
   style?: ViewStyle | ViewStyle[];
-  onTokenNavigate: (tokenDetails: TokenDetails) => void;
+  onPressToken: (tokenDetails: TokenDetails) => void;
 };
 
 export const TokenList: React.FC<TokenListProps> = ({
   tokens,
   style,
-  onTokenNavigate,
+  onPressToken,
 }: TokenListProps) => {
   const {
     Tabs,
@@ -37,9 +37,9 @@ export const TokenList: React.FC<TokenListProps> = ({
   const renderCurrentTab = {
     TOKEN: (
       <FlatList
+        testID="token-list"
         style={styles.list}
         data={tokens}
-        testID="token-list"
         renderItem={({ item }: ListRenderItemInfo<Token>) => (
           <TokenListItem
             picture={item.picture}
@@ -48,16 +48,16 @@ export const TokenList: React.FC<TokenListProps> = ({
             price={item.price}
             percentagePoint={item.percentagePoint}
             value={item.value}
-            onTokenNavigate={onTokenNavigate}
+            onPressToken={onPressToken}
           />
         )}
       />
     ),
     COLLECTIBILES: (
       <FlatList
+        testID="collectibiles-list"
         style={styles.list}
         data={['Collectibiles in Progress']}
-        testID="collectibiles-list"
         renderItem={({ item }: ListRenderItemInfo<string>) => (
           <Label value={item} />
         )}
@@ -69,16 +69,16 @@ export const TokenList: React.FC<TokenListProps> = ({
     <View style={[styles.container, style]}>
       <View style={styles.nav}>
         <TouchableOpacity
+          testID="token-list-token-tab"
           style={[styles.navItem, handleSwitchTabStyle(Tabs.TOKEN)]}
-          onPress={() => handleSwitchTab(Tabs.TOKEN)}
-          testID="token-list-token-tab">
+          onPress={() => handleSwitchTab(Tabs.TOKEN)}>
           <Label style={handleSwitchLabelStyles(Tabs.TOKEN)} value="Token" />
         </TouchableOpacity>
 
         <TouchableOpacity
+          testID="token-list-collectibles-tab"
           style={[styles.navItem, handleSwitchTabStyle(Tabs.COLLECTIBILES)]}
-          onPress={() => handleSwitchTab(Tabs.COLLECTIBILES)}
-          testID="token-list-collectibles-tab">
+          onPress={() => handleSwitchTab(Tabs.COLLECTIBILES)}>
           <Label
             style={handleSwitchLabelStyles(Tabs.COLLECTIBILES)}
             value="Collectibles"

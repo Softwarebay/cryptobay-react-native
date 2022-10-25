@@ -17,15 +17,15 @@ type HomeTemplateProps = {
   tokenValue: number;
   tokens: Token[];
   routeName: string;
-  onDropDown: () => void;
-  onSent: () => void;
-  onRecive: () => void;
-  onBuy: () => void;
-  onAddToken: () => void;
+  onPressDropDown: () => void;
+  onPressSent: () => void;
+  onPressRecive: () => void;
+  onPressBuy: () => void;
+  onPressAddToken: () => void;
   onHomeNavigate: () => void;
   onSwapNavigate: () => void;
   onSettingsNavigate: () => void;
-  onTokenNavigate: (tokenDetails: TokenDetails) => void;
+  onPressToken: (tokenDetails: TokenDetails) => void;
 };
 
 export const HomeTemplate: React.FC<HomeTemplateProps> = ({
@@ -36,15 +36,15 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   tokenValue,
   tokens,
   routeName,
-  onDropDown,
-  onSent,
-  onRecive,
-  onBuy,
-  onAddToken,
+  onPressDropDown,
+  onPressSent,
+  onPressRecive,
+  onPressBuy,
+  onPressAddToken,
   onHomeNavigate,
   onSwapNavigate,
   onSettingsNavigate,
-  onTokenNavigate,
+  onPressToken,
 }: HomeTemplateProps) => {
   const tokenHeaderValue = `${tokenValue} ${tokenShortName}`;
   const tokenPriceLabel = `$${tokenPrice}`;
@@ -66,7 +66,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
           <TouchableOpacity
             testID="home-bar-drop-down"
             style={styles.homeBarDropDown}
-            onPress={onDropDown}>
+            onPress={onPressDropDown}>
             <Text style={styles.homeBarDropDownLabel}>{tokenName} Main</Text>
             <Icon type={Icons.TICK_ARROW} />
           </TouchableOpacity>
@@ -92,7 +92,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
             iconType={Icons.ARROW}
             iconStyle={styles.actionButtonIcon}
             labelStyle={styles.actionButtonLabel}
-            onPress={onSent}
+            onPress={onPressSent}
           />
           <Button
             testID="home-action-recive"
@@ -101,7 +101,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
             iconType={Icons.ARROW}
             iconStyle={[styles.actionButtonIcon, styles.actionButtonIconRotate]}
             labelStyle={styles.actionButtonLabel}
-            onPress={onRecive}
+            onPress={onPressRecive}
           />
           <Button
             testID="home-action-buy"
@@ -109,14 +109,14 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
             iconType={Icons.BUY}
             iconStyle={styles.sctionButtonIconBuy}
             labelStyle={styles.actionButtonLabel}
-            onPress={onBuy}
+            onPress={onPressBuy}
           />
         </View>
 
         <TokenList
           tokens={tokens}
           style={styles.tokenList}
-          onTokenNavigate={onTokenNavigate}
+          onTokenNavigate={onPressToken}
         />
 
         <Button
@@ -126,7 +126,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
           variant="ghost"
           iconType={Icons.PLUS}
           iconStyle={styles.addButtonIcon}
-          onPress={onAddToken}
+          onPress={onPressAddToken}
         />
 
         <BottomNavigation

@@ -10,22 +10,18 @@ import { tokensMock } from '../../../mocks';
 import { TokenList } from './TokenList';
 import { TokenListItem } from './TokenListItem';
 
-const mockOnTokenNavigate = jest.fn();
+const mockOnPressToken = jest.fn();
 
 describe('TokenList Organism', () => {
   test('Component Snapshot', () => {
     const tree = renderer
-      .create(
-        <TokenList tokens={tokensMock} onTokenNavigate={mockOnTokenNavigate} />,
-      )
+      .create(<TokenList tokens={tokensMock} onPressToken={mockOnPressToken} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('ensure changing tabs works correctly', () => {
-    render(
-      <TokenList tokens={tokensMock} onTokenNavigate={mockOnTokenNavigate} />,
-    );
+    render(<TokenList tokens={tokensMock} onPressToken={mockOnPressToken} />);
     const tokenTab = screen.getByTestId('token-list-token-tab');
     const collectiblesTab = screen.getByTestId('token-list-collectibles-tab');
     const currentTabstyle = {
@@ -47,11 +43,11 @@ describe('TokenList Organism', () => {
         percentagePoint={226.69}
         value={19.2371}
         testID="token-list-item"
-        onTokenNavigate={mockOnTokenNavigate}
+        onPressToken={mockOnPressToken}
       />,
     );
     fireEvent.press(screen.getByTestId('token-list-item'));
-    expect(mockOnTokenNavigate).toHaveBeenCalledWith({
+    expect(mockOnPressToken).toHaveBeenCalledWith({
       shortName: 'BNB',
       value: 19.2371,
       price: 226.69,
@@ -67,7 +63,7 @@ describe('TokenList Organism', () => {
         percentagePoint={226.69}
         value={19.2371}
         testID="token-list-item"
-        onTokenNavigate={mockOnTokenNavigate}
+        onPressToken={mockOnPressToken}
       />,
     );
     const tokenPicture = screen.getByTestId('token-list-item-token-picture');
@@ -81,7 +77,7 @@ describe('TokenList Organism', () => {
         percentagePoint={226.69}
         value={19.2371}
         testID="token-list-item"
-        onTokenNavigate={mockOnTokenNavigate}
+        onPressToken={mockOnPressToken}
       />,
     );
     expect(tokenPicture).toHaveProp('source', PROFILE);

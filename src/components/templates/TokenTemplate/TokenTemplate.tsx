@@ -16,13 +16,13 @@ type TokenTemplateProps = {
   tokenPrice: number;
   tokenSwapHistory: Swap[];
   routeName: string;
-  onGoBack: () => void;
-  onSent: () => void;
-  onReceive: () => void;
+  onPressBack: () => void;
+  onPressSent: () => void;
+  onPressReceive: () => void;
   onHomeNavigate: () => void;
   onSwapNavigate: () => void;
   onSettingsNavigate: () => void;
-  onDetailsNavigate: (swapDetails: SwapDetails) => void;
+  onPressDetails: (swapDetails: SwapDetails) => void;
 };
 
 export const TokenTemplate: React.FC<TokenTemplateProps> = ({
@@ -31,13 +31,13 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
   tokenPrice,
   tokenSwapHistory,
   routeName,
-  onGoBack,
-  onSent,
-  onReceive,
+  onPressBack,
+  onPressSent,
+  onPressReceive,
   onHomeNavigate,
   onSwapNavigate,
   onSettingsNavigate,
-  onDetailsNavigate,
+  onPressDetails,
 }) => {
   const backButtonHitSlop = { top: 16, bottom: 16, left: 16, right: 16 };
   const tokenPriceLabel = `$${tokenPrice}`;
@@ -51,7 +51,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
           <TouchableOpacity
             testID="token-template-navigation-back"
             style={styles.backButton}
-            onPress={onGoBack}
+            onPress={onPressBack}
             hitSlop={backButtonHitSlop}>
             <Icon style={styles.backButtonIcon} type={Icons.TICK_ARROW} />
           </TouchableOpacity>
@@ -72,7 +72,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
             testID="token-template-action-sent"
             style={styles.actionButton}
             label="Sent"
-            onPress={onSent}
+            onPress={onPressSent}
             iconType={Icons.ARROW}
             iconStyle={styles.sentButtonIcon}
             labelStyle={styles.actionButtonLabel}
@@ -81,7 +81,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
             testID="token-template-action-receive"
             style={styles.actionButton}
             label="Receive"
-            onPress={onReceive}
+            onPress={onPressReceive}
             iconType={Icons.ARROW}
             iconStyle={styles.reciveButtonIcon}
             labelStyle={styles.actionButtonLabel}
@@ -91,7 +91,7 @@ export const TokenTemplate: React.FC<TokenTemplateProps> = ({
         <SwapsList
           tokenShortName={tokenShortName}
           swapsHistory={tokenSwapHistory}
-          onDetailsNavigate={onDetailsNavigate}
+          onPressDetails={onPressDetails}
         />
 
         <BottomNavigation

@@ -20,7 +20,7 @@ storiesOf('Templates/DetailsModalTemplate', module)
       totalAmountDolarValue={text('totalAmountDolarValue', '$594.304')}
       swapValue={text('swapValue', '2.35 BNB')}
       networkFee={text('network Fee', '0.21 BNB')}
-      onGoBack={action('onGoBack')}
+      onPressGoBack={action('onPressGoBack')}
     />
   ))
   .add('Details Modal Template Cancelled', () => (
@@ -34,6 +34,6 @@ storiesOf('Templates/DetailsModalTemplate', module)
       totalAmountDolarValue={text('totalAmountDolarValue', '$594.304')}
       swapValue={text('swapValue', '2.35 BNB')}
       networkFee={text('network Fee', '0.21 BNB')}
-      onGoBack={action('onGoBack')}
+      onPressGoBack={action('onPressGoBack')}
     />
   ));

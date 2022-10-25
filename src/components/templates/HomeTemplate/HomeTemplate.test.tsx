@@ -9,15 +9,15 @@ import { Screens } from '../../../screens.enum';
 
 import { HomeTemplate } from './HomeTemplate';
 
-const mockOnDropDown = jest.fn();
-const mockOnSent = jest.fn();
-const mockOnRecive = jest.fn();
-const mockOnBuy = jest.fn();
-const mockOnAddToken = jest.fn();
+const mockOnPressDropDown = jest.fn();
+const mockOnPressSent = jest.fn();
+const mockOnPressRecive = jest.fn();
+const mockOnPressBuy = jest.fn();
+const mockOnPressAddToken = jest.fn();
 const mockOnHomeNavigate = jest.fn();
 const mockOnSwapNavigate = jest.fn();
 const mockOnSettingsNavigate = jest.fn();
-const mockOnTokenNavigate = jest.fn();
+const mockOnPressToken = jest.fn();
 
 describe('HomeTemplate Template', () => {
   test('Component Snapshot', () => {
@@ -31,15 +31,15 @@ describe('HomeTemplate Template', () => {
           tokenValue={etheriumTokenMock.value}
           tokens={tokensMock}
           routeName={Screens.HOME}
-          onDropDown={mockOnDropDown}
-          onSent={mockOnSent}
-          onRecive={mockOnRecive}
-          onBuy={mockOnBuy}
-          onAddToken={mockOnAddToken}
+          onPressDropDown={mockOnPressDropDown}
+          onPressSent={mockOnPressSent}
+          onPressRecive={mockOnPressRecive}
+          onPressBuy={mockOnPressBuy}
+          onPressAddToken={mockOnPressAddToken}
           onHomeNavigate={mockOnHomeNavigate}
           onSwapNavigate={mockOnSwapNavigate}
           onSettingsNavigate={mockOnSettingsNavigate}
-          onTokenNavigate={mockOnTokenNavigate}
+          onPressToken={mockOnPressToken}
         />,
       )
       .toJSON();
@@ -56,15 +56,15 @@ describe('HomeTemplate Template', () => {
         tokenValue={etheriumTokenMock.value}
         tokens={tokensMock}
         routeName={Screens.HOME}
-        onDropDown={mockOnDropDown}
-        onSent={mockOnSent}
-        onRecive={mockOnRecive}
-        onBuy={mockOnBuy}
-        onAddToken={mockOnAddToken}
+        onPressDropDown={mockOnPressDropDown}
+        onPressSent={mockOnPressSent}
+        onPressRecive={mockOnPressRecive}
+        onPressBuy={mockOnPressBuy}
+        onPressAddToken={mockOnPressAddToken}
         onHomeNavigate={mockOnHomeNavigate}
         onSwapNavigate={mockOnSwapNavigate}
         onSettingsNavigate={mockOnSettingsNavigate}
-        onTokenNavigate={mockOnTokenNavigate}
+        onPressToken={mockOnPressToken}
       />,
     );
     const tokenPercentagePoint = screen.getByTestId(
@@ -81,15 +81,15 @@ describe('HomeTemplate Template', () => {
         tokenValue={etheriumTokenMock.value}
         tokens={tokensMock}
         routeName={Screens.HOME}
-        onDropDown={mockOnDropDown}
-        onSent={mockOnSent}
-        onRecive={mockOnRecive}
-        onBuy={mockOnBuy}
-        onAddToken={mockOnAddToken}
+        onPressDropDown={mockOnPressDropDown}
+        onPressSent={mockOnPressSent}
+        onPressRecive={mockOnPressRecive}
+        onPressBuy={mockOnPressBuy}
+        onPressAddToken={mockOnPressAddToken}
         onHomeNavigate={mockOnHomeNavigate}
         onSwapNavigate={mockOnSwapNavigate}
         onSettingsNavigate={mockOnSettingsNavigate}
-        onTokenNavigate={mockOnTokenNavigate}
+        onPressToken={mockOnPressToken}
       />,
     );
     expect(tokenPercentagePoint).toHaveStyle({ color: '#EA3943' });

@@ -10,8 +10,5 @@ import { TokenList } from './TokenList';
 storiesOf('Organisms/TokenList', module)
   .addDecorator(getStory => <StorybookView>{getStory()}</StorybookView>)
   .add('Token List', () => (
-    <TokenList
-      tokens={tokensMock}
-      onTokenNavigate={action('onTokenNavigate')}
-    />
+    <TokenList tokens={tokensMock} onPressToken={action('onPressToken')} />
   ));
