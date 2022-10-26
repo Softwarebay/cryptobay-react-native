@@ -14,9 +14,6 @@ const mockOnPressSent = jest.fn();
 const mockOnPressRecive = jest.fn();
 const mockOnPressBuy = jest.fn();
 const mockOnPressAddToken = jest.fn();
-const mockOnHomeNavigate = jest.fn();
-const mockOnSwapNavigate = jest.fn();
-const mockOnSettingsNavigate = jest.fn();
 const mockOnPressToken = jest.fn();
 
 describe('HomeTemplate Template', () => {
@@ -30,15 +27,11 @@ describe('HomeTemplate Template', () => {
           tokenPercentagePoint={etheriumTokenMock.percentagePoint}
           tokenValue={etheriumTokenMock.value}
           tokens={tokensMock}
-          routeName={Screens.HOME}
           onPressDropDown={mockOnPressDropDown}
           onPressSent={mockOnPressSent}
           onPressRecive={mockOnPressRecive}
           onPressBuy={mockOnPressBuy}
           onPressAddToken={mockOnPressAddToken}
-          onHomeNavigate={mockOnHomeNavigate}
-          onSwapNavigate={mockOnSwapNavigate}
-          onSettingsNavigate={mockOnSettingsNavigate}
           onPressToken={mockOnPressToken}
         />,
       )
@@ -55,15 +48,11 @@ describe('HomeTemplate Template', () => {
         tokenPercentagePoint={etheriumTokenMock.percentagePoint}
         tokenValue={etheriumTokenMock.value}
         tokens={tokensMock}
-        routeName={Screens.HOME}
         onPressDropDown={mockOnPressDropDown}
         onPressSent={mockOnPressSent}
         onPressRecive={mockOnPressRecive}
         onPressBuy={mockOnPressBuy}
         onPressAddToken={mockOnPressAddToken}
-        onHomeNavigate={mockOnHomeNavigate}
-        onSwapNavigate={mockOnSwapNavigate}
-        onSettingsNavigate={mockOnSettingsNavigate}
         onPressToken={mockOnPressToken}
       />,
     );
@@ -80,15 +69,11 @@ describe('HomeTemplate Template', () => {
         tokenPercentagePoint={-2.34}
         tokenValue={etheriumTokenMock.value}
         tokens={tokensMock}
-        routeName={Screens.HOME}
         onPressDropDown={mockOnPressDropDown}
         onPressSent={mockOnPressSent}
         onPressRecive={mockOnPressRecive}
         onPressBuy={mockOnPressBuy}
         onPressAddToken={mockOnPressAddToken}
-        onHomeNavigate={mockOnHomeNavigate}
-        onSwapNavigate={mockOnSwapNavigate}
-        onSettingsNavigate={mockOnSettingsNavigate}
         onPressToken={mockOnPressToken}
       />,
     );
