@@ -8,11 +8,6 @@ import { Screens } from '../../screens.enum';
 
 import { TokenScreen } from './TokenScreen';
 
-const mockNavigation = {
-  navigate: jest.fn(),
-  goBack: jest.fn(),
-};
-
 const tokenScreenRoute = {
   key: '',
   name: Screens.TOKEN,
@@ -24,6 +19,10 @@ const tokenScreenRoute = {
     },
   },
 } as any;
+const mockNavigation = {
+  navigate: jest.fn(),
+  goBack: jest.fn(),
+};
 
 console.log = jest.fn();
 

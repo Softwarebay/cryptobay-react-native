@@ -8,32 +8,23 @@ import { Screens } from '../../screens.enum';
 
 import { HomeScreen } from './HomeScreen';
 
+const mockRoute = Screens.HOME as any;
 const mockNavigation = {
   navigate: jest.fn(),
-};
+} as any;
 
 console.log = jest.fn();
 
 describe('HomeScreen Screen', () => {
   test('Component Snapshot', () => {
     const tree = renderer
-      .create(
-        <HomeScreen
-          navigation={mockNavigation as any}
-          route={Screens.HOME as any}
-        />,
-      )
+      .create(<HomeScreen navigation={mockNavigation} route={mockRoute} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('ensure homebar and actions button works', () => {
-    render(
-      <HomeScreen
-        navigation={mockNavigation as any}
-        route={Screens.HOME as any}
-      />,
-    );
+    render(<HomeScreen navigation={mockNavigation} route={mockRoute} />);
     const actionButton = (buttonName: string) =>
       screen.getByTestId(`home-action-${buttonName}`);
     fireEvent.press(screen.getByTestId('home-bar-drop-down'));
@@ -49,12 +40,7 @@ describe('HomeScreen Screen', () => {
   });
 
   test('ensure navigation token list item works correctly', () => {
-    render(
-      <HomeScreen
-        navigation={mockNavigation as any}
-        route={Screens.HOME as any}
-      />,
-    );
+    render(<HomeScreen navigation={mockNavigation} route={mockRoute} />);
     fireEvent.press(screen.getByTestId('token-list-item-BNB'));
     expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.TOKEN, {
       tokenDetails: {

@@ -9,6 +9,7 @@ import { Screens } from '../../screens.enum';
 
 import { UserScreen } from './UserScreen';
 
+const mockRoute = Screens.USER as any;
 const mockNavigation = {
   navigate: jest.fn(),
   goBack: jest.fn(),
@@ -19,7 +20,7 @@ describe('UserScreen Screen', () => {
     const tree = renderer
       .create(
         <NavigationContainer>
-          <UserScreen navigation={mockNavigation} route={Screens.USER as any} />
+          <UserScreen navigation={mockNavigation} route={mockRoute} />
         </NavigationContainer>,
       )
       .toJSON();
@@ -29,7 +30,7 @@ describe('UserScreen Screen', () => {
   test('ensure navigation works correctly', () => {
     render(
       <NavigationContainer>
-        <UserScreen navigation={mockNavigation} route={Screens.USER as any} />
+        <UserScreen navigation={mockNavigation} route={mockRoute} />
       </NavigationContainer>,
     );
     const bottomBarTab = (tabName: string) =>

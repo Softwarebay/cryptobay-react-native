@@ -8,6 +8,7 @@ import { Screens } from '../../screens.enum';
 
 import { WalletSetupScreen } from './WalletSetupScreen';
 
+const mockRoute = Screens.WALLET_SETUP as any;
 const mockNavigation = {
   navigate: jest.fn(),
 } as any;
@@ -16,22 +17,14 @@ describe('WalletSetupScreen Screen', () => {
   test('Component Snapshot', () => {
     const tree = renderer
       .create(
-        <WalletSetupScreen
-          navigation={mockNavigation}
-          route={Screens.WALLET_SETUP as any}
-        />,
+        <WalletSetupScreen navigation={mockNavigation} route={mockRoute} />,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('ensure wallet setup works correctly', () => {
-    render(
-      <WalletSetupScreen
-        navigation={mockNavigation}
-        route={Screens.WALLET_SETUP as any}
-      />,
-    );
+    render(<WalletSetupScreen navigation={mockNavigation} route={mockRoute} />);
     const button = (buttonName: string) =>
       screen.getByTestId(`wallet-setup-${buttonName}`);
     fireEvent.press(button('import'));

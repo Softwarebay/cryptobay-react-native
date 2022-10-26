@@ -8,11 +8,6 @@ import { Screens } from '../../screens.enum';
 
 import { DetailsModalScreen } from './DetailsModalScreen';
 
-const mockNavigation = {
-  navigate: jest.fn(),
-  goBack: jest.fn(),
-} as any;
-
 const detailsModalScreenRoute = {
   key: '',
   name: Screens.DETAILS,
@@ -28,13 +23,16 @@ const detailsModalScreenRoute = {
     },
   },
 } as any;
-
 const detailsModalScreenEmptyRoute = {
   key: '',
   name: Screens.DETAILS,
   params: {
     swapDetails: {},
   },
+} as any;
+const mockNavigation = {
+  navigate: jest.fn(),
+  goBack: jest.fn(),
 } as any;
 
 describe('DetailsModalScreen', () => {

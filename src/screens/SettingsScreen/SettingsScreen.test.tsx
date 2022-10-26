@@ -8,31 +8,22 @@ import { Screens } from '../../screens.enum';
 
 import { SettingsScreen } from './SettingsScreen';
 
+const mockRoute = Screens.SWAP as any;
 const mockNavigation = {
   navigate: jest.fn(),
   goBack: jest.fn(),
-};
+} as any;
 
 describe('SwapScreen Screen', () => {
   test('Component Snapshot', () => {
     const tree = renderer
-      .create(
-        <SettingsScreen
-          navigation={mockNavigation as any}
-          route={Screens.SWAP as any}
-        />,
-      )
+      .create(<SettingsScreen navigation={mockNavigation} route={mockRoute} />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });
 
   test('ensure navigation works correctly', () => {
-    render(
-      <SettingsScreen
-        navigation={mockNavigation as any}
-        route={Screens.SWAP as any}
-      />,
-    );
+    render(<SettingsScreen navigation={mockNavigation} route={mockRoute} />);
     fireEvent.press(screen.getByTestId('settings-screen-back-button'));
     expect(mockNavigation.goBack).toHaveBeenCalled();
   });

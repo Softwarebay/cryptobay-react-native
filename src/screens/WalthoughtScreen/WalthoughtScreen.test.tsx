@@ -8,6 +8,7 @@ import { Screens } from '../../screens.enum';
 
 import { WalthoughtScreen } from './WalthoughtScreen';
 
+const mockRoute = Screens.WALTHOUGHT as any;
 const mockNavigation = {
   navigate: jest.fn(),
 } as any;
@@ -15,21 +16,13 @@ const mockNavigation = {
 describe('WalthoughtScreen Screen', () => {
   test('Component Snapshot', () => {
     const tree = renderer.create(
-      <WalthoughtScreen
-        navigation={mockNavigation}
-        route={Screens.WALTHOUGHT as any}
-      />,
+      <WalthoughtScreen navigation={mockNavigation} route={mockRoute} />,
     );
     expect(tree).toMatchSnapshot();
   });
 
   test('ensure navigation works correctly', () => {
-    render(
-      <WalthoughtScreen
-        navigation={mockNavigation}
-        route={Screens.WALTHOUGHT as any}
-      />,
-    );
+    render(<WalthoughtScreen navigation={mockNavigation} route={mockRoute} />);
     const carouselButton = screen.getByTestId('walthought-carousel-button');
     fireEvent.press(carouselButton);
     expect(mockNavigation.navigate).not.toHaveBeenCalled();
