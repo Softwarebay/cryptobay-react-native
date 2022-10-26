@@ -25,6 +25,7 @@ export const SwapsList: React.FC<SwapsListProps> = ({
         data={swapsHistory}
         renderItem={({ item }) => (
           <SwapsListItem
+            testID={`swap-list-item-${item.id}`}
             tokenShortName={tokenShortName}
             date={item.date}
             operation={item.operation}

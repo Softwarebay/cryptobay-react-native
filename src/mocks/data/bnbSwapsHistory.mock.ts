@@ -2,6 +2,7 @@ import { Swap } from '../../types/swap.type';
 
 export const bnbSwapsHistory = [
   {
+    id: 1,
     date: 'Mar 3 at 10:04am',
     operation: 'Received',
     status: 'Confirmed',
@@ -11,6 +12,7 @@ export const bnbSwapsHistory = [
     to: '0x3Dc6...DfCE',
   },
   {
+    id: 2,
     date: 'Mar 3 at 10:04am',
     operation: 'Sent',
     status: 'Cancelled',
@@ -20,6 +22,7 @@ export const bnbSwapsHistory = [
     to: '0x3Dc6...DfCE',
   },
   {
+    id: 3,
     date: 'Mar 3 at 10:04am',
     operation: 'Received',
     status: 'Confirmed',
@@ -29,6 +32,7 @@ export const bnbSwapsHistory = [
     to: '0x3Dc6...DfCE',
   },
   {
+    id: 4,
     date: 'Mar 3 at 10:04am',
     operation: 'Sent',
     status: 'Confirmed',

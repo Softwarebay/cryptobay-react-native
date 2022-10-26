@@ -178,6 +178,7 @@ exports[`TokenList Organism Component Snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="token-list-item-BNB"
         >
           <View
             style={
@@ -198,7 +199,7 @@ exports[`TokenList Organism Component Snapshot 1`] = `
                   "width": 40,
                 }
               }
-              testID="token-list-item-token-picture"
+              testID="token-list-item-BNB-picture"
             />
             <View>
               <Text
@@ -313,6 +314,7 @@ exports[`TokenList Organism Component Snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="token-list-item-USDC"
         >
           <View
             style={
@@ -333,7 +335,7 @@ exports[`TokenList Organism Component Snapshot 1`] = `
                   "width": 40,
                 }
               }
-              testID="token-list-item-token-picture"
+              testID="token-list-item-USDC-picture"
             />
             <View>
               <Text
@@ -448,6 +450,7 @@ exports[`TokenList Organism Component Snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="token-list-item-SNX"
         >
           <View
             style={
@@ -468,7 +471,7 @@ exports[`TokenList Organism Component Snapshot 1`] = `
                   "width": 40,
                 }
               }
-              testID="token-list-item-token-picture"
+              testID="token-list-item-SNX-picture"
             />
             <View>
               <Text

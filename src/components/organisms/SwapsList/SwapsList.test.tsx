@@ -7,7 +7,6 @@ import 'react-native';
 import { bnbSwapsHistory } from '../../../mocks';
 
 import { SwapsList } from './SwapsList';
-import { SwapsListItem } from './SwapsListItem';
 
 const mockOnPressDetails = jest.fn();
 
@@ -27,20 +26,13 @@ describe('SwapsList Organism', () => {
 
   test('ensure swap list item navigate to item', () => {
     render(
-      <SwapsListItem
-        testID="swap-list-item"
-        date="Mar 3 at 10:04am"
-        operation="Received"
-        status="Confirmed"
-        value={0.04}
-        valueInDolar={9.58799}
-        from="0x3Dc6...DfCE"
-        to="0x3Dc6...DfCE"
+      <SwapsList
         tokenShortName="BNB"
+        swapsHistory={bnbSwapsHistory}
         onPressDetails={mockOnPressDetails}
       />,
     );
-    fireEvent.press(screen.getByTestId('swap-list-item'));
+    fireEvent.press(screen.getByTestId('swap-list-item-1'));
     expect(mockOnPressDetails).toHaveBeenCalledWith({
       shortName: 'BNB',
       operation: 'Received BNB',

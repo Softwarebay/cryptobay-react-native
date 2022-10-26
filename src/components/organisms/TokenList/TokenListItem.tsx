@@ -39,14 +39,14 @@ export const TokenListItem: React.FC<TokenListItemProps> = ({
 
   return (
     <TouchableOpacity
+      testID={testID}
       style={styles.container}
-      onPress={handleOnPressToken}
-      testID={testID}>
+      onPress={handleOnPressToken}>
       <View style={styles.dataWrapper}>
         <Picture
           style={styles.picture}
           pictureFile={tokenPicture}
-          testID="token-list-item-token-picture"
+          testID={`${testID}-picture`}
         />
 
         <View>

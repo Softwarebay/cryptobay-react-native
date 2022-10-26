@@ -47,4 +47,21 @@ describe('HomeScreen Screen', () => {
     fireEvent.press(actionButton('add-token'));
     expect(console.log).toHaveBeenCalledWith('onPressAddToken');
   });
+
+  test('ensure navigation token list item works correctly', () => {
+    render(
+      <HomeScreen
+        navigation={mockNavigation as any}
+        route={Screens.HOME as any}
+      />,
+    );
+    fireEvent.press(screen.getByTestId('token-list-item-BNB'));
+    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.TOKEN, {
+      tokenDetails: {
+        price: 226.69,
+        shortName: 'BNB',
+        value: 19.2371,
+      },
+    });
+  });
 });

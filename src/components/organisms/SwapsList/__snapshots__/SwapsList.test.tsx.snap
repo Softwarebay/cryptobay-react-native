@@ -15,6 +15,7 @@ exports[`SwapsList Organism Component Snapshot 1`] = `
         Object {
           "date": "Mar 3 at 10:04am",
           "from": "0x3Dc6...DfCE",
+          "id": 1,
           "operation": "Received",
           "status": "Confirmed",
           "to": "0x3Dc6...DfCE",
@@ -24,6 +25,7 @@ exports[`SwapsList Organism Component Snapshot 1`] = `
         Object {
           "date": "Mar 3 at 10:04am",
           "from": "0x3Dc6...DfCE",
+          "id": 2,
           "operation": "Sent",
           "status": "Cancelled",
           "to": "0x3Dc6...DfCE",
@@ -33,6 +35,7 @@ exports[`SwapsList Organism Component Snapshot 1`] = `
         Object {
           "date": "Mar 3 at 10:04am",
           "from": "0x3Dc6...DfCE",
+          "id": 3,
           "operation": "Received",
           "status": "Confirmed",
           "to": "0x3Dc6...DfCE",
@@ -42,6 +45,7 @@ exports[`SwapsList Organism Component Snapshot 1`] = `
         Object {
           "date": "Mar 3 at 10:04am",
           "from": "0x3Dc6...DfCE",
+          "id": 4,
           "operation": "Sent",
           "status": "Confirmed",
           "to": "0x3Dc6...DfCE",
@@ -103,6 +107,7 @@ exports[`SwapsList Organism Component Snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="swap-list-item-1"
         >
           <Text
             style={
@@ -322,6 +327,7 @@ exports[`SwapsList Organism Component Snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="swap-list-item-2"
         >
           <Text
             style={
@@ -533,6 +539,7 @@ exports[`SwapsList Organism Component Snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="swap-list-item-3"
         >
           <Text
             style={
@@ -752,6 +759,7 @@ exports[`SwapsList Organism Component Snapshot 1`] = `
               "opacity": 1,
             }
           }
+          testID="swap-list-item-4"
         >
           <Text
             style={

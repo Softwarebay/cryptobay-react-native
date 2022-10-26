@@ -1123,6 +1123,7 @@ exports[`HomeTemplate Template Component Snapshot 1`] = `
                   "opacity": 1,
                 }
               }
+              testID="token-list-item-BNB"
             >
               <View
                 style={
@@ -1143,7 +1144,7 @@ exports[`HomeTemplate Template Component Snapshot 1`] = `
                       "width": 40,
                     }
                   }
-                  testID="token-list-item-token-picture"
+                  testID="token-list-item-BNB-picture"
                 />
                 <View>
                   <Text
@@ -1258,6 +1259,7 @@ exports[`HomeTemplate Template Component Snapshot 1`] = `
                   "opacity": 1,
                 }
               }
+              testID="token-list-item-USDC"
             >
               <View
                 style={
@@ -1278,7 +1280,7 @@ exports[`HomeTemplate Template Component Snapshot 1`] = `
                       "width": 40,
                     }
                   }
-                  testID="token-list-item-token-picture"
+                  testID="token-list-item-USDC-picture"
                 />
                 <View>
                   <Text
@@ -1393,6 +1395,7 @@ exports[`HomeTemplate Template Component Snapshot 1`] = `
                   "opacity": 1,
                 }
               }
+              testID="token-list-item-SNX"
             >
               <View
                 style={
@@ -1413,7 +1416,7 @@ exports[`HomeTemplate Template Component Snapshot 1`] = `
                       "width": 40,
                     }
                   }
-                  testID="token-list-item-token-picture"
+                  testID="token-list-item-SNX-picture"
                 />
                 <View>
                   <Text

@@ -63,4 +63,25 @@ describe('TokenScreen Screen', () => {
     fireEvent.press(screen.getByTestId('token-template-navigation-back'));
     expect(mockNavigation.goBack).toHaveBeenCalled();
   });
+
+  test('ensure navigation of swap list item works correctly', () => {
+    render(
+      <TokenScreen
+        navigation={mockNavigation as any}
+        route={tokenScreenRoute}
+      />,
+    );
+    fireEvent.press(screen.getByTestId('swap-list-item-1'));
+    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.DETAILS, {
+      swapDetails: {
+        shortName: 'BNB',
+        operation: 'Received BNB',
+        status: 'Confirmed',
+        date: 'Mar 3 at 10:04am',
+        value: 0.04,
+        from: '0x3Dc6...DfCE',
+        to: '0x3Dc6...DfCE',
+      },
+    });
+  });
 });

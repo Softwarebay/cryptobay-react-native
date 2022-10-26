@@ -42,6 +42,7 @@ export const TokenList: React.FC<TokenListProps> = ({
         data={tokens}
         renderItem={({ item }: ListRenderItemInfo<Token>) => (
           <TokenListItem
+            testID={`token-list-item-${item.shortName}`}
             picture={item.picture}
             name={item.name}
             shortName={item.shortName}

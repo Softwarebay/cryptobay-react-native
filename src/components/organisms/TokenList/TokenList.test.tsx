@@ -4,11 +4,11 @@ import '@testing-library/jest-native';
 import renderer from 'react-test-renderer';
 
 import 'react-native';
-import { PROFILE } from '../../../../assets/pictures';
+import { BALL } from '../../../../assets/pictures';
 import { tokensMock } from '../../../mocks';
+import { Token } from '../../../types/token.type';
 
 import { TokenList } from './TokenList';
-import { TokenListItem } from './TokenListItem';
 
 const mockOnPressToken = jest.fn();
 
@@ -35,18 +35,8 @@ describe('TokenList Organism', () => {
   });
 
   test('ensure token list navigate works', () => {
-    render(
-      <TokenListItem
-        name="Binance Coin"
-        shortName="BNB"
-        price={226.69}
-        percentagePoint={226.69}
-        value={19.2371}
-        testID="token-list-item"
-        onPressToken={mockOnPressToken}
-      />,
-    );
-    fireEvent.press(screen.getByTestId('token-list-item'));
+    render(<TokenList tokens={tokensMock} onPressToken={mockOnPressToken} />);
+    fireEvent.press(screen.getByTestId('token-list-item-BNB'));
     expect(mockOnPressToken).toHaveBeenCalledWith({
       shortName: 'BNB',
       value: 19.2371,
@@ -55,31 +45,21 @@ describe('TokenList Organism', () => {
   });
 
   test('ensure token list item picture works correctly', () => {
-    const { rerender } = render(
-      <TokenListItem
-        name="Binance Coin"
-        shortName="BNB"
-        price={226.69}
-        percentagePoint={226.69}
-        value={19.2371}
-        testID="token-list-item"
-        onPressToken={mockOnPressToken}
-      />,
+    const newToken = {
+      picture: BALL,
+      name: 'Ball Coin',
+      shortName: 'BLC',
+      percentagePoint: 2,
+      value: 123.45,
+    } as Token;
+    const updatedTokenMock = tokensMock;
+    updatedTokenMock.push(newToken);
+    render(
+      <TokenList tokens={updatedTokenMock} onPressToken={mockOnPressToken} />,
     );
-    const tokenPicture = screen.getByTestId('token-list-item-token-picture');
-    expect(tokenPicture).toHaveProp('source', 0);
-    rerender(
-      <TokenListItem
-        picture={PROFILE}
-        name="Binance Coin"
-        shortName="BNB"
-        price={226.69}
-        percentagePoint={226.69}
-        value={19.2371}
-        testID="token-list-item"
-        onPressToken={mockOnPressToken}
-      />,
-    );
-    expect(tokenPicture).toHaveProp('source', PROFILE);
+    const tokenPicture = (tokenShortName: string) =>
+      screen.getByTestId(`token-list-item-${tokenShortName}-picture`);
+    expect(tokenPicture('BNB')).toHaveProp('source', 0);
+    expect(tokenPicture('BLC')).toHaveProp('source', BALL);
   });
 });

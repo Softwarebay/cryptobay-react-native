@@ -5,7 +5,6 @@ import 'react-native';
 import renderer from 'react-test-renderer';
 
 import { etheriumTokenMock, tokensMock } from '../../../mocks';
-import { Screens } from '../../../screens.enum';
 
 import { HomeTemplate } from './HomeTemplate';
 

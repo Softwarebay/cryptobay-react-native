@@ -48,9 +48,9 @@ export const SwapsListItem: React.FC<SwapsListItemProps> = ({
 
   return (
     <TouchableOpacity
+      testID={testID}
       style={styles.swapListItem}
-      onPress={handleOnPressDetails}
-      testID={testID}>
+      onPress={handleOnPressDetails}>
       <Caption value={date} />
 
       <View style={styles.contentWrapper}>
