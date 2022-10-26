@@ -16,13 +16,9 @@ storiesOf('Templates/TokenTemplate', module)
       tokenValue={number('tokenValue', 19.2371)}
       tokenPrice={number('tokenPrice', 4360.8582)}
       tokenSwapHistory={bnbSwapsHistory}
-      routeName={text('routeName', 'Home')}
       onPressBack={action('onPressBack')}
       onPressSent={action('onPressSent')}
       onPressReceive={action('onPressReceive')}
-      onHomeNavigate={action('onHomeNavigate')}
-      onSwapNavigate={action('onSwapNavigate')}
-      onSettingsNavigate={action('onSettingsNavigate')}
       onPressDetails={action('onPressDetails')}
     />
   ));

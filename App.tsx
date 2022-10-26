@@ -5,10 +5,7 @@ import Config from 'react-native-config';
 
 import {
   DetailsModalScreen,
-  HomeScreen,
-  SettingsScreen,
-  SwapScreen,
-  TokenScreen,
+  UserScreen,
   WalletSetupScreen,
   WalthoughtScreen,
 } from './src/screens';
@@ -30,10 +27,7 @@ const App: React.FC = () => {
           name={Screens.WALLET_SETUP}
           component={WalletSetupScreen}
         />
-        <Stack.Screen name={Screens.HOME} component={HomeScreen} />
-        <Stack.Screen name={Screens.SWAP} component={SwapScreen} />
-        <Stack.Screen name={Screens.SETTINGS} component={SettingsScreen} />
-        <Stack.Screen name={Screens.TOKEN} component={TokenScreen} />
+        <Stack.Screen name={Screens.USER} component={UserScreen} />
         <Stack.Screen
           name={Screens.DETAILS}
           options={{ presentation: 'transparentModal' }}

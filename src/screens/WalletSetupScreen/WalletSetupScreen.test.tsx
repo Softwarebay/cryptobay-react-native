@@ -35,8 +35,12 @@ describe('WalletSetupScreen Screen', () => {
     const button = (buttonName: string) =>
       screen.getByTestId(`wallet-setup-${buttonName}`);
     fireEvent.press(button('import'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.HOME);
+    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.USER, {
+      screen: Screens.HOME,
+    });
     fireEvent.press(button('create-new'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.HOME);
+    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.USER, {
+      screen: Screens.HOME,
+    });
   });
 });

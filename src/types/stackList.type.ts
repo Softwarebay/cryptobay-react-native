@@ -4,6 +4,7 @@ export type StackList = {
   Settings: undefined;
   Swap: undefined;
   Token: undefined;
+  User: undefined;
   WalletSetup: undefined;
   Walthought: undefined;
 };

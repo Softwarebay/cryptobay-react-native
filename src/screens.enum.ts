@@ -4,6 +4,7 @@ export enum Screens {
   SETTINGS = 'Settings',
   SWAP = 'Swap',
   TOKEN = 'Token',
+  USER = 'User',
   WALLET_SETUP = 'WalletSetup',
   WALTHOUGHT = 'Walthought',
 }

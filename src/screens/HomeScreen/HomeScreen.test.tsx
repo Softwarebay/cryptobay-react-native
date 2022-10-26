@@ -47,21 +47,4 @@ describe('HomeScreen Screen', () => {
     fireEvent.press(actionButton('add-token'));
     expect(console.log).toHaveBeenCalledWith('onPressAddToken');
   });
-
-  test('ensure navigation works', () => {
-    render(
-      <HomeScreen
-        navigation={mockNavigation as any}
-        route={Screens.HOME as any}
-      />,
-    );
-    const navigationTab = (tabName: string) =>
-      screen.getByTestId(`bottom-navigation-${tabName}-tab`);
-    fireEvent.press(navigationTab('wallet'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.HOME);
-    fireEvent.press(navigationTab('swap'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.SWAP);
-    fireEvent.press(navigationTab('settings'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.SETTINGS);
-  });
 });

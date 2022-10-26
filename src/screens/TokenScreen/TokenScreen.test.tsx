@@ -60,15 +60,7 @@ describe('TokenScreen Screen', () => {
         route={tokenScreenRoute}
       />,
     );
-    const bottomBarTab = (tabName: string) =>
-      screen.getByTestId(`bottom-navigation-${tabName}-tab`);
     fireEvent.press(screen.getByTestId('token-template-navigation-back'));
     expect(mockNavigation.goBack).toHaveBeenCalled();
-    fireEvent.press(bottomBarTab('wallet'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.HOME);
-    fireEvent.press(bottomBarTab('swap'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.SWAP);
-    fireEvent.press(bottomBarTab('settings'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.SETTINGS);
   });
 });

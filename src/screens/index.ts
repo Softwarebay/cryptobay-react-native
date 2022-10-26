@@ -3,5 +3,6 @@ export { HomeScreen } from './HomeScreen/HomeScreen';
 export { SettingsScreen } from './SettingsScreen/SettingsScreen';
 export { SwapScreen } from './SwapScreen/SwapScreen';
 export { TokenScreen } from './TokenScreen/TokenScreen';
+export { UserScreen } from './UserScreen/UserScreen';
 export { WalletSetupScreen } from './WalletSetupScreen/WalletSetupScreen';
 export { WalthoughtScreen } from './WalthoughtScreen/WalthoughtScreen';

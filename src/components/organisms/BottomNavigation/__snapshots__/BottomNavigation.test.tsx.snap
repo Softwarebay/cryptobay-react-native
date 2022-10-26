@@ -4,8 +4,9 @@ exports[`BottomNavigation Organism Component Snapshot 1`] = `
 <View
   style={
     Object {
+      "backgroundColor": "#17171A",
       "flexDirection": "row",
-      "height": 70,
+      "height": 100,
     }
   }
 >

@@ -33,14 +33,6 @@ describe('SwapScreen Screen', () => {
         route={Screens.SWAP as any}
       />,
     );
-    const bottomNavigationTab = (tabName: string) =>
-      screen.getByTestId(`bottom-navigation-${tabName}-tab`);
-    fireEvent.press(bottomNavigationTab('wallet'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.HOME);
-    fireEvent.press(bottomNavigationTab('swap'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.SWAP);
-    fireEvent.press(bottomNavigationTab('settings'));
-    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.SETTINGS);
     fireEvent.press(screen.getByTestId('swap-screen-back-button'));
     expect(mockNavigation.goBack).toHaveBeenCalled();
   });

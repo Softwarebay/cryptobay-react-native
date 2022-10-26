@@ -2,8 +2,9 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   bottomNavigation: {
+    backgroundColor: '#17171A',
     flexDirection: 'row',
-    height: 70,
+    height: 100,
   },
   bottomNavigationItem: {
     width: '33%',

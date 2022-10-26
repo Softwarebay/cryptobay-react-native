@@ -5,7 +5,7 @@ import { BALL } from '../../../../assets/pictures';
 import { Token } from '../../../types/token.type';
 import { Header, Icon, Icons, Label, Picture } from '../../atoms';
 import { Button, ProfileAvatar } from '../../molecules';
-import { BottomNavigation, TokenDetails, TokenList } from '../../organisms';
+import { TokenDetails, TokenList } from '../../organisms';
 
 import { styles } from './HomeTemplate.styles';
 
@@ -16,15 +16,11 @@ type HomeTemplateProps = {
   tokenPercentagePoint: number;
   tokenValue: number;
   tokens: Token[];
-  routeName: string;
   onPressDropDown: () => void;
   onPressSent: () => void;
   onPressRecive: () => void;
   onPressBuy: () => void;
   onPressAddToken: () => void;
-  onHomeNavigate: () => void;
-  onSwapNavigate: () => void;
-  onSettingsNavigate: () => void;
   onPressToken: (tokenDetails: TokenDetails) => void;
 };
 
@@ -35,15 +31,11 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   tokenPercentagePoint,
   tokenValue,
   tokens,
-  routeName,
   onPressDropDown,
   onPressSent,
   onPressRecive,
   onPressBuy,
   onPressAddToken,
-  onHomeNavigate,
-  onSwapNavigate,
-  onSettingsNavigate,
   onPressToken,
 }: HomeTemplateProps) => {
   const tokenHeaderValue = `${tokenValue} ${tokenShortName}`;
@@ -116,7 +108,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
         <TokenList
           tokens={tokens}
           style={styles.tokenList}
-          onTokenNavigate={onPressToken}
+          onPressToken={onPressToken}
         />
 
         <Button
@@ -127,13 +119,6 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
           iconType={Icons.PLUS}
           iconStyle={styles.addButtonIcon}
           onPress={onPressAddToken}
-        />
-
-        <BottomNavigation
-          routeName={routeName}
-          onHomeNavigate={onHomeNavigate}
-          onSwapNavigate={onSwapNavigate}
-          onSettingsNavigate={onSettingsNavigate}
         />
       </View>
     </SafeAreaView>

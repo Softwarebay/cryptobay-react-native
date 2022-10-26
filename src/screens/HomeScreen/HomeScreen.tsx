@@ -10,7 +10,6 @@ import { StackList } from '../../types/stackList.type';
 type HomeScreenProps = NativeStackScreenProps<StackList, Screens.HOME>;
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({
-  route,
   navigation,
 }: HomeScreenProps) => {
   const onPressDropDown = () => console.log('onPressDropDown');
@@ -23,12 +22,6 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
 
   const onPressAddToken = () => console.log('onPressAddToken');
 
-  const onHomeNavigate = () => navigation.navigate(Screens.HOME);
-
-  const onSwapNavigate = () => navigation.navigate(Screens.SWAP);
-
-  const onSettingsNavigate = () => navigation.navigate(Screens.SETTINGS);
-
   const onPressToken = (tokenDetails: TokenDetails) =>
     navigation.navigate(Screens.TOKEN, { tokenDetails: tokenDetails } as any);
 
@@ -40,15 +33,11 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
       tokenPercentagePoint={etheriumTokenMock.percentagePoint}
       tokenValue={etheriumTokenMock.value}
       tokens={tokensMock}
-      routeName={route.name}
       onPressDropDown={onPressDropDown}
       onPressSent={onPressSent}
       onPressRecive={onPressRecive}
       onPressBuy={onPressBuy}
       onPressAddToken={onPressAddToken}
-      onHomeNavigate={onHomeNavigate}
-      onSwapNavigate={onSwapNavigate}
-      onSettingsNavigate={onSettingsNavigate}
       onPressToken={onPressToken}
     />
   );

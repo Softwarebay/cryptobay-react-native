@@ -23,12 +23,6 @@ export const TokenScreen: React.FC<TokenScreenProps> = ({
 
   const onPressRecive = () => console.log('onPressRecive');
 
-  const onHomeNavigate = () => navigation.navigate(Screens.HOME);
-
-  const onSwapNavigate = () => navigation.navigate(Screens.SWAP);
-
-  const onSettingsNavigate = () => navigation.navigate(Screens.SETTINGS);
-
   const onPressDetails = (swapDetails: SwapDetails) =>
     navigation.navigate(Screens.DETAILS, { swapDetails: swapDetails } as any);
 
@@ -38,13 +32,9 @@ export const TokenScreen: React.FC<TokenScreenProps> = ({
       tokenValue={tokenDetails.value}
       tokenPrice={calculatedTokenPrice}
       tokenSwapHistory={bnbSwapsHistory}
-      routeName={route.name}
       onPressBack={onPressBack}
       onPressSent={onPressSent}
       onPressReceive={onPressRecive}
-      onHomeNavigate={onHomeNavigate}
-      onSwapNavigate={onSwapNavigate}
-      onSettingsNavigate={onSettingsNavigate}
       onPressDetails={onPressDetails}
     />
   );
