@@ -36,7 +36,7 @@ export const DetailsModalTemplate: React.FC<DetailsModalTemplateProps> = ({
   return (
     <Pressable
       testID="details-modal-template"
-      style={styles.detailsModalScreen}
+      style={styles.detailsModalTemplate}
       onPress={onPressBack}>
       <BlurView style={styles.blur}>
         <View style={styles.indicator} />

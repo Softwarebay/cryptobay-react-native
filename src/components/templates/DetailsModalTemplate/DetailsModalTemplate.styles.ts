@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  detailsModalScreen: {
+  detailsModalTemplate: {
     width: '100%',
     height: '100%',
     justifyContent: 'flex-end',
