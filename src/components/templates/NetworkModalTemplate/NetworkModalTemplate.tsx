@@ -2,17 +2,12 @@ import { BlurView } from '@react-native-community/blur';
 import React from 'react';
 import { View, Pressable, FlatList } from 'react-native';
 
+import { networkListMock } from '../../../mocks';
 import { Label } from '../../atoms';
 import { Button } from '../../molecules';
 
 import { NetworkItem } from './NetworkItem';
 import { styles } from './NetworkModalTemplate.styles';
-
-const networksListMock = [
-  { name: 'Ropsten Test', color: '#EA3943' },
-  { name: 'Kovan Test', color: '#45F0D1' },
-  { name: 'Goerli Test', color: '#5F97FF' },
-];
 
 type NetworkModalTemplateProps = {
   onPressClose: () => void;
@@ -41,7 +36,7 @@ export const NetworkModalTemplate: React.FC<NetworkModalTemplateProps> = ({
           <Label style={styles.networkListLabel} value="Other Networks" />
           <FlatList
             style={styles.networkList}
-            data={networksListMock}
+            data={networkListMock}
             renderItem={({ item }) => (
               <NetworkItem
                 style={styles.networkListItem}
