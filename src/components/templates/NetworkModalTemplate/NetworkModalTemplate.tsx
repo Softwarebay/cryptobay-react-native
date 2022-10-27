@@ -34,6 +34,7 @@ export const NetworkModalTemplate: React.FC<NetworkModalTemplateProps> = ({
           style={styles.selectedNetworkItem}
           networkName="Ethereum Main"
           networkColor="#FEBF32"
+          variant="checked"
         />
 
         <View style={styles.networkListWrapper}>

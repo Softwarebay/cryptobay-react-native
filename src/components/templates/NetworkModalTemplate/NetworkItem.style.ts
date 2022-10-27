@@ -1,7 +1,11 @@
 import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
-  networkListItem: {},
+  networkListItem: {
+    paddingHorizontal: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
   contentWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
