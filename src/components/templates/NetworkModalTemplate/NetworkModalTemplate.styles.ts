@@ -8,6 +8,10 @@ export const styles = StyleSheet.create({
   },
   blur: {
     height: '40%',
+  },
+  pressableBlur: {
+    width: '100%',
+    height: '100%',
     padding: 8,
     justifyContent: 'flex-end',
     alignItems: 'center',
@@ -40,14 +44,13 @@ export const styles = StyleSheet.create({
     color: '#ABAFC4',
   },
   networkList: {
-    marginBottom: 40,
+    marginBottom: 70,
     paddingLeft: 10,
   },
   networkListItem: {
     marginBottom: 18,
   },
   closeButton: {
-    marginBottom: 54,
     alignSelf: 'flex-end',
   },
 });

@@ -17,9 +17,11 @@ export const NetworkModalTemplate: React.FC<NetworkModalTemplateProps> = ({
   onPressClose,
 }: NetworkModalTemplateProps) => {
   return (
-    <Pressable style={styles.networkModalTemplate} onPress={onPressClose}>
+    <View style={styles.networkModalTemplate}>
       <BlurView style={styles.blur}>
-        <View style={styles.indicator} />
+        <Pressable style={styles.pressableBlur} onPress={onPressClose}>
+          <View style={styles.indicator} />
+        </Pressable>
       </BlurView>
 
       <View style={styles.networkContent}>
@@ -54,6 +56,6 @@ export const NetworkModalTemplate: React.FC<NetworkModalTemplateProps> = ({
           onPress={onPressClose}
         />
       </View>
-    </Pressable>
+    </View>
   );
 };

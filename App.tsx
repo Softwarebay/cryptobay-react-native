@@ -6,6 +6,7 @@ import Config from 'react-native-config';
 import {
   AuthorizedUserRoot,
   DetailsModalScreen,
+  NetworkModalScreen,
   WalletSetupScreen,
   WalthoughtScreen,
 } from './src/screens';
@@ -35,6 +36,11 @@ const App: React.FC = () => {
           name={Screens.DETAILS}
           options={{ presentation: 'transparentModal' }}
           component={DetailsModalScreen}
+        />
+        <Stack.Screen
+          name={Screens.NETWORK}
+          options={{ presentation: 'transparentModal' }}
+          component={NetworkModalScreen}
         />
       </Stack.Navigator>
     </NavigationContainer>

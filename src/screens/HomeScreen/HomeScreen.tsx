@@ -12,7 +12,7 @@ type HomeScreenProps = NativeStackScreenProps<StackList, Screens.HOME>;
 export const HomeScreen: React.FC<HomeScreenProps> = ({
   navigation,
 }: HomeScreenProps) => {
-  const onPressDropDown = () => console.log('onPressDropDown');
+  const onPressDropDown = () => navigation.navigate(Screens.NETWORK);
 
   const onPressSent = () => console.log('onPressSent');
 
