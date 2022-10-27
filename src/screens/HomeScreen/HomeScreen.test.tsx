@@ -23,6 +23,14 @@ describe('HomeScreen Screen', () => {
     expect(tree).toMatchSnapshot();
   });
 
+  test('ensure profile avatar navigation works correctly', () => {
+    render(<HomeScreen navigation={mockNavigation} route={mockRoute} />);
+    fireEvent.press(screen.getByTestId('home-bar-avatar'));
+    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.ACCOUNT_ROOT, {
+      screen: Screens.ACCOUNT,
+    });
+  });
+
   test('ensure homebar and actions button works', () => {
     render(<HomeScreen navigation={mockNavigation} route={mockRoute} />);
     const actionButton = (buttonName: string) =>

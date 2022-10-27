@@ -13,15 +13,13 @@ type WalletSetupScreenProps = NativeStackScreenProps<
 export const WalletSetupScreen: React.FC<WalletSetupScreenProps> = ({
   navigation,
 }: WalletSetupScreenProps) => {
+  const homeScreen = { screen: Screens.HOME } as any;
+
   const onImportUsingSeedPhrase = () =>
-    navigation.navigate(Screens.AUTHORIZED_USER_ROOT, {
-      screen: Screens.HOME,
-    } as any);
+    navigation.navigate(Screens.AUTHORIZED_USER_ROOT, homeScreen);
 
   const onCreateANewWallet = () =>
-    navigation.navigate(Screens.AUTHORIZED_USER_ROOT, {
-      screen: Screens.HOME,
-    } as any);
+    navigation.navigate(Screens.AUTHORIZED_USER_ROOT, homeScreen);
 
   return (
     <WalletSetupTemplate

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, ViewStyle } from 'react-native';
+import { Pressable, ViewStyle } from 'react-native';
 
 import { PROFILE } from '../../../../assets/pictures';
 import { Icon, Icons, Picture } from '../../atoms';
@@ -7,13 +7,17 @@ import { Icon, Icons, Picture } from '../../atoms';
 import { styles } from './ProfileAvatar.styles';
 
 type ProfileAvatarProps = {
+  testID?: string;
   pictureTestID?: string;
   iconTestID?: string;
+  onPressAvatar: () => void;
 };
 
 export const ProfileAvatar: React.FC<ProfileAvatarProps> = ({
+  testID,
   pictureTestID,
   iconTestID,
+  onPressAvatar,
 }: ProfileAvatarProps) => {
   const pictureStyle = {
     width: 42,
@@ -29,7 +33,10 @@ export const ProfileAvatar: React.FC<ProfileAvatarProps> = ({
   } as ViewStyle;
 
   return (
-    <View style={styles.profileAvatar}>
+    <Pressable
+      testID={testID}
+      style={styles.profileAvatar}
+      onPress={onPressAvatar}>
       <Picture
         pictureFile={PROFILE}
         style={pictureStyle}
@@ -42,6 +49,6 @@ export const ProfileAvatar: React.FC<ProfileAvatarProps> = ({
         style={iconStyle}
         testID={iconTestID}
       />
-    </View>
+    </Pressable>
   );
 };

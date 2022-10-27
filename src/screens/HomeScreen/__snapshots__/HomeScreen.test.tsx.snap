@@ -47,11 +47,24 @@ exports[`HomeScreen Screen Component Snapshot 1`] = `
       }
     >
       <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
         style={
           Object {
             "position": "relative",
           }
         }
+        testID="home-bar-avatar"
       >
         <Image
           source={

@@ -8,6 +8,7 @@ import { etheriumTokenMock, tokensMock } from '../../../mocks';
 
 import { HomeTemplate } from './HomeTemplate';
 
+const mockOnPressAvatar = jest.fn();
 const mockOnPressDropDown = jest.fn();
 const mockOnPressSent = jest.fn();
 const mockOnPressRecive = jest.fn();
@@ -26,6 +27,7 @@ describe('HomeTemplate Template', () => {
           tokenPercentagePoint={etheriumTokenMock.percentagePoint}
           tokenValue={etheriumTokenMock.value}
           tokens={tokensMock}
+          onPressAvatar={mockOnPressAvatar}
           onPressDropDown={mockOnPressDropDown}
           onPressSent={mockOnPressSent}
           onPressRecive={mockOnPressRecive}
@@ -47,6 +49,7 @@ describe('HomeTemplate Template', () => {
         tokenPercentagePoint={etheriumTokenMock.percentagePoint}
         tokenValue={etheriumTokenMock.value}
         tokens={tokensMock}
+        onPressAvatar={mockOnPressAvatar}
         onPressDropDown={mockOnPressDropDown}
         onPressSent={mockOnPressSent}
         onPressRecive={mockOnPressRecive}
@@ -68,6 +71,7 @@ describe('HomeTemplate Template', () => {
         tokenPercentagePoint={-2.34}
         tokenValue={etheriumTokenMock.value}
         tokens={tokensMock}
+        onPressAvatar={mockOnPressAvatar}
         onPressDropDown={mockOnPressDropDown}
         onPressSent={mockOnPressSent}
         onPressRecive={mockOnPressRecive}

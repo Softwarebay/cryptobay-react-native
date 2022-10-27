@@ -12,6 +12,11 @@ type HomeScreenProps = NativeStackScreenProps<StackList, Screens.HOME>;
 export const HomeScreen: React.FC<HomeScreenProps> = ({
   navigation,
 }: HomeScreenProps) => {
+  const accountScreen = { screen: Screens.ACCOUNT } as any;
+
+  const onPressAvatar = () =>
+    navigation.navigate(Screens.ACCOUNT_ROOT, accountScreen);
+
   const onPressDropDown = () => navigation.navigate(Screens.NETWORK);
 
   const onPressSent = () => console.log('onPressSent');
@@ -33,6 +38,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
       tokenPercentagePoint={etheriumTokenMock.percentagePoint}
       tokenValue={etheriumTokenMock.value}
       tokens={tokensMock}
+      onPressAvatar={onPressAvatar}
       onPressDropDown={onPressDropDown}
       onPressSent={onPressSent}
       onPressRecive={onPressRecive}

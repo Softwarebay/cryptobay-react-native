@@ -4,6 +4,7 @@ import React from 'react';
 import Config from 'react-native-config';
 
 import {
+  AccountRoot,
   AuthorizedUserRoot,
   DetailsModalScreen,
   NetworkModalScreen,
@@ -32,6 +33,7 @@ const App: React.FC = () => {
           name={Screens.AUTHORIZED_USER_ROOT}
           component={AuthorizedUserRoot}
         />
+        <Stack.Screen name={Screens.ACCOUNT_ROOT} component={AccountRoot} />
         <Stack.Screen
           name={Screens.DETAILS}
           options={{ presentation: 'transparentModal' }}

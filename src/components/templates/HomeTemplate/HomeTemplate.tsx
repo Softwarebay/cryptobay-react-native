@@ -16,6 +16,7 @@ type HomeTemplateProps = {
   tokenPercentagePoint: number;
   tokenValue: number;
   tokens: Token[];
+  onPressAvatar: () => void;
   onPressDropDown: () => void;
   onPressSent: () => void;
   onPressRecive: () => void;
@@ -31,6 +32,7 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
   tokenPercentagePoint,
   tokenValue,
   tokens,
+  onPressAvatar,
   onPressDropDown,
   onPressSent,
   onPressRecive,
@@ -53,7 +55,10 @@ export const HomeTemplate: React.FC<HomeTemplateProps> = ({
         <Picture style={styles.ballPicture} pictureFile={BALL} />
 
         <View style={styles.homeBar}>
-          <ProfileAvatar />
+          <ProfileAvatar
+            testID="home-bar-avatar"
+            onPressAvatar={onPressAvatar}
+          />
 
           <TouchableOpacity
             testID="home-bar-drop-down"
