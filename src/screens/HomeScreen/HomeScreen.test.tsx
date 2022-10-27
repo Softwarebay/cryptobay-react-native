@@ -28,7 +28,7 @@ describe('HomeScreen Screen', () => {
     const actionButton = (buttonName: string) =>
       screen.getByTestId(`home-action-${buttonName}`);
     fireEvent.press(screen.getByTestId('home-bar-drop-down'));
-    expect(console.log).toHaveBeenCalledWith('onPressDropDown');
+    expect(mockNavigation.navigate).toHaveBeenCalledWith(Screens.NETWORK);
     fireEvent.press(actionButton('sent'));
     expect(console.log).toHaveBeenCalledWith('onPressSent');
     fireEvent.press(actionButton('recive'));

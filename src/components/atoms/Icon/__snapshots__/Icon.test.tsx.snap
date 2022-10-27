@@ -237,6 +237,91 @@ exports[`Icon Atom Component Snapshot: Buy Icon 1`] = `
 </View>
 `;
 
+exports[`Icon Atom Component Snapshot: Check Icon 1`] = `
+<View>
+  <RNSVGSvgView
+    align="xMidYMid"
+    bbHeight="24"
+    bbWidth="24"
+    fill="none"
+    focusable={false}
+    height={24}
+    meetOrSlice={0}
+    minX={0}
+    minY={0}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        Object {
+          "flex": 0,
+          "height": 24,
+          "width": 24,
+        },
+      ]
+    }
+    testID="svg-icon-check"
+    vbHeight={24}
+    vbWidth={24}
+    width={24}
+  >
+    <RNSVGGroup
+      fill={null}
+      propList={
+        Array [
+          "fill",
+        ]
+      }
+    >
+      <RNSVGCircle
+        cx="12"
+        cy="12.0001"
+        propList={
+          Array [
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        r="9.00375"
+        stroke={
+          Object {
+            "payload": 4285981288,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth="1.5"
+      />
+      <RNSVGPath
+        d="M8.4425 12.3392L10.6104 14.5071L10.5964 14.4931L15.4874 9.60205"
+        propList={
+          Array [
+            "stroke",
+            "strokeWidth",
+            "strokeLinecap",
+            "strokeLinejoin",
+          ]
+        }
+        stroke={
+          Object {
+            "payload": 4285981288,
+            "type": 0,
+          }
+        }
+        strokeLinecap={1}
+        strokeLinejoin={1}
+        strokeWidth="1.5"
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+</View>
+`;
+
 exports[`Icon Atom Component Snapshot: Elipse Profile Icon 1`] = `
 <View>
   <RNSVGSvgView

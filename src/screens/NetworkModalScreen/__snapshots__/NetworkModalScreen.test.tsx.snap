@@ -1,0 +1,540 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NetworkModalScreen Screen Component Snapshot 1`] = `
+<View
+  style={
+    Object {
+      "height": "100%",
+      "justifyContent": "flex-end",
+      "width": "100%",
+    }
+  }
+>
+  <BlurView
+    blurAmount={10}
+    blurType="dark"
+    style={
+      Array [
+        Object {
+          "backgroundColor": "transparent",
+        },
+        Object {
+          "height": "40%",
+        },
+      ]
+    }
+  >
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "height": "100%",
+          "justifyContent": "flex-end",
+          "padding": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "backgroundColor": "#ABAFC4",
+            "borderRadius": 4,
+            "height": 4,
+            "width": 40,
+          }
+        }
+      />
+    </View>
+  </BlurView>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#17171A",
+        "height": "60%",
+        "padding": 24,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Poppins",
+          },
+          Object {
+            "fontSize": 16,
+            "fontWeight": "600",
+            "lineHeight": 24,
+          },
+          Object {
+            "alignSelf": "center",
+            "color": "#FFFFFF",
+            "marginBottom": 32,
+          },
+        ]
+      }
+    >
+      Network
+    </Text>
+    <View
+      style={
+        Array [
+          Object {
+            "marginBottom": 32,
+            "paddingLeft": 10,
+          },
+          Object {
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "paddingHorizontal": 10,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "borderRadius": 12,
+                "height": 12,
+                "marginRight": 18,
+                "width": 12,
+              },
+              Object {
+                "backgroundColor": "#FEBF32",
+              },
+            ]
+          }
+        />
+        <Text
+          style={
+            Array [
+              Object {
+                "fontFamily": "Poppins",
+              },
+              Object {
+                "fontSize": 14,
+                "fontWeight": "400",
+                "lineHeight": 24,
+              },
+              Object {
+                "color": "#FFFFFF",
+              },
+            ]
+          }
+        >
+          Ethereum Main
+        </Text>
+      </View>
+      <View>
+        <RNSVGSvgView
+          align="xMidYMid"
+          bbHeight="24"
+          bbWidth="24"
+          fill="none"
+          focusable={false}
+          height={24}
+          meetOrSlice={0}
+          minX={0}
+          minY={0}
+          style={
+            Array [
+              Object {
+                "backgroundColor": "transparent",
+                "borderWidth": 0,
+              },
+              Object {
+                "flex": 0,
+                "height": 24,
+                "width": 24,
+              },
+            ]
+          }
+          testID="svg-icon-check"
+          vbHeight={24}
+          vbWidth={24}
+          width={24}
+        >
+          <RNSVGGroup
+            fill={null}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+          >
+            <RNSVGCircle
+              cx="12"
+              cy="12.0001"
+              propList={
+                Array [
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              r="9.00375"
+              stroke={
+                Object {
+                  "payload": 4285981288,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth="1.5"
+            />
+            <RNSVGPath
+              d="M8.4425 12.3392L10.6104 14.5071L10.5964 14.4931L15.4874 9.60205"
+              propList={
+                Array [
+                  "stroke",
+                  "strokeWidth",
+                  "strokeLinecap",
+                  "strokeLinejoin",
+                ]
+              }
+              stroke={
+                Object {
+                  "payload": 4285981288,
+                  "type": 0,
+                }
+              }
+              strokeLinecap={1}
+              strokeLinejoin={1}
+              strokeWidth="1.5"
+            />
+          </RNSVGGroup>
+        </RNSVGSvgView>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Poppins",
+            },
+            Object {
+              "fontSize": 16,
+              "fontWeight": "600",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#ABAFC4",
+              "marginBottom": 24,
+            },
+          ]
+        }
+      >
+        Other Networks
+      </Text>
+      <RCTScrollView
+        data={
+          Array [
+            Object {
+              "color": "#EA3943",
+              "name": "Ropsten Test",
+            },
+            Object {
+              "color": "#45F0D1",
+              "name": "Kovan Test",
+            },
+            Object {
+              "color": "#5F97FF",
+              "name": "Goerli Test",
+            },
+          ]
+        }
+        getItem={[Function]}
+        getItemCount={[Function]}
+        keyExtractor={[Function]}
+        onContentSizeChange={[Function]}
+        onLayout={[Function]}
+        onMomentumScrollBegin={[Function]}
+        onMomentumScrollEnd={[Function]}
+        onScroll={[Function]}
+        onScrollBeginDrag={[Function]}
+        onScrollEndDrag={[Function]}
+        removeClippedSubviews={false}
+        renderItem={[Function]}
+        scrollEventThrottle={50}
+        stickyHeaderIndices={Array []}
+        style={
+          Object {
+            "marginBottom": 70,
+            "paddingLeft": 10,
+          }
+        }
+        viewabilityConfigCallbackPairs={Array []}
+      >
+        <View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "marginBottom": 18,
+                  },
+                  Object {
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "paddingHorizontal": 10,
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 12,
+                        "height": 12,
+                        "marginRight": 18,
+                        "width": 12,
+                      },
+                      Object {
+                        "backgroundColor": "#EA3943",
+                      },
+                    ]
+                  }
+                />
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                      },
+                      Object {
+                        "fontSize": 14,
+                        "fontWeight": "400",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Ropsten Test
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "marginBottom": 18,
+                  },
+                  Object {
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "paddingHorizontal": 10,
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 12,
+                        "height": 12,
+                        "marginRight": 18,
+                        "width": 12,
+                      },
+                      Object {
+                        "backgroundColor": "#45F0D1",
+                      },
+                    ]
+                  }
+                />
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                      },
+                      Object {
+                        "fontSize": 14,
+                        "fontWeight": "400",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Kovan Test
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            onLayout={[Function]}
+            style={null}
+          >
+            <View
+              style={
+                Array [
+                  Object {
+                    "marginBottom": 18,
+                  },
+                  Object {
+                    "flexDirection": "row",
+                    "justifyContent": "space-between",
+                    "paddingHorizontal": 10,
+                  },
+                ]
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <View
+                  style={
+                    Array [
+                      Object {
+                        "borderRadius": 12,
+                        "height": 12,
+                        "marginRight": 18,
+                        "width": 12,
+                      },
+                      Object {
+                        "backgroundColor": "#5F97FF",
+                      },
+                    ]
+                  }
+                />
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "fontFamily": "Poppins",
+                      },
+                      Object {
+                        "fontSize": 14,
+                        "fontWeight": "400",
+                        "lineHeight": 24,
+                      },
+                      Object {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  Goerli Test
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "flex-end",
+          "backgroundColor": "transparent",
+          "borderRadius": 8,
+          "color": "#FEBF32",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "opacity": 1,
+          "padding": 16,
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Poppins",
+            },
+            Object {
+              "fontSize": 16,
+              "fontWeight": "600",
+              "lineHeight": 24,
+            },
+            Object {
+              "color": "#FEBF32",
+            },
+          ]
+        }
+      >
+        Close
+      </Text>
+    </View>
+  </View>
+</View>
+`;
