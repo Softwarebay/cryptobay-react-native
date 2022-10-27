@@ -4,8 +4,8 @@ import React from 'react';
 import Config from 'react-native-config';
 
 import {
+  AuthorizedUserRoot,
   DetailsModalScreen,
-  UserScreen,
   WalletSetupScreen,
   WalthoughtScreen,
 } from './src/screens';
@@ -27,7 +27,10 @@ const App: React.FC = () => {
           name={Screens.WALLET_SETUP}
           component={WalletSetupScreen}
         />
-        <Stack.Screen name={Screens.USER} component={UserScreen} />
+        <Stack.Screen
+          name={Screens.AUTHORIZED_USER_ROOT}
+          component={AuthorizedUserRoot}
+        />
         <Stack.Screen
           name={Screens.DETAILS}
           options={{ presentation: 'transparentModal' }}

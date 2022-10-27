@@ -7,20 +7,20 @@ import renderer from 'react-test-renderer';
 import 'react-native';
 import { Screens } from '../../screens.enum';
 
-import { UserScreen } from './UserScreen';
+import { AuthorizedUserRoot } from './AuthorizedUserRoot';
 
-const mockRoute = Screens.USER as any;
+const mockRoute = Screens.AUTHORIZED_USER_ROOT as any;
 const mockNavigation = {
   navigate: jest.fn(),
   goBack: jest.fn(),
 } as any;
 
-describe('UserScreen Screen', () => {
+describe('AuthorizedUserRoot Screen', () => {
   test('Component Snapshot', () => {
     const tree = renderer
       .create(
         <NavigationContainer>
-          <UserScreen navigation={mockNavigation} route={mockRoute} />
+          <AuthorizedUserRoot navigation={mockNavigation} route={mockRoute} />
         </NavigationContainer>,
       )
       .toJSON();
@@ -30,7 +30,7 @@ describe('UserScreen Screen', () => {
   test('ensure navigation works correctly', () => {
     render(
       <NavigationContainer>
-        <UserScreen navigation={mockNavigation} route={mockRoute} />
+        <AuthorizedUserRoot navigation={mockNavigation} route={mockRoute} />
       </NavigationContainer>,
     );
     const bottomBarTab = (tabName: string) =>

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserScreen Screen Component Snapshot 1`] = `
+exports[`AuthorizedUserRoot Screen Component Snapshot 1`] = `
 Array [
   <RNCSafeAreaProvider
     onInsetsChange={[Function]}

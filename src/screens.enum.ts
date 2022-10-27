@@ -1,10 +1,10 @@
 export enum Screens {
+  AUTHORIZED_USER_ROOT = 'AuthorizedUserRoot',
   DETAILS = 'Details',
   HOME = 'Home',
   SETTINGS = 'Settings',
   SWAP = 'Swap',
   TOKEN = 'Token',
-  USER = 'User',
   WALLET_SETUP = 'WalletSetup',
   WALTHOUGHT = 'Walthought',
 }

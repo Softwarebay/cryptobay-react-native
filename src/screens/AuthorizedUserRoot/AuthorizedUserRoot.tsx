@@ -13,11 +13,14 @@ import { SettingsScreen } from '../SettingsScreen/SettingsScreen';
 import { SwapScreen } from '../SwapScreen/SwapScreen';
 import { TokenScreen } from '../TokenScreen/TokenScreen';
 
-type UserScreenProps = NativeStackScreenProps<StackList, Screens.USER>;
+type AuthorizedUserRootProps = NativeStackScreenProps<
+  StackList,
+  Screens.AUTHORIZED_USER_ROOT
+>;
 
-const User = createNativeStackNavigator<StackList>();
+const AuthorizedUser = createNativeStackNavigator<StackList>();
 
-export const UserScreen: React.FC<UserScreenProps> = ({
+export const AuthorizedUserRoot: React.FC<AuthorizedUserRootProps> = ({
   route,
   navigation,
 }) => {
@@ -31,15 +34,18 @@ export const UserScreen: React.FC<UserScreenProps> = ({
 
   return (
     <>
-      <User.Navigator
+      <AuthorizedUser.Navigator
         screenOptions={{
           headerShown: false,
         }}>
-        <User.Screen name={Screens.HOME} component={HomeScreen} />
-        <User.Screen name={Screens.TOKEN} component={TokenScreen} />
-        <User.Screen name={Screens.SWAP} component={SwapScreen} />
-        <User.Screen name={Screens.SETTINGS} component={SettingsScreen} />
-      </User.Navigator>
+        <AuthorizedUser.Screen name={Screens.HOME} component={HomeScreen} />
+        <AuthorizedUser.Screen name={Screens.TOKEN} component={TokenScreen} />
+        <AuthorizedUser.Screen name={Screens.SWAP} component={SwapScreen} />
+        <AuthorizedUser.Screen
+          name={Screens.SETTINGS}
+          component={SettingsScreen}
+        />
+      </AuthorizedUser.Navigator>
       <BottomNavigation
         routeName={routeName}
         onHomeNavigate={onHomeNavigate}
