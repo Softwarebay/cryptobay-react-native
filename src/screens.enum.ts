@@ -1,7 +1,11 @@
 export enum Screens {
+  ACCOUNT = 'Account',
+  ACCOUNT_ROOT = 'AccountRoot',
   AUTHORIZED_USER_ROOT = 'AuthorizedUserRoot',
+  CREATE_NEW_ACCOUNT = 'CreateNewAccount',
   DETAILS = 'Details',
   HOME = 'Home',
+  IMPORT_ACCOUNT = 'ImportAccount',
   NETWORK = 'Network',
   SETTINGS = 'Settings',
   SWAP = 'Swap',
