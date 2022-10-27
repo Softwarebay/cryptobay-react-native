@@ -1,5 +1,6 @@
 export { ArrowIcon } from './components/ArrowIcon';
 export { BuyIcon } from './components/BuyIcon';
+export { CheckIcon } from './components/CheckIcon';
 export { ElipseProfileIcon } from './components/ElipseProfileIcon';
 export { PlusIcon } from './components/PlusIcon';
 export { SettingsIcon } from './components/SettingsIcon';

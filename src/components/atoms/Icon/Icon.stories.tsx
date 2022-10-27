@@ -33,6 +33,7 @@ storiesOf('Atoms/Icon', module)
     />
   ))
   .add('Buy Icon', () => <Icon type={Icons.BUY} />)
+  .add('Check Icon', () => <Icon type={Icons.CHECK} />)
   .add('Elipse Profile Icon', () => <Icon type={Icons.ELIPSE_PROFILE} />)
   .add('Settings Icon', () => <Icon type={Icons.SETTINGS} />)
   .add('Swap Icon', () => <Icon type={Icons.SWAP} />)

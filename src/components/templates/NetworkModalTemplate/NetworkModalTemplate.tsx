@@ -1,8 +1,10 @@
 import { BlurView } from '@react-native-community/blur';
 import React from 'react';
 import { View, Pressable, FlatList } from 'react-native';
+
 import { Label } from '../../atoms';
 import { Button } from '../../molecules';
+
 import { NetworkItem } from './NetworkItem';
 import { styles } from './NetworkModalTemplate.styles';
 

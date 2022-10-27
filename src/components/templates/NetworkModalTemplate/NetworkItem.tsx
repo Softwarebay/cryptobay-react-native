@@ -1,6 +1,8 @@
 import React from 'react';
 import { View, ViewStyle } from 'react-native';
+
 import { Label } from '../../atoms';
+
 import { styles } from './NetworkItem.style';
 
 type NetworkItemProps = {

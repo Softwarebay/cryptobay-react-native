@@ -13,6 +13,7 @@ describe('Icon Atom', () => {
       renderer.create(<Icon type={icon} />).toJSON();
     expect(iconTree(Icons.ARROW)).toMatchSnapshot('Arrow Icon');
     expect(iconTree(Icons.BUY)).toMatchSnapshot('Buy Icon');
+    expect(iconTree(Icons.CHECK)).toMatchSnapshot('Check Icon');
     expect(iconTree(Icons.ELIPSE_PROFILE)).toMatchSnapshot(
       'Elipse Profile Icon',
     );

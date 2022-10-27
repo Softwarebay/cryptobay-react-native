@@ -3,6 +3,7 @@ import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 
 import StorybookView from '../../../../storybook/StorybookView';
+
 import { NetworkModalTemplate } from './NetworkModalTemplate';
 
 storiesOf('Templates/NetworkTemplate', module)

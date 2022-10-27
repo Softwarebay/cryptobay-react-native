@@ -4,6 +4,7 @@ import { View, ViewStyle } from 'react-native';
 import {
   ArrowIcon,
   BuyIcon,
+  CheckIcon,
   ElipseProfileIcon,
   PlusIcon,
   SettingsIcon,
@@ -40,6 +41,7 @@ export const Icon: React.FC<IconProps> = ({
       />
     ),
     BUY: <BuyIcon width={width} height={height} testID="svg-icon-buy" />,
+    CHECK: <CheckIcon width={width} height={height} testID="svg-icon-check" />,
     ELIPSE_PROFILE: (
       <ElipseProfileIcon
         width={width}
