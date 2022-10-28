@@ -13,6 +13,7 @@ function loadStories() {
   require('../src/components/molecules/Button/Button.stories');
   require('../src/components/molecules/ProfileAvatar/ProfileAvatar.stories');
   require('../src/components/organisms/BottomNavigation/BottomNavigation.stories');
+  require('../src/components/organisms/ModalLayout/ModalLayout.stories');
   require('../src/components/organisms/SwapsList/SwapsList.stories');
   require('../src/components/organisms/TokenList/TokenList.stories');
   require('../src/components/organisms/WalthoughtCarousel/WalthoughtCarousel.stories');
@@ -34,6 +35,7 @@ const stories = [
   '../src/components/molecules/Button/Button.stories',
   '../src/components/molecules/ProfileAvatar/ProfileAvatar.stories',
   '../src/components/organisms/BottomNavigation/BottomNavigation.stories',
+  '../src/components/organisms/ModalLayout/ModalLayout.stories',
   '../src/components/organisms/SwapsList/SwapsList.stories',
   '../src/components/organisms/TokenList/TokenList.stories',
   '../src/components/organisms/WalthoughtCarousel/WalthoughtCarousel.stories',
