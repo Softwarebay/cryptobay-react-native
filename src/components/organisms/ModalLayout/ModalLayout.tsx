@@ -1,6 +1,7 @@
 import { BlurView } from '@react-native-community/blur';
 import React from 'react';
 import { Pressable, View } from 'react-native';
+
 import { styles } from './ModalLayout.styles';
 
 type ModalLayout = {

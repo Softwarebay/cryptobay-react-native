@@ -1,5 +1,5 @@
+export { AccountModalScreen } from './AccountModalScreen/AccountModalScreen';
 export { AccountRoot } from './AccountRoot/AccountRoot';
-export { AccountScreen } from './AccountScreen/AccountScreen';
 export { AuthorizedUserRoot } from './AuthorizedUserRoot/AuthorizedUserRoot';
 export { CreateNewAccountScreen } from './CreateNewAccountScreen/CreateNewAccountScreen';
 export { DetailsModalScreen } from './DetailsModalScreen/DetailsModalScreen';

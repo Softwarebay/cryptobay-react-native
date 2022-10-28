@@ -18,6 +18,7 @@ storiesOf('Templates/HomeTemplate', module)
       tokenPercentagePoint={number('tokenPercentagePoint', 0.7)}
       tokenValue={number('tokenValue', 9.2362)}
       tokens={tokensMock}
+      onPressAvatar={action('onPressAvatar')}
       onPressDropDown={action('onPressDropDown')}
       onPressSent={action('onPressSent')}
       onPressRecive={action('onPressRecive')}

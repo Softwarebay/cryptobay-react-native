@@ -17,6 +17,7 @@ function loadStories() {
   require('../src/components/organisms/SwapsList/SwapsList.stories');
   require('../src/components/organisms/TokenList/TokenList.stories');
   require('../src/components/organisms/WalthoughtCarousel/WalthoughtCarousel.stories');
+  require('../src/components/templates/AccountModalTemplate/AccountModalTemplate.stories');
   require('../src/components/templates/DetailsModalTemplate/DetailsModalTemplate.stories');
   require('../src/components/templates/HomeTemplate/HomeTemplate.stories');
   require('../src/components/templates/NetworkModalTemplate/NetworkModalTemplate.stories');
@@ -39,6 +40,7 @@ const stories = [
   '../src/components/organisms/SwapsList/SwapsList.stories',
   '../src/components/organisms/TokenList/TokenList.stories',
   '../src/components/organisms/WalthoughtCarousel/WalthoughtCarousel.stories',
+  '../src/components/templates/AccountModalTemplate/AccountModalTemplate.stories',
   '../src/components/templates/DetailsModalTemplate/DetailsModalTemplate.stories',
   '../src/components/templates/HomeTemplate/HomeTemplate.stories',
   '../src/components/templates/NetworkModalTemplate/NetworkModalTemplate.stories',

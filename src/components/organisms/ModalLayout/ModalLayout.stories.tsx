@@ -7,6 +7,7 @@ import StorybookView from '../../../../storybook/StorybookView';
 import { bnbSwapsHistory } from '../../../mocks';
 import { Label } from '../../atoms';
 import { SwapsList } from '../SwapsList/SwapsList';
+
 import { ModalLayout } from './ModalLayout';
 
 storiesOf('Organisms/ModalLayout', module)

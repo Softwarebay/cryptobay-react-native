@@ -5,13 +5,18 @@ import { View, Text } from 'react-native';
 import { Screens } from '../../screens.enum';
 import { StackList } from '../../types/stackList.type';
 
-type AccountScreenProps = NativeStackScreenProps<StackList, Screens.ACCOUNT>;
+type AccountModalScreenProps = NativeStackScreenProps<
+  StackList,
+  Screens.ACCOUNT
+>;
 
-export const AccountScreen: React.FC<AccountScreenProps> = ({}: // navigation,
-AccountScreenProps) => {
+export const AccountModalScreen: React.FC<
+  AccountModalScreenProps
+> = ({}: // navigation,
+AccountModalScreenProps) => {
   return (
     <View>
-      <Text>Account</Text>
+      <Text>AccountModal</Text>
     </View>
   );
 };

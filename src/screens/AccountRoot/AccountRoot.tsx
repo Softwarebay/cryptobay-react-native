@@ -3,7 +3,7 @@ import React from 'react';
 
 import { Screens } from '../../screens.enum';
 import { StackList } from '../../types/stackList.type';
-import { AccountScreen } from '../AccountScreen/AccountScreen';
+import { AccountModalScreen } from '../AccountModalScreen/AccountModalScreen';
 import { CreateNewAccountScreen } from '../CreateNewAccountScreen/CreateNewAccountScreen';
 import { ImportAccountScreen } from '../ImportAccountScreen/ImportAccountScreen';
 
@@ -18,7 +18,7 @@ export const AccountRoot: React.FC = () => {
       <Account.Screen
         name={Screens.ACCOUNT}
         options={{ presentation: 'transparentModal' }}
-        component={AccountScreen}
+        component={AccountModalScreen}
       />
       <Account.Screen
         name={Screens.CREATE_NEW_ACCOUNT}
